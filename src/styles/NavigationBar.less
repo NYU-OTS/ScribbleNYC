@@ -1,0 +1,47 @@
+@import './Index.less';
+
+// The navigation bar component.
+.navigation-bar {
+    height: 89px;
+    text-align: right;
+    padding-top: 30px;
+
+    // The logo image should always stick to the left side of the screen.
+    img {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        width: 89px;
+        height: 89px;
+    }
+
+    // The buttons, except for the sign up button, should have the same styles.
+    .nav-button {
+        border: none;
+        outline: none;
+        .common-font();
+        font-size: 16px;
+        cursor: pointer;
+        background: none;
+        margin-right: 30px;
+        text-decoration: none;
+
+        // When you hover over them, underline it and color it appropriately.
+        &:hover {
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    }
+    .nav-button-1:hover { color: @red; }
+    .nav-button-2:hover { color: @yellow; }
+    .nav-button-3:hover { color: @green; }
+    .nav-button-4:hover { color: @blue; }
+
+    // The sign up button shouldn't be so close to the right.
+    .primary-button {
+        position: relative;
+        top: -2px;
+        font-size: 15px;
+        margin-right: 40px;
+    }
+}
