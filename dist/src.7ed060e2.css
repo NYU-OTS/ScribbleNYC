@@ -5,6 +5,30 @@
   font-family: Rubik;
   font-weight: normal;
 }
+.primary-button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  background-color: #2E9CCD;
+}
+.primary-button:hover {
+  background-color: #257ca3;
+}
+.primary-button:active {
+  background-color: #206c8f;
+}
 .app {
   position: absolute;
   top: 0px;
@@ -15,34 +39,95 @@
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
 }
+.home {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .home .signup-holder {
-  background-color: lightcoral;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: fit-content;
+  transform: translate(-50%, -50%);
 }
 .home .color-button {
   position: absolute;
+  z-index: 1;
   border: none;
   outline: none;
   color: black;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   background: none;
   text-decoration: none;
 }
+.home .color-button:hover {
+  color: white;
+  font-weight: bolder;
+}
 .home .color-button:nth-child(1) {
-  top: 10%;
-  left: 10%;
+  top: 15%;
+  left: 15%;
 }
 .home .color-button:nth-child(2) {
-  top: 10%;
-  right: 10%;
+  top: 15%;
+  right: 15%;
 }
 .home .color-button:nth-child(3) {
-  left: 10%;
-  bottom: 10%;
+  left: 15%;
+  bottom: 15%;
 }
 .home .color-button:nth-child(4) {
-  right: 10%;
-  bottom: 10%;
+  right: 15%;
+  bottom: 15%;
+}
+.home #home-green-bubble {
+  position: absolute;
+  left: -80px;
+  width: 0px;
+  height: 0px;
+  bottom: -40vh;
+  overflow: hidden;
+  object-fit: contain;
+  transition-duration: 0.2s;
+}
+.home #home-red-bubble {
+  position: absolute;
+  top: -40vh;
+  width: 0px;
+  height: 0px;
+  right: -80px;
+  overflow: hidden;
+  object-fit: contain;
+  transition-duration: 0.2s;
+}
+.home #home-yellow-bubble {
+  position: absolute;
+  top: -40vh;
+  width: 0px;
+  height: 0px;
+  left: -80px;
+  overflow: hidden;
+  object-fit: contain;
+  transition-duration: 0.2s;
+}
+.home #home-blue-bubble {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -80px;
+  bottom: -40vh;
+  overflow: hidden;
+  object-fit: contain;
+  transition-duration: 0.2s;
 }
 
 .common-font {
@@ -51,6 +136,30 @@
   font-style: normal;
   font-family: Rubik;
   font-weight: normal;
+}
+.primary-button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  background-color: #2E9CCD;
+}
+.primary-button:hover {
+  background-color: #257ca3;
+}
+.primary-button:active {
+  background-color: #206c8f;
 }
 .app {
   position: absolute;

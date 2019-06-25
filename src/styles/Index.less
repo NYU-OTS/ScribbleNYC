@@ -13,6 +13,30 @@
     font-weight: normal;
 }
 
+// Buttons:
+.primary-button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    .common-font();
+    color: white;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    background-color: @primary;
+
+    // Hover and click states.
+    &:hover {
+        background-color: darken(@primary, 10%);
+    }
+    &:active {
+        background-color: darken(@primary, 15%);
+    }
+}
+
 // The entire app has the loose leaf paper background.
 .app {
     position: absolute;
