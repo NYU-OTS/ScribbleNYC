@@ -1,0 +1,22 @@
+{
+  "name": "scribblenycwebsite",
+  "version": "1.0.0",
+  "description": "The website for Scribble NYC.",
+  "main": "src/index.js",
+  "scripts": {
+    "start-dev": "parcel -p 3000 public/index.html",
+    "clean": "rm -rf .cache dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "less": "^3.9.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}

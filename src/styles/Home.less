@@ -1,0 +1,48 @@
+@import './Index.less';
+
+// The home page with the options to take you to different pages.
+.home {
+
+    // The image and sign up button in the middle of the home page.
+    .signup-holder {
+        background-color: lightcoral;
+    }
+
+    // Every "color-button" on this page should have the same look,
+    // and should show a colorful background on hover.
+    .color-button {
+        position: absolute;
+        border: none;
+        outline: none;
+        color: black;
+        cursor: pointer;
+        font-size: 18px;
+        background: none;
+        text-decoration: none;
+
+        // The first one is in the top left corner.
+        &:nth-child(1) {
+            top: 10%;
+            left: 10%;
+        }
+
+        // The second one is in the top right corner.
+        &:nth-child(2) {
+            top: 10%;
+            right: 10%;
+        }
+
+        // The third one is in the bottom left corner.
+        &:nth-child(3) {
+            left: 10%;
+            bottom: 10%;
+        }
+
+        // The fourth one is in the bottom right corner.
+        &:nth-child(4) {
+            right: 10%;
+            bottom: 10%;
+        }
+    }
+
+}
