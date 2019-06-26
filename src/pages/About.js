@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import NavigationBar from '../components/NavigationBar.js';
+import Footer from '../components/Footer.js';
+import TopButton from '../components/BackToTopButton';
 
-import Red from '../images/RedBubble2.svg';
-import Yellow from '../images/YellowBubble2.svg';
-import Green from '../images/GreenBubble2.svg';
-import Blue from '../images/BlueBubble2.svg';
+import AboutBackground from '../images/AboutBackground.svg';
 import '../styles/About.less';
 
 
@@ -15,9 +14,15 @@ export default function About() {
         <NavigationBar />
 
         <h1>About</h1>
-        <img src={Red}/>
-        <img src={Yellow}/>
-        <img src={Blue}/>
-        <img src={Green}/>
+        <img className='bubble-background-image' src={AboutBackground}/>
+
+        <div className='information'>
+            something
+
+
+            <TopButton />
+        </div>
+
+        <Footer />
     </div>
 }
