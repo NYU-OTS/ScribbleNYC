@@ -43,6 +43,7 @@
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -51,8 +52,8 @@
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -69,6 +70,11 @@
   background-size: 100%;
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 .home {
   position: fixed;
@@ -206,6 +212,7 @@
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -214,8 +221,8 @@
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -232,6 +239,11 @@
   background-size: 100%;
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 .navigation-bar {
   height: 89px;
@@ -327,6 +339,7 @@
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -335,8 +348,8 @@
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -354,32 +367,10 @@
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
 }
-footer {
-  position: relative;
-  background-color: white;
-}
-footer img {
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 59px;
-  height: 59px;
-}
-footer p {
-  position: relative;
-  top: 8px;
-  font-size: 18px;
-  line-height: 21px;
-  font-style: normal;
-  font-family: Rubik;
-  font-weight: normal;
-  font-size: 14px;
-  font-weight: 200;
-}
-footer .primary-button {
-  position: absolute;
-  top: 0px;
-  right: 10px;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 .common-font {
@@ -427,6 +418,7 @@ footer .primary-button {
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -435,8 +427,8 @@ footer .primary-button {
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -454,6 +446,11 @@ footer .primary-button {
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
 }
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
 .about {
   text-align: center;
 }
@@ -466,10 +463,14 @@ footer .primary-button {
   margin-bottom: 0px;
 }
 .about .bubble-background-image {
+  position: relative;
   margin: 0px;
   padding: 0px;
 }
 .about .information {
+  position: relative;
+  top: -5px;
+  z-index: 1;
   margin: 0px;
   padding: 0px;
   background-color: #E8898A;
@@ -520,6 +521,7 @@ footer .primary-button {
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -528,8 +530,8 @@ footer .primary-button {
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -546,6 +548,11 @@ footer .primary-button {
   background-size: 100%;
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 .last-year {
   text-align: center;
@@ -568,6 +575,9 @@ footer .primary-button {
   padding: 0px;
 }
 .last-year .information {
+  position: relative;
+  top: -5px;
+  z-index: 1;
   margin: 0px;
   padding: 0px;
   background-color: #FBB557;
@@ -618,6 +628,7 @@ footer .primary-button {
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -626,8 +637,8 @@ footer .primary-button {
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -644,6 +655,11 @@ footer .primary-button {
   background-size: 100%;
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 .this-year {
   margin: 0px;
@@ -663,6 +679,9 @@ footer .primary-button {
   padding: 0px;
 }
 .this-year .information {
+  position: relative;
+  top: -5px;
+  z-index: 1;
   margin: 0px;
   padding: 0px;
   background-color: #58B0D7;
@@ -713,6 +732,7 @@ footer .primary-button {
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -721,8 +741,8 @@ footer .primary-button {
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -740,31 +760,25 @@ footer .primary-button {
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
 }
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
 .faq {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  background-color: lightcoral;
 }
 .faq h1 {
-  font-size: 110px;
-  line-height: 180px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: 'Nanum Pen Script';
-  font-size: 90px;
-  margin-bottom: 0px;
-}
-.faq h1 br {
   position: relative;
-  margin: 0px;
-  padding: 0px;
 }
 .faq .bubble-background-image {
-  margin: 0px;
-  padding: 0px;
-}
-.faq .information {
-  margin: 0px;
-  padding: 0px;
-  background-color: #5ECED1;
+  position: relative;
 }
 
 .common-font {
@@ -812,6 +826,7 @@ footer .primary-button {
   display: block;
   color: black;
   cursor: pointer;
+  font-size: 14px;
   background: none;
   margin-top: 50px;
   margin-left: auto;
@@ -820,8 +835,8 @@ footer .primary-button {
 }
 .back-to-top-button span {
   display: block;
-  font-weight: bolder;
   margin-bottom: 0px;
+  font-weight: bolder;
 }
 .back-to-top-button p {
   margin-top: 0px;
@@ -838,6 +853,11 @@ footer .primary-button {
   background-size: 100%;
   background-repeat: repeat-y;
   background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 

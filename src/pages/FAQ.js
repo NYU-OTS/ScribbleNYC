@@ -16,12 +16,8 @@ export default function FAQ() {
         <h1>Frequently Asked Questions</h1>
         <img className='bubble-background-image' src={FAQBackground}/>
 
-        <div className='information'>
-            something
-
-            <TopButton />
-        </div>
-
-        <Footer />
+        <main className='information'>
+            
+        </main>
     </div>
 }

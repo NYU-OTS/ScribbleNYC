@@ -30068,7 +30068,7 @@ function About() {
   }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "About"), _react.default.createElement("img", {
     className: "bubble-background-image",
     src: _AboutBackground.default
-  }), _react.default.createElement("div", {
+  }), _react.default.createElement("main", {
     className: "information"
   }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
 }
@@ -30110,7 +30110,7 @@ function ThisYear() {
   }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
     className: "bubble-background-image",
     src: _LastYearBackground.default
-  }), _react.default.createElement("div", {
+  }), _react.default.createElement("main", {
     className: "information"
   }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
 }
@@ -30194,9 +30194,9 @@ function FAQ() {
   }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Frequently Asked Questions"), _react.default.createElement("img", {
     className: "bubble-background-image",
     src: _FAQBackground.default
-  }), _react.default.createElement("div", {
+  }), _react.default.createElement("main", {
     className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
+  }));
 }
 },{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/FAQBackground.svg":"../src/images/FAQBackground.svg","../styles/FAQ.less":"../src/styles/FAQ.less"}],"../src/styles/Index.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30294,7 +30294,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52076" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

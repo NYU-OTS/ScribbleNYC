@@ -16,12 +16,12 @@ export default function About() {
         <h1>About</h1>
         <img className='bubble-background-image' src={AboutBackground}/>
 
-        <div className='information'>
+        <main className='information'>
             something
 
 
             <TopButton />
-        </div>
+        </main>
 
         <Footer />
     </div>

@@ -16,11 +16,11 @@ export default function ThisYear() {
         <h1>Last Year<br/>2018</h1>
         <img className='bubble-background-image' src={LastYearBackground}/>
         
-        <div className='information'>
+        <main className='information'>
             something
 
             <TopButton />
-        </div>
+        </main>
 
         <Footer />
     </div>
