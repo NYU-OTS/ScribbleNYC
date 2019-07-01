@@ -102,9 +102,10 @@ body {
   outline: none;
   color: black;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 28px;
   background: none;
-  text-decoration: none;
+  text-decoration: underline;
+  font-family: 'Nanum Pen Script';
 }
 .home .color-button:hover {
   color: white;
@@ -371,6 +372,35 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  height: 90px;
+  padding: 0px;
+  background-color: white;
+}
+footer img {
+  position: absolute;
+  left: 10px;
+  width: 89px;
+  height: 100%;
+}
+footer p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Noto Sans';
+  transform: translateX(-50%) translateY(-50%);
+}
+footer button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .common-font {
@@ -687,6 +717,31 @@ body {
   background-color: #58B0D7;
 }
 
+.collectionView {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  text-align: center;
+  height: fit-content;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.collectionView > div {
+  /* position: relative; */
+  /* display: inline-block; */
+  text-decoration: none;
+}
+#popupList {
+  overflow: scroll;
+  white-space: pre-wrap;
+}
+#popupList::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+}
+
 .common-font {
   font-size: 18px;
   line-height: 21px;
@@ -772,13 +827,52 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: lightcoral;
 }
-.faq h1 {
-  position: relative;
+.faq #faq-items {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background-color: mediumseagreen;
 }
-.faq .bubble-background-image {
-  position: relative;
+.faq #faq-items * {
+  width: 100%;
+}
+.faq #faq-items h1 {
+  font-size: 110px;
+  line-height: 180px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Nanum Pen Script';
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.faq #faq-items .bubble-background-image {
+  padding: 0px;
+  object-fit: cover;
+}
+.faq #faq-items .information {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #5ECED1;
+}
+.faq #faq-items .information h2 {
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.33;
+}
+.faq #faq-items .information p {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Poppins;
+  margin-bottom: 80px;
 }
 
 .common-font {

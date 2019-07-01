@@ -30156,7 +30156,224 @@ function ThisYear() {
     className: "information"
   }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/styles/CollectionView.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/CollectionView.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+require("../styles/CollectionView.less");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+/** A layout for a basic collection view that displays data in a horizontal or vertical scrolling list. */
+var CollectionView =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(CollectionView, _Component);
+
+  /** **************************
+  *                           *
+  *           INIT            *
+  *                           *
+  **************************** */
+  function CollectionView(props) {
+    var _this;
+
+    _classCallCheck(this, CollectionView);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CollectionView).call(this, props)); // Create the default settings for a collection view.
+
+    _this.state = {
+      data: props.data ? props.data instanceof Function ? props.data() : props.data : [],
+      orientation: props.orientation || CollectionView.Orientation.vertical,
+      emptyDataView: props.emptyDataView || _react.default.createElement("div", null),
+      shouldScrollOnReload: props.shouldScrollOnReload || false,
+      edgeInsets: props.edgeInsets || ['0px', '0px', '0px', '0px'],
+      // top, right, bottom, left,
+      isScrollEnabled: props.isScrollEnabled || true
+    };
+    return _this;
+  }
+  /** **************************
+  *                           *
+  *          FUNCTIONS        *
+  *                           *
+  **************************** */
+
+  /** Returns an array of components representing the items of this collection view. */
+
+
+  _createClass(CollectionView, [{
+    key: "getChildren",
+    value: function getChildren() {
+      return this.state.data || [];
+    }
+    /** Call this function to reload the data in this collection view.
+    * @param newData The new data to populate the collection view with.
+    * @param before The function to run just before the data gets reloaded.
+    * @param after The function to run directly after the data gets reloaded.
+    */
+
+  }, {
+    key: "reloadData",
+    value: function reloadData(newData) {
+      var _this2 = this;
+
+      var before = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+      var after = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+      if (!newData) {
+        return;
+      } // If there is something to run before changing the state, do it now.
+
+
+      if (before) {
+        before(this.refs.collectionView); // The 'before' function, as of right now, should only be used to fade/show
+        // the suggestions buttons when they change. Because it is so specific, set the
+        // timeout and THEN set the state.
+
+        setTimeout(function () {
+          // Change the state.
+          _this2.setState({
+            data: newData
+          }, function () {
+            // If there is something to run immediately after setting the state, do it now.
+            if (after) {
+              after(_this2.refs.collectionView);
+            } // Scroll to the bottom of the collection view.
+
+
+            if (_this2.state.shouldScrollOnReload === true) {
+              _this2.scrollToBottom();
+            }
+          });
+        }, 100);
+      } else {
+        // Change the state.
+        this.setState({
+          data: newData
+        }, function () {
+          // If there is something to run immediately after setting the state, do it now.
+          if (after) {
+            after(_this2.refs.collectionView);
+          } // Scroll to the bottom of the collection view.
+
+
+          if (_this2.state.shouldScrollOnReload === true) {
+            _this2.scrollToBottom();
+          }
+        });
+      }
+    }
+    /** Scrolls to the bottom of the collection view. */
+
+  }, {
+    key: "scrollToBottom",
+    value: function scrollToBottom() {
+      var element = this.refs.collectionView;
+
+      if (element.offsetHeight < element.scrollHeight || element.offsetWidth < element.scrollWidth) {
+        element.scroll({
+          top: element.scrollHeight,
+          behavior: 'smooth'
+        });
+      }
+    }
+    /** **************************
+    *                           *
+    *           STYLES          *
+    *                           *
+    **************************** */
+
+    /** The styles for the collection view. */
+
+  }, {
+    key: "configureStyles",
+    value: function configureStyles() {
+      var ofx = this.state.orientation === CollectionView.Orientation.horizontal ? 'auto' : 'hidden';
+      var ofy = this.state.orientation === CollectionView.Orientation.vertical ? 'auto' : 'hidden';
+      var ws = this.state.orientation === CollectionView.Orientation.horizontal ? 'nowrap' : 'unset';
+      var edgeTop = this.state.edgeInsets[0];
+      var edgeRight = this.state.edgeInsets[1];
+      var edgeBottom = this.state.edgeInsets[2];
+      var edgeLeft = this.state.edgeInsets[3];
+      return _objectSpread({
+        overflowX: this.state.isScrollEnabled === true ? ofx : 'hidden',
+        overflowY: this.state.isScrollEnabled === true ? ofy : 'hidden',
+        whiteSpace: ws,
+        paddingTop: edgeTop,
+        paddingLeft: edgeLeft,
+        paddingRight: edgeRight,
+        paddingBottom: edgeBottom,
+        textAlign: 'center',
+        textDecoration: 'none'
+      }, this.props.style);
+    }
+    /** **************************
+    *                           *
+    *          RENDER           *
+    *                           *
+    **************************** */
+
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        id: this.props.id,
+        ref: "collectionView",
+        className: "collectionView ".concat(this.props.className),
+        tabIndex: this.props.tabIndex === 0 ? 0 : this.props.tabIndex || null,
+        "aria-label": this.props['aria-label'] || null,
+        "data-layout": this.props['data-layout'] || false,
+        style: this.configureStyles()
+      }, (this.props.data || []).length > 0 ? this.props.data ? this.props.data instanceof Function ? this.props.data() : this.props.data : [] : this.state.emptyDataView);
+    }
+  }]);
+
+  return CollectionView;
+}(_react.Component);
+/** The orientation of the collection view: vertical or horizontal. */
+
+
+CollectionView.Orientation = Object.freeze({
+  vertical: 'vertical',
+  horizontal: 'horizontal'
+});
+var _default = CollectionView;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../styles/CollectionView.less":"../src/styles/CollectionView.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
 module.exports = "/FAQBackground.35d96185.svg";
 },{}],"../src/styles/FAQ.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30175,6 +30392,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
 
+var _CollectionView = _interopRequireDefault(require("../components/CollectionView.js"));
+
 var _Footer = _interopRequireDefault(require("../components/Footer.js"));
 
 var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
@@ -30191,14 +30410,48 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function FAQ() {
   return _react.default.createElement("div", {
     className: "page faq"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Frequently Asked Questions"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _FAQBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
+    id: "faq-items",
+    orientation: _CollectionView.default.Orientation.vertical,
+    data: [_react.default.createElement("h1", null, "Frequently Asked Questions"), _react.default.createElement("img", {
+      className: "bubble-background-image",
+      src: _FAQBackground.default
+    }), _react.default.createElement("main", {
+      className: "information"
+    }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students.")), _react.default.createElement(_Footer.default, null)]
   }));
 }
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/FAQBackground.svg":"../src/images/FAQBackground.svg","../styles/FAQ.less":"../src/styles/FAQ.less"}],"../src/styles/Index.less":[function(require,module,exports) {
+
+{}
+/* <h1>Frequently Asked Questions</h1>
+<div className='bubble-background-image'><img src={FAQBackground}/></div>
+<main className='information'>
+   
+</main>
+<Footer /> */
+// <h2>What should I bring to Scribble NYC?</h2>
+// <p>
+//     Please bring a valid student or government ID. 
+//     We also recommend attendees to bring laptops, 
+//     as some workshops be heavily reliant on a laptop
+// </p>
+// <h2>Who can attend?</h2>
+// <p>
+//     Anyone can purchase a ticket, which will give them 
+//     admission to the workshops. However, only middle and 
+//     high school students can compete in the design-a-thon.
+// </p>
+// <h2>How much does it cost?</h2>
+// <p>
+//     Tickets cost $20 per person. However, if you purchase 
+//     tickets as a group, they are $15 per person. Groups are 
+//     limited to five people
+// </p>
+// <h2>How many people can be on a team for the design-a-thon?</h2>
+// <p>
+//     Teams must consist of 2-4 students.
+// </p>
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/FAQBackground.svg":"../src/images/FAQBackground.svg","../styles/FAQ.less":"../src/styles/FAQ.less"}],"../src/styles/Index.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -30294,7 +30547,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52076" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49706" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

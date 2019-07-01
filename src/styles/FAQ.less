@@ -7,16 +7,58 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: lightcoral;
-    
-    // The title of the page.
-    h1 {
-        position: relative;
+    // background-color: lightcoral;
+
+    // The page contents are all contained inside of this
+    // collection view so that they can be appropriately stacked.
+    #faq-items {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        background-color: mediumseagreen;
+
+        // By nature of the collection view, make sure everything
+        // takes up the entire width of the list.
+        * { width: 100%; }
+
+        // The title of the page.
+        h1 {
+            .header-font();
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        // The background bubbles.
+        .bubble-background-image {
+            padding: 0px;
+            object-fit: cover;
+        }
+
+        // The main information section of the page.
+        .information {
+            text-align: left;
+            padding-left: 15%;
+            padding-right: 15%;
+            background-color: #5ECED1;
+
+            // The question.
+            h2 {
+                .common-font();
+                font-size: 30px;
+                line-height: 1.33;
+            }
+
+            // The answer.
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-style: normal;
+                font-weight: normal;
+                font-family: Poppins;
+                margin-bottom: 80px;
+            }
+        }
     }
 
-    // The background image with the bubbles.
-    .bubble-background-image {
-        position: relative;
-        
-    }
 }
