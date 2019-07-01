@@ -29973,190 +29973,7 @@ function NavigationBar() {
     to: "/faq"
   }));
 }
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","../styles/NavigationBar.less":"../src/styles/NavigationBar.less"}],"../src/styles/Footer.less":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Footer;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _ScribbleLogo = _interopRequireDefault(require("../images/ScribbleLogo.svg"));
-
-require("../styles/Footer.less");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-// Exports the footer component for each page.
-function Footer() {
-  return _react.default.createElement("footer", null, _react.default.createElement("img", {
-    src: _ScribbleLogo.default,
-    alt: "Scribble NYC Logo"
-  }), _react.default.createElement("p", null, "Design and Content \xA9 2018, Operations Technology Services and Support, NYU IT"), _react.default.createElement("button", {
-    className: "primary-button"
-  }, "Sign Up!"));
-}
-},{"react":"../node_modules/react/index.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","../styles/Footer.less":"../src/styles/Footer.less"}],"../src/components/BackToTopButton.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = BackToTopButton;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function BackToTopButton() {
-  return _react.default.createElement("button", {
-    className: "back-to-top-button",
-    onClick: function onClick() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  }, _react.default.createElement("span", {
-    className: "fa fa-arrow-up"
-  }), _react.default.createElement("p", null, "Back to Top"));
-}
-},{"react":"../node_modules/react/index.js"}],"../src/images/AboutBackground.svg":[function(require,module,exports) {
-module.exports = "/AboutBackground.4a748ab6.svg";
-},{}],"../src/styles/About.less":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/About.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = About;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
-
-var _Footer = _interopRequireDefault(require("../components/Footer.js"));
-
-var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
-
-var _AboutBackground = _interopRequireDefault(require("../images/AboutBackground.svg"));
-
-require("../styles/About.less");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-// The about page.
-function About() {
-  return _react.default.createElement("div", {
-    className: "page about"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "About"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _AboutBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
-}
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/AboutBackground.svg":"../src/images/AboutBackground.svg","../styles/About.less":"../src/styles/About.less"}],"../src/images/LastYearBackground.svg":[function(require,module,exports) {
-module.exports = "/LastYearBackground.10a7cbeb.svg";
-},{}],"../src/styles/LastYear.less":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/LastYear.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ThisYear;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
-
-var _Footer = _interopRequireDefault(require("../components/Footer"));
-
-var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
-
-var _LastYearBackground = _interopRequireDefault(require("../images/LastYearBackground.svg"));
-
-require("../styles/LastYear.less");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-// The page describing the event for this year.
-function ThisYear() {
-  return _react.default.createElement("div", {
-    className: "page last-year"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _LastYearBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
-}
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/LastYearBackground.svg":"../src/images/LastYearBackground.svg","../styles/LastYear.less":"../src/styles/LastYear.less"}],"../src/images/ThisYearBackground.svg":[function(require,module,exports) {
-module.exports = "/ThisYearBackground.3e113584.svg";
-},{}],"../src/styles/ThisYear.less":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/ThisYear.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ThisYear;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
-
-var _Footer = _interopRequireDefault(require("../components/Footer"));
-
-var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
-
-var _ThisYearBackground = _interopRequireDefault(require("../images/ThisYearBackground.svg"));
-
-require("../styles/ThisYear.less");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-// The page describing the event for this year.
-function ThisYear() {
-  return _react.default.createElement("div", {
-    className: "page this-year"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "This Year"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _ThisYearBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
-}
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/styles/CollectionView.less":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","../styles/NavigationBar.less":"../src/styles/NavigationBar.less"}],"../src/styles/CollectionView.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -30373,7 +30190,208 @@ CollectionView.Orientation = Object.freeze({
 });
 var _default = CollectionView;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../styles/CollectionView.less":"../src/styles/CollectionView.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../styles/CollectionView.less":"../src/styles/CollectionView.less"}],"../src/components/BackToTopButton.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = BackToTopButton;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function BackToTopButton() {
+  return _react.default.createElement("button", {
+    className: "back-to-top-button",
+    onClick: function onClick() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, _react.default.createElement("span", {
+    className: "fa fa-arrow-up"
+  }), _react.default.createElement("br", null), _react.default.createElement("p", null, "Back to Top"));
+}
+},{"react":"../node_modules/react/index.js"}],"../src/styles/Footer.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _ScribbleLogo = _interopRequireDefault(require("../images/ScribbleLogo.svg"));
+
+var _BackToTopButton = _interopRequireDefault(require("./BackToTopButton"));
+
+require("../styles/Footer.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+// Exports the footer component for each page.
+function Footer() {
+  return _react.default.createElement("footer", null, _react.default.createElement("img", {
+    src: _ScribbleLogo.default,
+    alt: "Scribble NYC Logo"
+  }), _react.default.createElement("p", null, "Design and Content \xA9 2018, Operations Technology Services and Support, NYU IT"), _react.default.createElement("button", {
+    className: "primary-button"
+  }, "Sign Up!"), _react.default.createElement(_BackToTopButton.default, null));
+}
+},{"react":"../node_modules/react/index.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","./BackToTopButton":"../src/components/BackToTopButton.js","../styles/Footer.less":"../src/styles/Footer.less"}],"../src/images/AboutBackground.svg":[function(require,module,exports) {
+module.exports = "/AboutBackground.4a748ab6.svg";
+},{}],"../src/styles/About.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = About;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
+
+var _CollectionView = _interopRequireDefault(require("../components/CollectionView.js"));
+
+var _Footer = _interopRequireDefault(require("../components/Footer.js"));
+
+var _AboutBackground = _interopRequireDefault(require("../images/AboutBackground.svg"));
+
+require("../styles/About.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+// The about page.
+function About() {
+  return _react.default.createElement("div", {
+    className: "page about"
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
+    id: "about-items",
+    orientation: _CollectionView.default.Orientation.vertical,
+    data: [_react.default.createElement("h1", null, "About"), _react.default.createElement("img", {
+      className: "bubble-background-image",
+      src: _AboutBackground.default
+    }), _react.default.createElement("main", {
+      className: "information"
+    }, _react.default.createElement("h2", null, "What is Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is a design forum and design-a-thon aimed at teaching middle and high school students about the world of product design."), _react.default.createElement("h2", null, "Who organizes Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is organized and hosted by NYU IT Operations Technology Services & Support (OTSS), in collaboration with industry partners from across the software design and development field."), _react.default.createElement("section", {
+      className: "about-organizers"
+    }, _react.default.createElement("img", {
+      src: ""
+    }), _react.default.createElement("img", {
+      src: ""
+    }), _react.default.createElement("img", {
+      src: ""
+    })), _react.default.createElement("h2", null, "Who participates?"), _react.default.createElement("p", null, _react.default.createElement("ul", {
+      style: {
+        textAlign: 'left'
+      }
+    }, _react.default.createElement("li", null, "Students, teachers, and faculty entering our competition and/or attending our workshops."), _react.default.createElement("li", null, "Designers and developers from many different companies all over New York will host workshops and provide support while teams are working on projects."), _react.default.createElement("li", null, "Anyone who wants to learn more, including students, teachers, faculty, parents, and school administrators."))), _react.default.createElement("h2", null, "Who sponsers Scribble NYC?"), _react.default.createElement("p", null, "The below companies have generously donated workshops, prizes, and other resources as sponsors of Scribble NYC."))]
+  }), _react.default.createElement(_Footer.default, null));
+}
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../images/AboutBackground.svg":"../src/images/AboutBackground.svg","../styles/About.less":"../src/styles/About.less"}],"../src/images/LastYearBackground.svg":[function(require,module,exports) {
+module.exports = "/LastYearBackground.10a7cbeb.svg";
+},{}],"../src/styles/LastYear.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/LastYear.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ThisYear;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
+
+var _Footer = _interopRequireDefault(require("../components/Footer"));
+
+var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
+
+var _LastYearBackground = _interopRequireDefault(require("../images/LastYearBackground.svg"));
+
+require("../styles/LastYear.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+// The page describing the event for this year.
+function ThisYear() {
+  return _react.default.createElement("div", {
+    className: "page last-year"
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
+    className: "bubble-background-image",
+    src: _LastYearBackground.default
+  }), _react.default.createElement("main", {
+    className: "information"
+  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
+}
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/LastYearBackground.svg":"../src/images/LastYearBackground.svg","../styles/LastYear.less":"../src/styles/LastYear.less"}],"../src/images/ThisYearBackground.svg":[function(require,module,exports) {
+module.exports = "/ThisYearBackground.3e113584.svg";
+},{}],"../src/styles/ThisYear.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/pages/ThisYear.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ThisYear;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
+
+var _Footer = _interopRequireDefault(require("../components/Footer"));
+
+var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
+
+var _ThisYearBackground = _interopRequireDefault(require("../images/ThisYearBackground.svg"));
+
+require("../styles/ThisYear.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+// The page describing the event for this year.
+function ThisYear() {
+  return _react.default.createElement("div", {
+    className: "page this-year"
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "This Year"), _react.default.createElement("img", {
+    className: "bubble-background-image",
+    src: _ThisYearBackground.default
+  }), _react.default.createElement("main", {
+    className: "information"
+  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
+}
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
 module.exports = "/FAQBackground.35d96185.svg";
 },{}],"../src/styles/FAQ.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30418,39 +30436,9 @@ function FAQ() {
       src: _FAQBackground.default
     }), _react.default.createElement("main", {
       className: "information"
-    }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students.")), _react.default.createElement(_Footer.default, null)]
-  }));
+    }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students."))]
+  }), _react.default.createElement(_Footer.default, null));
 }
-
-{}
-/* <h1>Frequently Asked Questions</h1>
-<div className='bubble-background-image'><img src={FAQBackground}/></div>
-<main className='information'>
-   
-</main>
-<Footer /> */
-// <h2>What should I bring to Scribble NYC?</h2>
-// <p>
-//     Please bring a valid student or government ID. 
-//     We also recommend attendees to bring laptops, 
-//     as some workshops be heavily reliant on a laptop
-// </p>
-// <h2>Who can attend?</h2>
-// <p>
-//     Anyone can purchase a ticket, which will give them 
-//     admission to the workshops. However, only middle and 
-//     high school students can compete in the design-a-thon.
-// </p>
-// <h2>How much does it cost?</h2>
-// <p>
-//     Tickets cost $20 per person. However, if you purchase 
-//     tickets as a group, they are $15 per person. Groups are 
-//     limited to five people
-// </p>
-// <h2>How many people can be on a team for the design-a-thon?</h2>
-// <p>
-//     Teams must consist of 2-4 students.
-// </p>
 },{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/FAQBackground.svg":"../src/images/FAQBackground.svg","../styles/FAQ.less":"../src/styles/FAQ.less"}],"../src/styles/Index.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -30547,7 +30535,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49706" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51008" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

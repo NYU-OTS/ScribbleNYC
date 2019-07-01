@@ -3,26 +3,69 @@
 .about {
     text-align: center;
 
-    // The title of the about page.
-    h1 {
-        .header-font();
-        margin-bottom: 0px;
-    }
-
-    // The background image with the bubbles.
-    .bubble-background-image {
-        position: relative;
+    // The page contents are all contained inside of this
+    // collection view so that they can be appropriately stacked.
+    #about-items {
+        width: 100%;
         margin: 0px;
         padding: 0px;
-    }
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
 
-    // The information section, which is the main part of the website.
-    .information {
-        position: relative;
-        top: -5px;
-        z-index: 1;
-        margin: 0px;
-        padding: 0px;
-        background-color: #E8898A;
-    }
-}
+        // By nature of the collection view, make sure everything
+        // takes up the entire width of the list.
+        * { width: 100%; }
+
+        // The title of the page.
+        h1 {
+            .header-font();
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        // The background bubbles.
+        .bubble-background-image {
+            margin: 0px;
+            padding: 0px;
+            object-fit: cover;
+        }
+
+        // The main information section of the page.
+        .information {
+            padding-left: 25%;
+            padding-right: 25%;
+            background-color: #E8898A;
+
+            // The section titles.
+            h2 {
+                .common-font();
+                font-size: 30px;
+                line-height: 1.33;
+                font-weight: bolder;
+            }
+
+            // The descriptions.
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-style: normal;
+                font-weight: normal;
+                margin-bottom: 80px;
+                font-family: Poppins;
+            }
+
+            // The section about event organizers.
+            .about-organizers {
+                img {
+                    width: 130px;
+                    height: 130px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    border-radius: 100%;
+                    background-color: lightgray;
+                }
+            }
+        } // End of ".information"
+    } // End of "#about-items"
+} // End of ".about"

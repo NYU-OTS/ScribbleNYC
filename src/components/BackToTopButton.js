@@ -5,6 +5,7 @@ export default function BackToTopButton() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }}>
         <span className='fa fa-arrow-up'/>
+        <br/>
         <p>Back to Top</p>
     </button>
 }

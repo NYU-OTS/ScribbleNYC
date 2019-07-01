@@ -37,22 +37,23 @@
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -207,22 +208,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -295,6 +297,28 @@ body {
   margin-right: 40px;
 }
 
+.collectionView {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  white-space: nowrap;
+  height: fit-content;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.collectionView > div {
+  text-decoration: none;
+}
+#popupList {
+  overflow: scroll;
+  white-space: pre-wrap;
+}
+#popupList::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+}
+
 .common-font {
   font-size: 18px;
   line-height: 21px;
@@ -334,22 +358,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -383,7 +408,7 @@ footer {
 }
 footer img {
   position: absolute;
-  left: 10px;
+  left: 20px;
   width: 89px;
   height: 100%;
 }
@@ -399,7 +424,7 @@ footer p {
 footer button {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 20px;
   transform: translateY(-50%);
 }
 
@@ -442,22 +467,23 @@ footer button {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -484,26 +510,61 @@ body {
 .about {
   text-align: center;
 }
-.about h1 {
+.about #about-items {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.about #about-items * {
+  width: 100%;
+}
+.about #about-items h1 {
   font-size: 110px;
   line-height: 180px;
   font-style: normal;
   font-weight: normal;
   font-family: 'Nanum Pen Script';
+  margin-top: 0px;
   margin-bottom: 0px;
 }
-.about .bubble-background-image {
-  position: relative;
+.about #about-items .bubble-background-image {
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
 }
-.about .information {
-  position: relative;
-  top: -5px;
-  z-index: 1;
-  margin: 0px;
-  padding: 0px;
+.about #about-items .information {
+  padding-left: 25%;
+  padding-right: 25%;
   background-color: #E8898A;
+}
+.about #about-items .information h2 {
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.33;
+  font-weight: bolder;
+}
+.about #about-items .information p {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 80px;
+  font-family: Poppins;
+}
+.about #about-items .information .about-organizers img {
+  width: 130px;
+  height: 130px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 100%;
+  background-color: lightgray;
 }
 
 .common-font {
@@ -545,22 +606,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -652,22 +714,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -717,31 +780,6 @@ body {
   background-color: #58B0D7;
 }
 
-.collectionView {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1140px;
-  text-align: center;
-  height: fit-content;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-.collectionView > div {
-  /* position: relative; */
-  /* display: inline-block; */
-  text-decoration: none;
-}
-#popupList {
-  overflow: scroll;
-  white-space: pre-wrap;
-}
-#popupList::-webkit-scrollbar {
-  display: none;
-  visibility: hidden;
-}
-
 .common-font {
   font-size: 18px;
   line-height: 21px;
@@ -781,22 +819,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {
@@ -830,10 +869,11 @@ body {
 }
 .faq #faq-items {
   width: 100%;
+  margin: 0px;
+  padding: 0px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  background-color: mediumseagreen;
 }
 .faq #faq-items * {
   width: 100%;
@@ -865,14 +905,15 @@ body {
   font-weight: normal;
   font-size: 30px;
   line-height: 1.33;
+  font-weight: bolder;
 }
 .faq #faq-items .information p {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
   font-weight: normal;
-  font-family: Poppins;
   margin-bottom: 80px;
+  font-family: Poppins;
 }
 
 .common-font {
@@ -914,22 +955,23 @@ body {
   background-color: #206c8f;
 }
 .back-to-top-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
   border: none;
+  color: black;
   outline: none;
   display: block;
-  color: black;
   cursor: pointer;
   font-size: 14px;
   background: none;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
+  transform: translateX(-50%);
 }
 .back-to-top-button span {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: bolder;
 }
 .back-to-top-button p {

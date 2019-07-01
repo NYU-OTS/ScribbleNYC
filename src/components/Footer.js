@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import ScribbleLogo from '../images/ScribbleLogo.svg';
+import TopButton from './BackToTopButton';
 
 import '../styles/Footer.less';
 
@@ -11,5 +12,7 @@ export default function Footer() {
         <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
         <p>Design and Content © 2018, Operations Technology Services and Support, NYU IT</p>
         <button className='primary-button'>Sign Up!</button>
+
+        <TopButton />
     </footer>
 }

@@ -47,22 +47,23 @@
 
 // The button to take you back to the top of the page.
 .back-to-top-button {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    width: 80px;
     border: none;
+    color: black;
     outline: none;
     display: block;
-    color: black;
     cursor: pointer;
     font-size: 14px;
     background: none;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     text-decoration: none;
+    transform: translateX(-50%);
 
     span {
         display: block;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         font-weight: bolder;
     }
     p {
