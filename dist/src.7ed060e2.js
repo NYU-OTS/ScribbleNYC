@@ -30249,7 +30249,36 @@ function Footer() {
     className: "primary-button"
   }, "Sign Up!"), _react.default.createElement(_BackToTopButton.default, null));
 }
-},{"react":"../node_modules/react/index.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","./BackToTopButton":"../src/components/BackToTopButton.js","../styles/Footer.less":"../src/styles/Footer.less"}],"../src/images/AboutBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../images/ScribbleLogo.svg":"../src/images/ScribbleLogo.svg","./BackToTopButton":"../src/components/BackToTopButton.js","../styles/Footer.less":"../src/styles/Footer.less"}],"../src/styles/OrganizerCell.less":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../images/LooseLeafBackground.svg":[["LooseLeafBackground.00032755.svg","../src/images/LooseLeafBackground.svg"],"../src/images/LooseLeafBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/OrganizerCell.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = OrganizerCell;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../styles/OrganizerCell.less");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function OrganizerCell(props) {
+  var image = props.image,
+      name = props.name,
+      title = props.title;
+  return _react.default.createElement("span", {
+    className: "organizer-cell"
+  }, _react.default.createElement("img", {
+    src: image
+  }), _react.default.createElement("h3", null, name), _react.default.createElement("p", null, title));
+}
+},{"react":"../node_modules/react/index.js","../styles/OrganizerCell.less":"../src/styles/OrganizerCell.less"}],"../src/images/AboutBackground.svg":[function(require,module,exports) {
 module.exports = "/AboutBackground.4a748ab6.svg";
 },{}],"../src/styles/About.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30272,6 +30301,8 @@ var _CollectionView = _interopRequireDefault(require("../components/CollectionVi
 
 var _Footer = _interopRequireDefault(require("../components/Footer.js"));
 
+var _OrganizerCell = _interopRequireDefault(require("../components/OrganizerCell"));
+
 var _AboutBackground = _interopRequireDefault(require("../images/AboutBackground.svg"));
 
 require("../styles/About.less");
@@ -30292,14 +30323,20 @@ function About() {
       src: _AboutBackground.default
     }), _react.default.createElement("main", {
       className: "information"
-    }, _react.default.createElement("h2", null, "What is Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is a design forum and design-a-thon aimed at teaching middle and high school students about the world of product design."), _react.default.createElement("h2", null, "Who organizes Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is organized and hosted by NYU IT Operations Technology Services & Support (OTSS), in collaboration with industry partners from across the software design and development field."), _react.default.createElement("section", {
+    }, _react.default.createElement("h2", null, "What is Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is a design forum and design-a-thon aimed at teaching middle and high school students about the world of product design."), _react.default.createElement("h2", null, "Who organizes Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is organized and hosted by NYU IT Operations Technology Services & Support (OTSS), in collaboration with industry partners from across the software design and development field."), _react.default.createElement("div", {
       className: "about-organizers"
-    }, _react.default.createElement("img", {
-      src: ""
-    }), _react.default.createElement("img", {
-      src: ""
-    }), _react.default.createElement("img", {
-      src: ""
+    }, _react.default.createElement(_OrganizerCell.default, {
+      image: "",
+      name: "Meenakshi Baker",
+      title: "Event Manager"
+    }), _react.default.createElement(_OrganizerCell.default, {
+      image: "",
+      name: "Felicity Ng",
+      title: "Event Organizer"
+    }), _react.default.createElement(_OrganizerCell.default, {
+      image: "",
+      name: "Adeola Uthman",
+      title: "Event Organizer"
     })), _react.default.createElement("h2", null, "Who participates?"), _react.default.createElement("p", null, _react.default.createElement("ul", {
       style: {
         textAlign: 'left'
@@ -30307,7 +30344,7 @@ function About() {
     }, _react.default.createElement("li", null, "Students, teachers, and faculty entering our competition and/or attending our workshops."), _react.default.createElement("li", null, "Designers and developers from many different companies all over New York will host workshops and provide support while teams are working on projects."), _react.default.createElement("li", null, "Anyone who wants to learn more, including students, teachers, faculty, parents, and school administrators."))), _react.default.createElement("h2", null, "Who sponsers Scribble NYC?"), _react.default.createElement("p", null, "The below companies have generously donated workshops, prizes, and other resources as sponsors of Scribble NYC."))]
   }), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../images/AboutBackground.svg":"../src/images/AboutBackground.svg","../styles/About.less":"../src/styles/About.less"}],"../src/images/LastYearBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../components/OrganizerCell":"../src/components/OrganizerCell.js","../images/AboutBackground.svg":"../src/images/AboutBackground.svg","../styles/About.less":"../src/styles/About.less"}],"../src/images/LastYearBackground.svg":[function(require,module,exports) {
 module.exports = "/LastYearBackground.10a7cbeb.svg";
 },{}],"../src/styles/LastYear.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30535,7 +30572,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51008" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57236" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

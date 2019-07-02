@@ -507,6 +507,98 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.organizer-cell:nth-child(1) {
+  position: relative;
+  background-color: magenta;
+}
+.organizer-cell:nth-child(2) {
+  position: relative;
+  background-color: aqua;
+}
+.organizer-cell:nth-child(3) {
+  position: relative;
+  background-color: peru;
+}
+
+.common-font {
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+}
+.header-font {
+  font-size: 110px;
+  line-height: 180px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Nanum Pen Script';
+}
+.primary-button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  background-color: #2E9CCD;
+}
+.primary-button:hover {
+  background-color: #257ca3;
+}
+.primary-button:active {
+  background-color: #206c8f;
+}
+.back-to-top-button {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 80px;
+  border: none;
+  color: black;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+.back-to-top-button span {
+  display: block;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+.back-to-top-button p {
+  margin-top: 0px;
+  font-weight: bolder;
+}
+.app {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-image: url('LooseLeafBackground.00032755.svg');
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
 .about {
   text-align: center;
 }
@@ -558,13 +650,11 @@ body {
   margin-bottom: 80px;
   font-family: Poppins;
 }
-.about #about-items .information .about-organizers img {
-  width: 130px;
-  height: 130px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 100%;
-  background-color: lightgray;
+.about #about-items .information .about-organizers {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: lightseagreen;
 }
 
 .common-font {

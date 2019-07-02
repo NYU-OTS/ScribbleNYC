@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
+import OrganizerCell from '../components/OrganizerCell';
 
 import AboutBackground from '../images/AboutBackground.svg';
 import '../styles/About.less';
@@ -33,11 +34,17 @@ export default function About() {
                         in collaboration with industry partners from across 
                         the software design and development field.
                     </p>
-                    <section className='about-organizers'>
-                        <img src='' />
-                        <img src='' />
-                        <img src='' />
-                    </section>
+                    <div className='about-organizers'>
+                        <OrganizerCell image='' 
+                            name='Meenakshi Baker'
+                            title='Event Manager'/>
+                        <OrganizerCell image='' 
+                            name='Felicity Ng'
+                            title='Event Organizer'/>
+                        <OrganizerCell image='' 
+                            name='Adeola Uthman'
+                            title='Event Organizer'/>
+                    </div>
 
                     <h2>Who participates?</h2>
                     <p>
