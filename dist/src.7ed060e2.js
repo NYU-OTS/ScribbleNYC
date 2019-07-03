@@ -30272,7 +30272,7 @@ function OrganizerCell(props) {
   var image = props.image,
       name = props.name,
       title = props.title;
-  return _react.default.createElement("span", {
+  return _react.default.createElement("div", {
     className: "organizer-cell"
   }, _react.default.createElement("img", {
     src: image
@@ -30318,10 +30318,14 @@ function About() {
   }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
     id: "about-items",
     orientation: _CollectionView.default.Orientation.vertical,
-    data: [_react.default.createElement("h1", null, "About"), _react.default.createElement("img", {
+    data: [_react.default.createElement("h1", {
+      key: "0"
+    }, "About"), _react.default.createElement("img", {
+      key: "1",
       className: "bubble-background-image",
       src: _AboutBackground.default
     }), _react.default.createElement("main", {
+      key: "2",
       className: "information"
     }, _react.default.createElement("h2", null, "What is Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is a design forum and design-a-thon aimed at teaching middle and high school students about the world of product design."), _react.default.createElement("h2", null, "Who organizes Scribble NYC?"), _react.default.createElement("p", null, "Scribble NYC is organized and hosted by NYU IT Operations Technology Services & Support (OTSS), in collaboration with industry partners from across the software design and development field."), _react.default.createElement("div", {
       className: "about-organizers"
@@ -30337,11 +30341,11 @@ function About() {
       image: "",
       name: "Adeola Uthman",
       title: "Event Organizer"
-    })), _react.default.createElement("h2", null, "Who participates?"), _react.default.createElement("p", null, _react.default.createElement("ul", {
+    })), _react.default.createElement("h2", null, "Who participates?"), _react.default.createElement("section", null, _react.default.createElement("ul", {
       style: {
         textAlign: 'left'
       }
-    }, _react.default.createElement("li", null, "Students, teachers, and faculty entering our competition and/or attending our workshops."), _react.default.createElement("li", null, "Designers and developers from many different companies all over New York will host workshops and provide support while teams are working on projects."), _react.default.createElement("li", null, "Anyone who wants to learn more, including students, teachers, faculty, parents, and school administrators."))), _react.default.createElement("h2", null, "Who sponsers Scribble NYC?"), _react.default.createElement("p", null, "The below companies have generously donated workshops, prizes, and other resources as sponsors of Scribble NYC."))]
+    }, _react.default.createElement("li", null, "Students, teachers, and faculty entering our competition and/or attending our workshops."), _react.default.createElement("li", null, "Designers and developers from many different companies all over New York will host workshops and provide support while teams are working on projects."), _react.default.createElement("li", null, "Anyone who wants to learn more, including students, teachers, faculty, parents, and school administrators."))), _react.default.createElement("h2", null, "Who sponsers Scribble NYC?"), _react.default.createElement("p", null, "The below companies have generously donated workshops, prizes, and other resources as sponsors of Scribble NYC."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null))]
   }), _react.default.createElement(_Footer.default, null));
 }
 },{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../components/OrganizerCell":"../src/components/OrganizerCell.js","../images/AboutBackground.svg":"../src/images/AboutBackground.svg","../styles/About.less":"../src/styles/About.less"}],"../src/images/LastYearBackground.svg":[function(require,module,exports) {
@@ -30363,9 +30367,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
 
-var _Footer = _interopRequireDefault(require("../components/Footer"));
+var _CollectionView = _interopRequireDefault(require("../components/CollectionView.js"));
 
-var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
+var _Footer = _interopRequireDefault(require("../components/Footer.js"));
 
 var _LastYearBackground = _interopRequireDefault(require("../images/LastYearBackground.svg"));
 
@@ -30379,15 +30383,38 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function ThisYear() {
   return _react.default.createElement("div", {
     className: "page last-year"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _LastYearBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
+    id: "last-year-items",
+    orientation: _CollectionView.default.Orientation.vertical,
+    data: [_react.default.createElement("h1", {
+      key: "0"
+    }, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
+      key: "1",
+      className: "bubble-background-image",
+      src: _LastYearBackground.default
+    }), _react.default.createElement("main", {
+      key: "2",
+      className: "information"
+    }, _react.default.createElement("h2", null, "64 attendees, --X-- workshops, one design-a-thon"), _react.default.createElement("p", null, "Middle school and high school students from all over New York came to join us on October 14th to learn about product design. They participated in workshops and then applied their knowledge to compete in a design-a-thon, where the winners were chosen based on creativity, originality, and positive impact on their school."), _react.default.createElement("h2", null, "Workshops"), _react.default.createElement("section", null, "Teams started the day by participating in a series of workshops where they learned how to articulate a project concept, design a solution based program, and develop a system prototype.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("b", {
+      style: {
+        fontWeight: 'bolder'
+      }
+    }, "Workshops Provided:"), _react.default.createElement("span", null, _react.default.createElement("li", null, "Workshop 1"), _react.default.createElement("li", null, "Workshop 2"), _react.default.createElement("li", null, "Workshop 3"), _react.default.createElement("li", null, "Workshop 4"), _react.default.createElement("li", null, "Workshop 5"))), _react.default.createElement("img", {
+      src: "",
+      className: "preview-image"
+    }), _react.default.createElement("h2", null, "The Competition"), _react.default.createElement("p", null, "After participating in these workshops, students formed teams and participated in a Design-A-Thon competition! Each group was able to present their work to a panel of judges, which included representatives from NYU, local schools, and the tech community."), _react.default.createElement("h2", null, "Grand Prize Winners"), _react.default.createElement("p", null, "The Marymount School of Manhattan", _react.default.createElement("br", null), "Using sound and a warning light, Tipper Stopper aims to keep students safe by alerting them and their teacher when they tip in their chair."), _react.default.createElement("img", {
+      src: "",
+      className: "preview-image"
+    }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", null, "Middle School 2017 An online peer support network that brings together students and school to support academics and provide mental health services."), _react.default.createElement("img", {
+      src: "",
+      className: "preview-image"
+    }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null))]
+  }), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/LastYearBackground.svg":"../src/images/LastYearBackground.svg","../styles/LastYear.less":"../src/styles/LastYear.less"}],"../src/images/ThisYearBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../images/LastYearBackground.svg":"../src/images/LastYearBackground.svg","../styles/LastYear.less":"../src/styles/LastYear.less"}],"../src/images/ThisYearBackground.svg":[function(require,module,exports) {
 module.exports = "/ThisYearBackground.3e113584.svg";
+},{}],"../src/images/ScheduleGraphic.svg":[function(require,module,exports) {
+module.exports = "/ScheduleGraphic.ebf359e8.svg";
 },{}],"../src/styles/ThisYear.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -30405,11 +30432,13 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _NavigationBar = _interopRequireDefault(require("../components/NavigationBar.js"));
 
+var _CollectionView = _interopRequireDefault(require("../components/CollectionView.js"));
+
 var _Footer = _interopRequireDefault(require("../components/Footer"));
 
-var _BackToTopButton = _interopRequireDefault(require("../components/BackToTopButton"));
-
 var _ThisYearBackground = _interopRequireDefault(require("../images/ThisYearBackground.svg"));
+
+var _ScheduleGraphic = _interopRequireDefault(require("../images/ScheduleGraphic.svg"));
 
 require("../styles/ThisYear.less");
 
@@ -30421,14 +30450,25 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function ThisYear() {
   return _react.default.createElement("div", {
     className: "page this-year"
-  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement("h1", null, "This Year"), _react.default.createElement("img", {
-    className: "bubble-background-image",
-    src: _ThisYearBackground.default
-  }), _react.default.createElement("main", {
-    className: "information"
-  }, "something", _react.default.createElement(_BackToTopButton.default, null)), _react.default.createElement(_Footer.default, null));
+  }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
+    id: "this-year-items",
+    orientation: _CollectionView.default.Orientation.vertical,
+    data: [_react.default.createElement("h1", {
+      key: "0"
+    }, "This Year"), _react.default.createElement("img", {
+      key: "1",
+      className: "bubble-background-image",
+      src: _ThisYearBackground.default
+    }), _react.default.createElement("main", {
+      key: "2",
+      className: "information"
+    }, _react.default.createElement("img", {
+      src: _ScheduleGraphic.default,
+      className: "preview-image"
+    }), _react.default.createElement("h2", null, "Workshops"), _react.default.createElement("p", null, "From learning to code to navigating how to work as a team, sit in on the workshops that interest you and learn something new!"), _react.default.createElement("h2", null, "Virtual Reality with A-Frame"), _react.default.createElement("p", null, "Taught by Upperline Code Lorem Ipsem about the workshop Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris nisi, condimentum efficitur diam ac, tempor ultrices nisl. Fusce aliquam placerat justo, vel vestibulum velit vestibulum sed. Maecenasviverra tortor at odio placerat posuere. Cras ac lacinia odio."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null))]
+  }), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/Footer":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer":"../src/components/Footer.js","../images/ThisYearBackground.svg":"../src/images/ThisYearBackground.svg","../images/ScheduleGraphic.svg":"../src/images/ScheduleGraphic.svg","../styles/ThisYear.less":"../src/styles/ThisYear.less"}],"../src/images/FAQBackground.svg":[function(require,module,exports) {
 module.exports = "/FAQBackground.35d96185.svg";
 },{}],"../src/styles/FAQ.less":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -30473,7 +30513,7 @@ function FAQ() {
       src: _FAQBackground.default
     }), _react.default.createElement("main", {
       className: "information"
-    }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students."))]
+    }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null))]
   }), _react.default.createElement(_Footer.default, null));
 }
 },{"react":"../node_modules/react/index.js","../components/NavigationBar.js":"../src/components/NavigationBar.js","../components/CollectionView.js":"../src/components/CollectionView.js","../components/Footer.js":"../src/components/Footer.js","../components/BackToTopButton":"../src/components/BackToTopButton.js","../images/FAQBackground.svg":"../src/images/FAQBackground.svg","../styles/FAQ.less":"../src/styles/FAQ.less"}],"../src/styles/Index.less":[function(require,module,exports) {
@@ -30508,26 +30548,22 @@ require("./styles/Index.less");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", {
+  return _react.default.createElement(_reactRouterDom.HashRouter, null, _react.default.createElement("div", {
     className: "app"
   }, _react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/",
     component: _Home.default
   }), _react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
     path: "/about",
     component: _About.default
   }), _react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
     path: "/thisyear",
     component: _ThisYear.default
   }), _react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
     path: "/lastyear",
     component: _LastYear.default
   }), _react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
     path: "/faq",
     component: _FAQ.default
   })));
@@ -30572,7 +30608,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57236" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52609" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

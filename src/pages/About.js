@@ -17,9 +17,9 @@ export default function About() {
         <CollectionView id='about-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <h1>About</h1>,
-                <img className='bubble-background-image' src={AboutBackground}/>,
-                <main className='information'>
+                <h1 key='0'>About</h1>,
+                <img key='1' className='bubble-background-image' src={AboutBackground}/>,
+                <main key='2' className='information'>
                     <h2>What is Scribble NYC?</h2>
                     <p>
                         Scribble NYC is a design forum and design-a-thon 
@@ -47,7 +47,7 @@ export default function About() {
                     </div>
 
                     <h2>Who participates?</h2>
-                    <p>
+                    <section>
                         <ul style={{ textAlign: 'left' }}>
                             <li>
                                 Students, teachers, and faculty entering our 
@@ -63,13 +63,18 @@ export default function About() {
                                 teachers, faculty, parents, and school administrators.
                             </li>
                         </ul>
-                    </p>
+                    </section>
 
                     <h2>Who sponsers Scribble NYC?</h2>
                     <p>
                         The below companies have generously donated workshops, 
                         prizes, and other resources as sponsors of Scribble NYC.
                     </p>
+
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
                 </main>,
             ]}/>
 

@@ -507,17 +507,35 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.organizer-cell:nth-child(1) {
+.organizer-cell {
   position: relative;
-  background-color: magenta;
+  width: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
 }
-.organizer-cell:nth-child(2) {
-  position: relative;
-  background-color: aqua;
+.organizer-cell * {
+  margin: 0px;
+  padding: 0px;
 }
-.organizer-cell:nth-child(3) {
+.organizer-cell img {
   position: relative;
-  background-color: peru;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+.organizer-cell h3 {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  margin-top: 10px;
+  height: fit-content;
+  font-weight: bolder;
+  margin-bottom: 25px;
 }
 
 .common-font {
@@ -599,10 +617,41 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.organizer-cell {
+  position: relative;
+  width: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.organizer-cell * {
+  margin: 0px;
+  padding: 0px;
+}
+.organizer-cell img {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+.organizer-cell h3 {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  margin-top: 10px;
+  height: fit-content;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
 .about {
   text-align: center;
 }
 .about #about-items {
+  position: relative;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -628,11 +677,12 @@ body {
   object-fit: cover;
 }
 .about #about-items .information {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 20%;
+  padding-right: 20%;
   background-color: #E8898A;
 }
 .about #about-items .information h2 {
+  position: relative;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
@@ -642,7 +692,9 @@ body {
   line-height: 1.33;
   font-weight: bolder;
 }
-.about #about-items .information p {
+.about #about-items .information p,
+.about #about-items .information section {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
@@ -654,7 +706,39 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
-  background-color: lightseagreen;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.about #about-items .information .about-organizers * {
+  position: relative;
+  width: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.about #about-items .information .about-organizers * * {
+  margin: 0px;
+  padding: 0px;
+}
+.about #about-items .information .about-organizers * img {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+.about #about-items .information .about-organizers * h3 {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  margin-top: 10px;
+  height: fit-content;
+  font-weight: bolder;
+  margin-bottom: 25px;
 }
 
 .common-font {
@@ -739,30 +823,63 @@ body {
 .last-year {
   text-align: center;
 }
-.last-year h1 {
+.last-year #last-year-items {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.last-year #last-year-items * {
+  width: 100%;
+}
+.last-year #last-year-items h1 {
   font-size: 110px;
   line-height: 180px;
   font-style: normal;
   font-weight: normal;
   font-family: 'Nanum Pen Script';
+  margin-top: 0px;
   margin-bottom: 0px;
 }
-.last-year h1 br {
-  position: relative;
+.last-year #last-year-items .bubble-background-image {
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
 }
-.last-year .bubble-background-image {
-  margin: 0px;
-  padding: 0px;
-}
-.last-year .information {
-  position: relative;
-  top: -5px;
-  z-index: 1;
-  margin: 0px;
-  padding: 0px;
+.last-year #last-year-items .information {
+  padding-left: 15%;
+  padding-right: 15%;
   background-color: #FBB557;
+}
+.last-year #last-year-items .information h2 {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.33;
+  font-weight: bolder;
+}
+.last-year #last-year-items .information p,
+.last-year #last-year-items .information section {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 80px;
+  font-family: Poppins;
+}
+.last-year #last-year-items .information .preview-image {
+  width: 80%;
+  height: 600px;
+  margin-bottom: 30px;
+  background-color: lightgray;
 }
 
 .common-font {
@@ -849,25 +966,67 @@ body {
   padding: 0px;
   text-align: center;
 }
-.this-year h1 {
+.this-year #this-year-items {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.this-year #this-year-items * {
+  width: 100%;
+}
+.this-year #this-year-items h1 {
   font-size: 110px;
   line-height: 180px;
   font-style: normal;
   font-weight: normal;
   font-family: 'Nanum Pen Script';
+  margin-top: 0px;
   margin-bottom: 0px;
 }
-.this-year .bubble-background-image {
+.this-year #this-year-items .bubble-background-image {
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
 }
-.this-year .information {
-  position: relative;
-  top: -5px;
-  z-index: 1;
-  margin: 0px;
-  padding: 0px;
+.this-year #this-year-items .information {
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
   background-color: #58B0D7;
+}
+.this-year #this-year-items .information h2 {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-family: Rubik;
+  font-weight: normal;
+  margin-top: 0px;
+  font-size: 30px;
+  line-height: 1.33;
+  font-weight: bolder;
+}
+.this-year #this-year-items .information p,
+.this-year #this-year-items .information section {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 80px;
+  font-family: Poppins;
+}
+.this-year #this-year-items .information .preview-image {
+  position: relative;
+  left: 10%;
+  width: 100%;
+  height: 944px;
+  margin-bottom: 0px;
+  object-fit: contain;
 }
 
 .common-font {

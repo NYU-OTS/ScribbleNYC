@@ -45,6 +45,11 @@ export default function FAQ() {
                     <p>
                         Teams must consist of 2-4 students.
                     </p>
+
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
                 </main>,
             ]}/>
 

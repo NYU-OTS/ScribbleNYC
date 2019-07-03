@@ -3,31 +3,70 @@
 .last-year {
     text-align: center;
 
-    // The title of the page.
-    h1 {
-        .header-font();
-        margin-bottom: 0px;
+    // The page contents are all contained inside of this
+    // collection view so that they can be appropriately stacked.
+    #last-year-items {
+        position: relative;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
 
-        br {
-            position: relative;
+        // By nature of the collection view, make sure everything
+        // takes up the entire width of the list.
+        * { width: 100%; }
+
+        // The title of the page.
+        h1 {
+            .header-font();
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        // The background bubbles.
+        .bubble-background-image {
             margin: 0px;
             padding: 0px;
+            object-fit: cover;
         }
-    }
 
-    // The background image with the bubbles.
-    .bubble-background-image {
-        margin: 0px;
-        padding: 0px;
-    }
+        // The main information section of the page.
+        .information {
+            padding-left: 15%;
+            padding-right: 15%;
+            background-color: #FBB557;
 
-    // The information section, which is the main part of the website.
-    .information {
-        position: relative;
-        top: -5px;
-        z-index: 1;
-        margin: 0px;
-        padding: 0px;
-        background-color: #FBB557;
-    }
+            // The section titles.
+            h2 {
+                position: relative;
+                .common-font();
+                font-size: 30px;
+                line-height: 1.33;
+                font-weight: bolder;
+            }
+
+            // The descriptions.
+            p, section {
+                position: relative;
+                font-size: 16px;
+                line-height: 24px;
+                font-style: normal;
+                font-weight: normal;
+                margin-bottom: 80px;
+                font-family: Poppins;
+            }
+
+            // The large image previews of the event.
+            .preview-image {
+                width: 80%;
+                height: 600px;
+                margin-bottom: 30px;
+                background-color: lightgray;
+            }
+
+        } // End of ".information"
+    } // End of "#last-year-items"
+    // The title of the page.
 }

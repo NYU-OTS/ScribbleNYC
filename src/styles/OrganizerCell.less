@@ -1,18 +1,33 @@
 @import './Index.less';
 
 .organizer-cell {
-    
+    position: relative;
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
 
-    &:nth-child(1) {
-        position: relative;
-        background-color: magenta;
+    * {
+        margin: 0px;
+        padding: 0px;
     }
-    &:nth-child(2) {
+
+    // The profile image.
+    img {
         position: relative;
-        background-color: aqua;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        background-color: lightgray;
     }
-    &:nth-child(3) {
+
+    // The organizer name.
+    h3 {
         position: relative;
-        background-color: peru;
+        .common-font();
+        margin-top: 10px;
+        height: fit-content;
+        font-weight: bolder;
+        margin-bottom: 25px;
     }
 }
