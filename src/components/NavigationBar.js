@@ -15,7 +15,9 @@ export default function NavigationBar() {
 
     // .) Return the react component.
     return <nav className='navigation-bar'>
-        <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
+        <img src={ScribbleLogo} alt='Scribble NYC Logo' onClick={() => {
+            window.location.href = '/';
+        }}/>
 
         <button className='nav-button nav-button-1' onClick={() => setGoAbout(true)}>About</button>
         <button className='nav-button nav-button-2' onClick={() => setGoLastYear(true)}>Last Year</button>

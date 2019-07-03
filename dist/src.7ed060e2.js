@@ -29940,7 +29940,10 @@ function NavigationBar() {
     className: "navigation-bar"
   }, _react.default.createElement("img", {
     src: _ScribbleLogo.default,
-    alt: "Scribble NYC Logo"
+    alt: "Scribble NYC Logo",
+    onClick: function onClick() {
+      window.location.href = '/';
+    }
   }), _react.default.createElement("button", {
     className: "nav-button nav-button-1",
     onClick: function onClick() {

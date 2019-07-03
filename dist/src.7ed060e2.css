@@ -293,6 +293,7 @@ body {
   left: 10px;
   width: 89px;
   height: 89px;
+  cursor: pointer;
 }
 .navigation-bar .nav-button {
   border: none;
