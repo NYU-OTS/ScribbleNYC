@@ -17,9 +17,9 @@ export default function FAQ() {
         <CollectionView id='faq-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <h1>Frequently Asked Questions</h1>,
-                <img className='bubble-background-image' src={FAQBackground}/>,
-                <main className='information'>
+                <h1 key='0'>Frequently Asked Questions</h1>,
+                <img key='1' className='bubble-background-image' src={FAQBackground}/>,
+                <main key='2' className='information'>
                     <h2>What should I bring to Scribble NYC?</h2>
                     <p>
                         Please bring a valid student or government ID. 

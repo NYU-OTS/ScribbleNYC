@@ -77,6 +77,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
+}
 .home {
   position: fixed;
   top: 0px;
@@ -168,6 +176,24 @@ body {
   object-fit: contain;
   transition-duration: 0.2s;
 }
+@media not screen and (min-width: 768px) {
+  .home .signup-holder {
+    width: 70%;
+  }
+  .home #home-blue-bubble,
+  .home #home-red-bubble,
+  .home #home-yellow-bubble,
+  .home #home-green-bubble {
+    visibility: hidden;
+  }
+  .home .color-button:hover {
+    color: black;
+    font-weight: normal;
+  }
+  .home .color-button:active {
+    font-weight: bolder;
+  }
+}
 
 .common-font {
   font-size: 18px;
@@ -248,6 +274,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
+}
 .navigation-bar {
   height: 89px;
   text-align: right;
@@ -295,6 +329,51 @@ body {
   top: -2px;
   font-size: 15px;
   margin-right: 40px;
+}
+@media not screen and (min-width: 768px) {
+  .navigation-bar {
+    text-align: center;
+  }
+  .navigation-bar .nav-button {
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+  .navigation-bar .nav-button-1:hover {
+    color: black;
+  }
+  .navigation-bar .nav-button-2:hover {
+    color: black;
+  }
+  .navigation-bar .nav-button-3:hover {
+    color: black;
+  }
+  .navigation-bar .nav-button-4:hover {
+    color: black;
+  }
+  .navigation-bar .nav-button-1:active {
+    color: #E47475;
+  }
+  .navigation-bar .nav-button-2:active {
+    color: rgba(250, 162, 45, 0.8);
+  }
+  .navigation-bar .nav-button-3:active {
+    color: rgba(104, 211, 210, 0.85);
+  }
+  .navigation-bar .nav-button-4:active {
+    color: #4DABD4;
+  }
+  .navigation-bar img {
+    display: none;
+  }
+  .navigation-bar .primary-button {
+    display: block;
+    margin-top: 20px;
+    padding-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6px;
+  }
 }
 
 .collectionView {
@@ -398,6 +477,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
+}
 footer {
   position: relative;
   width: 100%;
@@ -426,6 +513,25 @@ footer button {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+@media not screen and (min-width: 768px) {
+  footer img {
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    transform: translateY(-50%);
+  }
+  footer .footer-text {
+    top: 35%;
+    width: 55%;
+    right: 0px;
+    font-size: 12px;
+    text-align: right;
+    transform: translateX(-20%) translateY(-50%);
+  }
+  footer button {
+    display: none;
+  }
 }
 
 .common-font {
@@ -506,6 +612,14 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+}
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
 }
 .organizer-cell {
   position: relative;
@@ -616,6 +730,14 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+}
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
 }
 .organizer-cell {
   position: relative;
@@ -740,6 +862,22 @@ body {
   font-weight: bolder;
   margin-bottom: 25px;
 }
+@media not screen and (min-width: 768px) {
+  .about #about-items .information {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .about #about-items .about-organizers * {
+    margin-bottom: 50px;
+  }
+  .about #about-items .about-organizers *:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+  .about #about-items ul {
+    position: relative;
+    left: -25px;
+  }
+}
 
 .common-font {
   font-size: 18px;
@@ -820,6 +958,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
+}
 .last-year {
   text-align: center;
 }
@@ -841,8 +987,9 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: 'Nanum Pen Script';
-  margin-top: 0px;
-  margin-bottom: 0px;
+  line-height: 1.25;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 .last-year #last-year-items .bubble-background-image {
   margin: 0px;
@@ -881,6 +1028,21 @@ body {
   margin-bottom: 30px;
   background-color: lightgray;
 }
+@media not screen and (min-width: 768px) {
+  .last-year #last-year-items h1 {
+    font-size: 60px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .last-year #last-year-items .information {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .last-year #last-year-items .information .preview-image {
+    width: 100%;
+    height: 400px;
+  }
+}
 
 .common-font {
   font-size: 18px;
@@ -960,6 +1122,14 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+}
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
 }
 .this-year {
   margin: 0px;
@@ -1028,6 +1198,22 @@ body {
   margin-bottom: 0px;
   object-fit: contain;
 }
+@media not screen and (min-width: 768px) {
+  .this-year #this-year-items h1 {
+    font-size: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .this-year #this-year-items .information {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .this-year #this-year-items .information .preview-image {
+    width: 100%;
+    height: 400px;
+    transform: scale(1.2);
+  }
+}
 
 .common-font {
   font-size: 18px;
@@ -1108,6 +1294,14 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
+}
 .faq {
   position: absolute;
   top: 0px;
@@ -1133,8 +1327,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: 'Nanum Pen Script';
-  margin-top: 0px;
-  margin-bottom: 0px;
+  line-height: 1.25;
 }
 .faq #faq-items .bubble-background-image {
   padding: 0px;
@@ -1164,6 +1357,17 @@ body {
   margin-bottom: 80px;
   font-family: Poppins;
 }
+@media not screen and (min-width: 768px) {
+  .faq #faq-items h1 {
+    font-size: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .faq #faq-items .information {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
 
 .common-font {
   font-size: 18px;
@@ -1243,6 +1447,14 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+}
+@media not screen and (min-width: 768px) {
+  .primary-button:hover {
+    background-color: #2E9CCD;
+  }
+  .primary-button:active {
+    background-color: #257ca3;
+  }
 }
 
 

@@ -91,3 +91,13 @@ html, body {
     margin: 0px;
     padding: 0px;
 }
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    // Primary buttons should not have a hover state.
+    .primary-button {
+        &:hover { background-color: @primary; }
+        &:active { background-color: darken(@primary, 10%); }
+    }
+}

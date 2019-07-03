@@ -26,8 +26,7 @@
         // The title of the page.
         h1 {
             .header-font();
-            margin-top: 0px;
-            margin-bottom: 0px;
+            line-height: 1.25;
         }
 
         // The background bubbles.
@@ -63,4 +62,25 @@
         }
     }
 
+}
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .faq {
+        #faq-items {
+            // Give the title some more side room.
+            h1 {
+                font-size: 80px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            // Give more side spacing in general.
+            .information {
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+        }
+    }
 }

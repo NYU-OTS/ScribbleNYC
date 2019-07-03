@@ -21,8 +21,9 @@
         // The title of the page.
         h1 {
             .header-font();
-            margin-top: 0px;
-            margin-bottom: 0px;
+            line-height: 1.25;
+            padding-left: 30%;
+            padding-right: 30%;
         }
 
         // The background bubbles.
@@ -69,4 +70,30 @@
         } // End of ".information"
     } // End of "#last-year-items"
     // The title of the page.
+}
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .last-year {
+        #last-year-items {
+            // Give the title some more side room.
+            h1 {
+                font-size: 60px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            // Give more side spacing in general.
+            .information {
+                padding-left: 7%;
+                padding-right: 7%;
+
+                // Make the images fit better on mobile.
+                .preview-image {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
 }

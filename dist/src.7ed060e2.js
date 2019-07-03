@@ -30245,7 +30245,9 @@ function Footer() {
   return _react.default.createElement("footer", null, _react.default.createElement("img", {
     src: _ScribbleLogo.default,
     alt: "Scribble NYC Logo"
-  }), _react.default.createElement("p", null, "Design and Content \xA9 2018, Operations Technology Services and Support, NYU IT"), _react.default.createElement("button", {
+  }), _react.default.createElement("p", {
+    className: "footer-text"
+  }, "Design and Content \xA9 2018, Operations Technology Services and Support, NYU IT"), _react.default.createElement("button", {
     className: "primary-button"
   }, "Sign Up!"), _react.default.createElement(_BackToTopButton.default, null));
 }
@@ -30388,7 +30390,7 @@ function ThisYear() {
     orientation: _CollectionView.default.Orientation.vertical,
     data: [_react.default.createElement("h1", {
       key: "0"
-    }, "Last Year", _react.default.createElement("br", null), "2018"), _react.default.createElement("img", {
+    }, "Last Year 2018"), _react.default.createElement("img", {
       key: "1",
       className: "bubble-background-image",
       src: _LastYearBackground.default
@@ -30508,10 +30510,14 @@ function FAQ() {
   }, _react.default.createElement(_NavigationBar.default, null), _react.default.createElement(_CollectionView.default, {
     id: "faq-items",
     orientation: _CollectionView.default.Orientation.vertical,
-    data: [_react.default.createElement("h1", null, "Frequently Asked Questions"), _react.default.createElement("img", {
+    data: [_react.default.createElement("h1", {
+      key: "0"
+    }, "Frequently Asked Questions"), _react.default.createElement("img", {
+      key: "1",
       className: "bubble-background-image",
       src: _FAQBackground.default
     }), _react.default.createElement("main", {
+      key: "2",
       className: "information"
     }, _react.default.createElement("h2", null, "What should I bring to Scribble NYC?"), _react.default.createElement("p", null, "Please bring a valid student or government ID. We also recommend attendees to bring laptops, as some workshops be heavily reliant on a laptop"), _react.default.createElement("h2", null, "Who can attend?"), _react.default.createElement("p", null, "Anyone can purchase a ticket, which will give them admission to the workshops. However, only middle and high school students can compete in the design-a-thon."), _react.default.createElement("h2", null, "How much does it cost?"), _react.default.createElement("p", null, "Tickets cost $20 per person. However, if you purchase tickets as a group, they are $15 per person. Groups are limited to five people"), _react.default.createElement("h2", null, "How many people can be on a team for the design-a-thon?"), _react.default.createElement("p", null, "Teams must consist of 2-4 students."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null))]
   }), _react.default.createElement(_Footer.default, null));
@@ -30608,7 +30614,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55061" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51456" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

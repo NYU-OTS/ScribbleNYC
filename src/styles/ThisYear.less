@@ -76,3 +76,31 @@
     } // End of "#last-year-items"
     // The title of the page.
 }
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .this-year {
+        #this-year-items {
+            // Give the title some more side room.
+            h1 {
+                font-size: 80px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            // Give more side spacing in general.
+            .information {
+                padding-left: 7%;
+                padding-right: 7%;
+
+                // Make the images fit better on mobile.
+                .preview-image {
+                    width: 100%;
+                    height: 400px;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

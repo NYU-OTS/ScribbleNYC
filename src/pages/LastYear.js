@@ -16,7 +16,7 @@ export default function ThisYear() {
         <CollectionView id='last-year-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <h1 key='0'>Last Year<br/>2018</h1>,
+                <h1 key='0'>Last Year 2018</h1>,
                 <img key='1' className='bubble-background-image' src={LastYearBackground}/>,
                 <main key='2' className='information'>
                     <h2>64 attendees, --X-- workshops, one design-a-thon</h2>

@@ -45,3 +45,42 @@
         margin-right: 40px;
     }
 }
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .navigation-bar {
+        text-align: center;
+
+        // Make each nav button closer to each other and give it
+        // an underline so it looks more like a button.
+        .nav-button {
+            font-size: 18px;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        // Remove the hover action and replace it with active.
+        .nav-button-1:hover { color: black; }
+        .nav-button-2:hover { color: black; }
+        .nav-button-3:hover { color: black; }
+        .nav-button-4:hover { color: black; }
+        .nav-button-1:active { color: @red; }
+        .nav-button-2:active { color: @yellow; }
+        .nav-button-3:active { color: @green; }
+        .nav-button-4:active { color: @blue; }
+
+        // Hide the icon on mobile cause it's not totally necessary.
+        img { display: none; }
+
+        // Give the sign up button its own line.
+        .primary-button {
+            display: block;
+            margin-top: 20px;
+            padding-top: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 6px;
+        }
+    }
+}

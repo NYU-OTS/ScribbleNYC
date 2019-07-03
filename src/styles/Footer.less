@@ -32,3 +32,34 @@ footer {
         transform: translateY(-50%);
     }
 }
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    footer {
+        // Make the image smaller so it fits on the page better.
+        img {
+            top: 50%;
+            width: 70px;
+            height: 70px;
+            transform: translateY(-50%);
+        }
+
+        // The footer description should align to the right to
+        // fit better.
+        .footer-text {
+            top: 35%;
+            width: 55%;
+            right: 0px;
+            font-size: 12px;
+            text-align: right;
+            transform: translateX(-20%) translateY(-50%);
+        }
+
+        // Remove the sign up button, it doesn't really need to
+        // be there on mobile.
+        button {
+            display: none;
+        }
+    }
+}

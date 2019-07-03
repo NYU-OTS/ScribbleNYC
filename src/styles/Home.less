@@ -113,3 +113,33 @@
         transition-duration: 0.2s;
     }
 }
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .home {
+        // The sign up holder should be bigger to match
+        // the size of the page and the sign up button.
+        .signup-holder {
+            width: 70%;
+        }
+
+        // Don't show the bubbles on mobile.
+        #home-blue-bubble, #home-red-bubble,
+        #home-yellow-bubble, #home-green-bubble {
+            visibility: hidden;
+        }
+
+        // The color buttons should not turn white
+        // since the bubbles are hidden.
+        .color-button {
+            &:hover {
+                color: black;
+                font-weight: normal;
+            }
+            &:active {
+                font-weight: bolder;
+            }
+        }
+    }
+}

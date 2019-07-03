@@ -73,3 +73,31 @@
         } // End of ".information"
     } // End of "#about-items"
 } // End of ".about"
+
+
+// Media Queries:
+@media not screen and (min-width: 768px) {
+    .about {
+        #about-items {
+
+            // Shorten the space from the sides on mobile.
+            .information {
+                padding-left: 12%;
+                padding-right: 12%;
+            }
+
+            // Give the organizer cells some space.
+            .about-organizers {
+                * { margin-bottom: 50px; }
+                *:nth-last-child(1) { margin-bottom: 0px; }
+            }
+
+            // The list was too far to the right on mobile,
+            // so move it back.
+            ul {
+                position: relative;
+                left: -25px;
+            }
+        }
+    }
+}
