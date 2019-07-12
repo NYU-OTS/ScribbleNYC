@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start-dev": "parcel -p 3000 public/index.html",
-    "clean": "rm -rf .cache dist"
+    "clean": "rm -rf .cache dist",
+    "build": "parcel build public/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
