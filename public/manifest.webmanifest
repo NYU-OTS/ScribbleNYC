@@ -1,0 +1,16 @@
+{
+    "name": "Scribble NYC",
+    "short_name": "ScribbleNYC",
+    "categories": ["education","social","entertainment"],
+    "description": "An app for information about the Scribble NYC event.",
+    "icons": [{
+        "src": "ScribbleLogo.png",
+        "sizes": "718x718",
+        "type": "image/png"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#4DABD4",
+    "crossorigin": "anonymous",
+    "background_color": "white"
+  }
