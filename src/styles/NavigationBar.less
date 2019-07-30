@@ -6,6 +6,17 @@
     text-align: right;
     padding-top: 30px;
 
+    // Hide the hamburger menu on desktop.
+    span[class="fa fa-bars"] {
+        position: fixed;
+        display: none;
+        z-index: 100;
+        cursor: pointer;
+        font-size: 28px;
+        margin-left: 10%;
+        color: rgb(83, 83, 83);
+    }
+
     // The logo image should always stick to the left side of the screen.
     img {
         position: absolute;
@@ -51,37 +62,22 @@
 // Media Queries:
 @media not screen and (min-width: 768px) {
     .navigation-bar {
-        text-align: center;
+        text-align: left;
 
-        // Make each nav button closer to each other and give it
-        // an underline so it looks more like a button.
-        .nav-button {
-            font-size: 18px;
-            margin-right: 10px;
-            text-decoration: underline;
+        // Only show the hamburger menu on mobile.
+        span[class="fa fa-bars"] {
+            display: block;
         }
 
-        // Remove the hover action and replace it with active.
-        .nav-button-1:hover { color: black; }
-        .nav-button-2:hover { color: black; }
-        .nav-button-3:hover { color: black; }
-        .nav-button-4:hover { color: black; }
-        .nav-button-1:active { color: @red; }
-        .nav-button-2:active { color: @yellow; }
-        .nav-button-3:active { color: @green; }
-        .nav-button-4:active { color: @blue; }
-
-        // Hide the icon on mobile cause it's not totally necessary.
-        img { display: none; }
-
-        // Give the sign up button its own line.
+        // Hide everything else on mobile.
+        .nav-button {
+            display: none;
+        }
+        img {
+            display: none;
+        }
         .primary-button {
-            display: block;
-            margin-top: 20px;
-            padding-top: 6px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 6px;
+            display: none;
         }
     }
 }

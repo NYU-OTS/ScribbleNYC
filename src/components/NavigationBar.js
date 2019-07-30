@@ -9,6 +9,8 @@ import '../styles/NavigationBar.less';
 export default function NavigationBar() {
     // 1.) Return the react component.
     return <nav className='navigation-bar'>
+        <span className='fa fa-bars'></span>
+
         <img src={ScribbleLogo} alt='Scribble NYC Logo' onClick={() => {
             window.location.href = '/';
         }}/>
