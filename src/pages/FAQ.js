@@ -53,6 +53,6 @@ export default function FAQ() {
                 </main>,
             ]}/>
 
-            <Footer /> 
+            <Footer />
     </div>
 }

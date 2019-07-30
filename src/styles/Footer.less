@@ -37,23 +37,35 @@ footer {
 // Media Queries:
 @media not screen and (min-width: 768px) {
     footer {
+        position: relative;
+        width: 100%;
+
         // Make the image smaller so it fits on the page better.
         img {
-            top: 50%;
+            position: relative;
+            left: 0px;
             width: 70px;
             height: 70px;
-            transform: translateY(-50%);
+            display: block;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         // The footer description should align to the right to
         // fit better.
         .footer-text {
-            top: 35%;
-            width: 55%;
-            right: 0px;
-            font-size: 12px;
-            text-align: right;
-            transform: translateX(-20%) translateY(-50%);
+            position: relative;
+            width: 50%;
+            display: block;
+            font-size: 14px;
+            margin-top: 0px;
+            padding-left: 0px;
+            text-align: center;
+            padding-right: 0px;
+            margin-bottom: 20px;
         }
 
         // Remove the sign up button, it doesn't really need to
