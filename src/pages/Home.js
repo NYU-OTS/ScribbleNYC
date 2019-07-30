@@ -68,6 +68,11 @@ export default function Home() {
     }
 
     return <div className='page home'>
+        <main className='signup-holder'>
+            <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
+            <button className='primary-button'>Sign Up!</button>
+        </main>
+        
        <button className='color-button' onMouseOver={didHover.bind(null, 'yellow')}
             onMouseLeave={didLeave.bind(null, 'yellow')} onClick={() => setGoLastYear(true)}>
             Last Year
@@ -89,11 +94,6 @@ export default function Home() {
        <img id='home-red-bubble' src={RedBubble}/>
        <img id='home-yellow-bubble' src={YellowBubble}/>
        <img id='home-blue-bubble' src={BlueBubble}/>
-
-        <main className='signup-holder'>
-            <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
-            <button className='primary-button'>Sign Up!</button>
-        </main>
 
         { goAbout && <Redirect to='/about'/> }
         { goLastYear && <Redirect to='/lastyear'/> }
