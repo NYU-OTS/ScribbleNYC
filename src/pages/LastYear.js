@@ -5,6 +5,16 @@ import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
 
 import LastYearBackground from '../images/LastYearBackground.svg';
+import Image1 from '../images/LastYear/Image1.svg';
+import Image2 from '../images/LastYear/Image2.svg';
+import Image3 from '../images/LastYear/Image3.svg';
+import Image4 from '../images/LastYear/Image4.svg';
+import Image5 from '../images/LastYear/Image5.svg';
+import Image6 from '../images/LastYear/Image6.svg';
+import Image7 from '../images/LastYear/Image7.svg';
+import Image8 from '../images/LastYear/Image8.svg';
+import Image9 from '../images/LastYear/Image9.svg';
+import Image10 from '../images/LastYear/Image10.svg';
 import '../styles/LastYear.less';
 
 
@@ -47,7 +57,13 @@ export default function ThisYear() {
                         </span>
                     </section>
 
-                    <img src='' className='preview-image'/>
+                    <div class='image-group'>
+                        <img src={Image1} className='preview-image'/>
+                        <img src={Image2} className='preview-image'/>
+                        <img src={Image3} className='preview-image'/>
+                        <img src={Image4} className='preview-image'/>
+                        <img src={Image5} className='preview-image'/>
+                    </div>
 
                     <h2>The Competition</h2>
                     <p>
@@ -61,22 +77,48 @@ export default function ThisYear() {
                     <h2>Grand Prize Winners</h2>
                     <p>
                         The Marymount School of Manhattan
-                        <br/>
-                        Using sound and a warning light, Tipper Stopper aims
-                        to keep students safe by alerting them and their
-                        teacher when they tip in their chair.
+                        <br/><br/>
+                        Using sound and a warning light, Tipper Stopper aims to 
+                        keep students safe by alerting them and their teacher 
+                        when they tip in their chair.
                     </p>
-
-                    <img src='' className='preview-image'/>
-
+                    <img src={Image6} />
                     <br/><br/><br/>
-                    <p>
-                        Middle School 2017 An online peer support network
-                        that brings together students and school to support
-                        academics and provide mental health services.
-                    </p>
 
-                    <img src='' className='preview-image'/>
+                    <h2>More Winners</h2>
+                    <p>
+                        Middle School 2017
+                        <br/><br/>
+                        An online peer support network that brings together 
+                        studentsand school to support academics and provide 
+                        mental health services.
+                    </p>
+                    <img src={Image7} />
+                    <br/>
+
+                    <p>
+                        Thomas Alvin Edison High School
+                        <br/><br/>
+                        A student life application that allows students to 
+                        communicate with teachers, connect to their peers, 
+                        and streamlines academic planning
+                    </p>
+                    <img src={Image8} />
+                    <br/>
+
+                    <p>
+                        Brooklyn Emerging Leaders Academy Charter High School
+                        <br/><br/>
+                        A school application that allows students to chat, 
+                        receive important reminders about tests and quizzes, 
+                        and connect to their classes. It also allows parents 
+                        to receive alerts and school updates.
+                    </p>
+                    <img src={Image9} />
+                    <br/>
+
+                    <a>Click to join us again this year!</a>
+                    <img src={Image10} />
 
                     <br/><br/>
                     <br/><br/>

@@ -59,12 +59,41 @@
                 font-family: Poppins;
             }
 
-            // The large image previews of the event.
-            .preview-image {
-                width: 80%;
-                height: 600px;
-                margin-bottom: 30px;
-                background-color: lightgray;
+            // The image previews of the event.
+            .image-group {
+
+                .preview-image {
+                    margin: 1%;
+                    margin-bottom: 30px;
+                    box-sizing: content-box;
+                    background-color: lightgray;
+
+                    // An image group will contain 5 images, so space them out evenly.
+                    &:nth-of-type(1) {
+                        width: 48%;
+                        display: inline-block;
+                    }
+                    &:nth-of-type(2) {
+                        width: 48%;
+                        display: inline-block;
+                    }
+                    &:nth-of-type(3) {
+                        width: 98%;
+                        display: block;
+                    }
+                    &:nth-of-type(4) {
+                        width: 48%;
+                        display: inline-block;
+                    }
+                    &:nth-of-type(5) {
+                        width: 48%;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            img:not(.preview-image) {
+                margin-bottom: 100px;
             }
 
         } // End of ".information"

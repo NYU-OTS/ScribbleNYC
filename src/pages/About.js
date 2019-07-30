@@ -6,6 +6,13 @@ import Footer from '../components/Footer.js';
 import OrganizerCell from '../components/OrganizerCell';
 
 import AboutBackground from '../images/AboutBackground.svg';
+import Adeola from '../images/Adeola.svg';
+import Felicty from '../images/Felicity.svg';
+import Meenakshi from '../images/Meenakshi.svg';
+import Ueno from '../images/Ueno.svg';
+import Upperline from '../images/UpperlineCode.svg';
+import Square from '../images/Square.svg';
+import Apple from '../images/Apple.svg';
 import '../styles/About.less';
 
 
@@ -35,13 +42,13 @@ export default function About() {
                         the software design and development field.
                     </p>
                     <div className='about-organizers'>
-                        <OrganizerCell image='' 
+                        <OrganizerCell image={Meenakshi} 
                             name='Meenakshi Baker'
                             title='Event Manager'/>
-                        <OrganizerCell image='' 
+                        <OrganizerCell image={Felicty}
                             name='Felicity Ng'
                             title='Event Organizer'/>
-                        <OrganizerCell image='' 
+                        <OrganizerCell image={Adeola} 
                             name='Adeola Uthman'
                             title='Event Organizer'/>
                     </div>
@@ -70,6 +77,10 @@ export default function About() {
                         The below companies have generously donated workshops, 
                         prizes, and other resources as sponsors of Scribble NYC.
                     </p>
+                    <p><img src={Ueno} alt='Ueno' height={80}/></p>
+                    <p><img src={Upperline} alt='Upperline Code' height={80}/></p>
+                    <p><img src={Square} alt='Square' height={80}/></p>
+                    <p><img src={Apple} alt='Apple' height={80}/></p>
 
                     <br/><br/>
                     <br/><br/>

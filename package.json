@@ -7,8 +7,7 @@
     "start-dev": "parcel -p 3000 public/index.html",
     "clean": "rm -rf .cache dist",
     "build": "parcel build public/index.html --public-url ./",
-    "deploy-dev": "npm run build && git add . && git commit -m \"New Version\" && git push origin dev",
-    "deploy-prod": "npm run build && git add . && git commit -m \"New Version\" && git push origin master"
+    "deploy": "npm run build && git add . && git commit -m \"New Version\" && git push origin master"
   },
   "author": "",
   "license": "ISC",
