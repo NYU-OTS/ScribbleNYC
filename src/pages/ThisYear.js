@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 
 import ThisYearBackground from '../images/ThisYearBackground.svg';
 import ScheduleGraphic from '../images/ScheduleGraphic.svg';
+import ScheduleLeft from '../images/ScheduleLeft.svg';
 import '../styles/ThisYear.less';
 
 
@@ -20,7 +21,8 @@ export default function ThisYear() {
                 <h1 key='0'>This Year</h1>,
                 <img key='1' className='bubble-background-image' src={ThisYearBackground}/>,
                 <main key='2' className='information'>
-                    <img src={ScheduleGraphic} className='preview-image' />
+                    <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
+                    <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
 
                     <h2>Workshops</h2>
                     <p>

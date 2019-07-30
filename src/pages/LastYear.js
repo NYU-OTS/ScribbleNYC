@@ -27,7 +27,7 @@ export default function ThisYear() {
             orientation={CollectionView.Orientation.vertical}
             data={[
                 <h1 key='0'>Last Year (2018)</h1>,
-                <img key='1' className='bubble-background-image' src={LastYearBackground}/>,
+                <img loading='lazy' key='1' className='bubble-background-image' src={LastYearBackground}/>,
                 <main key='2' className='information'>
                     <h2>64 attendees, --X-- workshops, one design-a-thon</h2>
                     <p>
@@ -57,12 +57,12 @@ export default function ThisYear() {
                         </span>
                     </section>
 
-                    <div class='image-group'>
-                        <img src={Image1} className='preview-image'/>
-                        <img src={Image2} className='preview-image'/>
-                        <img src={Image3} className='preview-image'/>
-                        <img src={Image4} className='preview-image'/>
-                        <img src={Image5} className='preview-image'/>
+                    <div className='image-group'>
+                        <img loading='lazy' src={Image1} className='preview-image'/>
+                        <img loading='lazy' src={Image2} className='preview-image'/>
+                        <img loading='lazy' src={Image3} className='preview-image'/>
+                        <img loading='lazy' src={Image4} className='preview-image'/>
+                        <img loading='lazy' src={Image5} className='preview-image'/>
                     </div>
 
                     <h2>The Competition</h2>
@@ -82,7 +82,7 @@ export default function ThisYear() {
                         keep students safe by alerting them and their teacher 
                         when they tip in their chair.
                     </p>
-                    <img src={Image6} />
+                    <img loading='lazy' src={Image6} />
                     <br/><br/><br/>
 
                     <h2>More Winners</h2>
@@ -93,7 +93,7 @@ export default function ThisYear() {
                         studentsand school to support academics and provide 
                         mental health services.
                     </p>
-                    <img src={Image7} />
+                    <img loading='lazy' src={Image7} />
                     <br/>
 
                     <p>
@@ -103,7 +103,7 @@ export default function ThisYear() {
                         communicate with teachers, connect to their peers, 
                         and streamlines academic planning
                     </p>
-                    <img src={Image8} />
+                    <img loading='lazy' src={Image8} />
                     <br/>
 
                     <p>
@@ -114,11 +114,11 @@ export default function ThisYear() {
                         and connect to their classes. It also allows parents 
                         to receive alerts and school updates.
                     </p>
-                    <img src={Image9} />
+                    <img loading='lazy' src={Image9} />
                     <br/>
 
                     <a>Click to join us again this year!</a>
-                    <img src={Image10} />
+                    <img loading='lazy' src={Image10} />
 
                     <br/><br/>
                     <br/><br/>
