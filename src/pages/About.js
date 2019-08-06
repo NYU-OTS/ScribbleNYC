@@ -18,6 +18,11 @@ import '../styles/About.less';
 
 // The about page.
 export default function About() {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+
     return <div className='page about'>
         <NavigationBar />
 
@@ -50,7 +55,8 @@ export default function About() {
                             title='Event Organizer'/>
                         <OrganizerCell image={Adeola} 
                             name='Adeola Uthman'
-                            title='Event Organizer'/>
+                            title='Event Organizer'
+                            id='twister'/>
                     </div>
 
                     <h2>Who participates?</h2>

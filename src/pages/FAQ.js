@@ -11,6 +11,11 @@ import '../styles/FAQ.less';
 
 // The about page.
 export default function FAQ() {
+    
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+    
     return <div className='page faq'>
         <NavigationBar />
 

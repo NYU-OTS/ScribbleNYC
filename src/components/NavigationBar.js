@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import Media from 'react-media';
 import { Redirect } from "react-router-dom";
 
+import MobileNav from './MobileNavigation';
 import ScribbleLogo from '../images/ScribbleLogo.svg';
 import '../styles/NavigationBar.less';
 
 
 // The navigation bar.
 export default function NavigationBar() {
+    const [showingMobileNav, setShowMobileNav] = useState(false);
+
     // 1.) Return the react component.
     return <nav className='navigation-bar'>
-        <span className='fa fa-bars'></span>
+        <span className={showingMobileNav ? 'fas fa-times' : 'fa fa-bars'} onClick={() => {
+            setShowMobileNav(!showingMobileNav);
+        }}></span>
+        <Media query='(max-width: 768px)'>{ matches => matches ?
+            (showingMobileNav ? <MobileNav /> : '')
+            :
+            ''
+        }</Media>
 
         <img src={ScribbleLogo} alt='Scribble NYC Logo' onClick={() => {
             window.location.href = '/';

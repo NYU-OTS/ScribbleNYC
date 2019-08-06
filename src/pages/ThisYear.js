@@ -12,6 +12,11 @@ import '../styles/ThisYear.less';
 
 // The page describing the event for this year.
 export default function ThisYear() {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
+    
     return <div className='page this-year'>
         <NavigationBar />
 
