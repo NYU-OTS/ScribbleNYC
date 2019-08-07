@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Media from 'react-media';
 
 import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
@@ -22,7 +23,11 @@ export default function FAQ() {
         <CollectionView id='faq-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <h1 key='0'>Frequently Asked Questions</h1>,
+                <Media query='(min-width: 768px)'>{matches => matches ?
+                    <h1 key='0'>Frequently Asked Questions</h1>
+                    :
+                    <h1 key='0'>FAQs</h1>
+                }</Media>,
                 <img key='1' className='bubble-background-image' src={FAQBackground}/>,
                 <main key='2' className='information'>
                     <h2>What should I bring to Scribble NYC?</h2>
