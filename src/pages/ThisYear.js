@@ -5,8 +5,8 @@ import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer';
 
 import ThisYearBackground from '../images/ThisYearBackground.svg';
-import ScheduleGraphic from '../images/ScheduleGraphic.svg';
-import ScheduleLeft from '../images/ScheduleLeft.svg';
+import ScheduleGraphic from '../images/ScheduleMiddle.png';
+import ScheduleLeft from '../images/ScheduleLeft.png';
 import '../styles/ThisYear.less';
 
 

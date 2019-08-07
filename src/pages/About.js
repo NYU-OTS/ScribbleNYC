@@ -7,7 +7,7 @@ import OrganizerCell from '../components/OrganizerCell';
 
 import AboutBackground from '../images/AboutBackground.svg';
 import Adeola from '../images/Adeola Uthman.jpg';
-import Felicty from '../images/Felicity.svg';
+import Felicty from '../images/Felicity Ng.JPG';
 import Meenakshi from '../images/Meenakshi.svg';
 import Ueno from '../images/Ueno.svg';
 import Upperline from '../images/UpperlineCode.svg';
