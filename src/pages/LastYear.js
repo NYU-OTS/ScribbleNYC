@@ -34,7 +34,7 @@ export default function ThisYear() {
                 <h1 key='0'>Last Year (2018)</h1>,
                 <img loading='lazy' key='1' className='bubble-background-image' src={LastYearBackground}/>,
                 <main key='2' className='information'>
-                    <h2>64 attendees, --X-- workshops, one design-a-thon</h2>
+                    <h2>64 attendees, 8 workshops, one design-a-thon</h2>
                     <p>
                         Middle school and high school students from all over 
                         New York came to join us on October 14th to learn about
@@ -122,7 +122,7 @@ export default function ThisYear() {
                     <img loading='lazy' src={Image9} />
                     <br/>
 
-                    <a>Click to join us again this year!</a>
+                    <a href='/thisyear'>Click to join us again this year!</a>
                     <img loading='lazy' src={Image10} />
 
                     <br/><br/>

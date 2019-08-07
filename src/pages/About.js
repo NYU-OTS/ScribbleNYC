@@ -6,7 +6,7 @@ import Footer from '../components/Footer.js';
 import OrganizerCell from '../components/OrganizerCell';
 
 import AboutBackground from '../images/AboutBackground.svg';
-import Adeola from '../images/Adeola.svg';
+import Adeola from '../images/Adeola Uthman.jpg';
 import Felicty from '../images/Felicity.svg';
 import Meenakshi from '../images/Meenakshi.svg';
 import Ueno from '../images/Ueno.svg';

@@ -38,8 +38,7 @@ export default function ThisYear() {
 
                     <h2>Virtual Reality with A-Frame</h2>
                     <p>
-                        Taught by Upperline Code Lorem Ipsem about the 
-                        workshop Lorem ipsum dolor sit amet, consectetur 
+                        Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Nam mauris nisi, condimentum efficitur
                         diam ac, tempor ultrices nisl. Fusce aliquam placerat
                         justo, vel vestibulum velit vestibulum sed. Maecenasviverra

@@ -7,7 +7,9 @@ export default function OrganizerCell(props) {
     const { image, name, title } = props;
 
     return <div className='organizer-cell'>
-        <img src={image} />
+        <img src={image} style={{
+            transform: name === 'Adeola Uthman' ? 'rotateZ(90deg)' : 'none'
+        }}/>
         <h3>{name}</h3>
         <p>{title}</p>
     </div>
