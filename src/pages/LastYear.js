@@ -87,7 +87,7 @@ export default function ThisYear() {
                         keep students safe by alerting them and their teacher 
                         when they tip in their chair.
                     </p>
-                    <img loading='lazy' src={Image6} />
+                    <img loading='lazy' src={Image8} />
                     <br/><br/><br/>
 
                     <h2>More Winners</h2>
@@ -108,7 +108,7 @@ export default function ThisYear() {
                         communicate with teachers, connect to their peers, 
                         and streamlines academic planning
                     </p>
-                    <img loading='lazy' src={Image8} />
+                    <img loading='lazy' src={Image6} />
                     <br/>
 
                     <p>
