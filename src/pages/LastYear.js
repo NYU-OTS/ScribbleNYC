@@ -5,16 +5,16 @@ import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
 
 import LastYearBackground from '../images/LastYearBackground.svg';
-import Image1 from '../images/LastYear/Image1.svg';
-import Image2 from '../images/LastYear/Image2.svg';
-import Image3 from '../images/LastYear/Image3.svg';
-import Image4 from '../images/LastYear/Image4.svg';
-import Image5 from '../images/LastYear/Image5.svg';
-import Image6 from '../images/LastYear/Image6.svg';
-import Image7 from '../images/LastYear/Image7.svg';
-import Image8 from '../images/LastYear/Image8.svg';
-import Image9 from '../images/LastYear/Image9.svg';
-import Image10 from '../images/LastYear/Image10.svg';
+import Image1 from '../images/LastYear/Image3.JPG';
+import Image2 from '../images/LastYear/Image2.JPG';
+import Image3 from '../images/LastYear/Image1.JPG';
+import Image4 from '../images/LastYear/Image4.JPG';
+import Image5 from '../images/LastYear/Image5.JPG';
+import Image6 from '../images/LastYear/Image6.JPG';
+import Image7 from '../images/LastYear/Image7.JPG';
+import Image8 from '../images/LastYear/Image8.JPG';
+import Image9 from '../images/LastYear/Image9.JPG';
+import Image10 from '../images/LastYear/Image10.JPG';
 import '../styles/LastYear.less';
 
 
