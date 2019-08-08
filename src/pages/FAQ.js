@@ -23,7 +23,7 @@ export default function FAQ() {
         <CollectionView id='faq-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <Media query='(min-width: 768px)'>{matches => matches ?
+                <Media key='3' query='(min-width: 768px)'>{matches => matches ?
                     <h1 key='0'>Frequently Asked Questions</h1>
                     :
                     <h1 key='0'>FAQs</h1>
