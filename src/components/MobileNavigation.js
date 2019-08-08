@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
+import ScribbleLogo from '../images/ScribbleLogo.svg';
 import '../styles/MobileNav.less';
 
 
@@ -12,7 +13,13 @@ export default function Home() {
     const [goFAQ, setGoFAQ] = useState(false);
 
     // 2.) Return component.
-        return <div className='mobile-nav'>
+    return <div className='mobile-nav'>
+        
+        <div className='signup-holder'>
+            <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
+            <button className='primary-button'>Sign Up!</button>
+        </div>
+
        <button className='color-button' onClick={() => setGoLastYear(true)}>
             Last Year
         </button>

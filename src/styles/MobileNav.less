@@ -17,7 +17,7 @@
     left: 0px;
     z-index: 3;
     width: 100%;
-    height: 400px;
+    height: 100%;
     overflow: hidden;
     background: none;
     padding-top: 50px;
@@ -26,56 +26,68 @@
     border-bottom: 2px solid lightgray;
     background: url('../images/LooseLeafBackground.svg');
 
+    // The image and sign up button in the middle of the home page.
+    .signup-holder {
+        position: relative;
+        top: 45%;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: fit-content;
+        transform: translateY(-50%);
+    }
+
     // The color buttons should not turn white
-        // since the bubbles are hidden.
-        .color-button {
-            position: relative;
+    // since the bubbles are hidden.
+    .color-button {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        border: none;
+        outline: none;
+        display: block;
+        font-size: 36px;
+        user-select: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        background-color: transparent;
+        
+        &:hover {
+            color: black;
+            font-weight: normal;
+        }
+        &:active {
+            font-weight: bolder;
+        }
+
+        * {
+            user-select: none;
+        }
+
+        &:nth-of-type(1) {
+            top: 0px;
             left: 0px;
             right: 0px;
-            border: none;
-            outline: none;
-            display: block;
-            font-size: 36px;
-            user-select: none;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            margin-bottom: 50px;
-            background-color: transparent;
-            
-            &:hover {
-                color: black;
-                font-weight: normal;
-            }
-            &:active {
-                font-weight: bolder;
-            }
-
-            * {
-                user-select: none;
-            }
-
-            &:nth-of-type(1) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(2) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(3) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(4) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
         }
+        &:nth-of-type(2) {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        &:nth-of-type(3) {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        &:nth-of-type(4) {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+    }
 }
 
 
@@ -86,6 +98,17 @@
         margin-left: auto;
         text-align: center;
         margin-right: auto;
+
+        // The sign up holder should be bigger to match
+        // the size of the page and the sign up button.
+        .signup-holder {
+            position: relative;
+            top: 5%;
+            width: 50%;
+            z-index: 100;
+            margin-bottom: 80px;
+            transform: translateY(0%);
+        }
 
         // The color buttons should not turn white
         // since the bubbles are hidden.
