@@ -103,23 +103,32 @@
         // The sign up holder should be bigger to match
         // the size of the page and the sign up button.
         .signup-holder {
-            position: absolute;
-            top: 10%;
-            left: 50%;
+            position: relative;
+            top: 5%;
+            width: 70%;
+            height: 25%;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 80px;
-            transform: translate(-50%, 0%) scale(2);
+            transform: translateY(0%);
+
+            img {
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+                transform: scale(2);
+            }
 
             .primary-button {
                 position: relative;
-                left: 50%;
-                width: 60px;
+                width: 100px;
+                height: 30px;
                 padding: 0px;
-                font-size: 10px;
-                margin-top: 100px;
+                font-size: 15px;
+                margin-left: auto;
+                margin-right: auto;
                 border-radius: 4px;
-                transform: translateX(-50%);
             }
         }
 
@@ -138,7 +147,10 @@
             margin-bottom: 50px;
 
             &:nth-of-type(1) {
-                margin-top: 250px;
+                margin-top: 70px;
+            }
+            &:nth-last-of-type(1) {
+                margin-bottom: 100px;
             }
             
             &:hover {
