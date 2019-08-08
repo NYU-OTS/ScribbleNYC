@@ -14,11 +14,10 @@ export default function Home() {
 
     // 2.) Return component.
     return <div className='mobile-nav'>
-        
-        <div className='signup-holder'>
+        <main className='signup-holder'>
             <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
             <button className='primary-button'>Sign Up!</button>
-        </div>
+        </main>
 
        <button className='color-button' onClick={() => setGoLastYear(true)}>
             Last Year

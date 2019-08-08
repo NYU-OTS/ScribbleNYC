@@ -45,6 +45,7 @@
         left: 0px;
         right: 0px;
         border: none;
+        z-index: 1000;
         outline: none;
         display: block;
         font-size: 36px;
@@ -102,12 +103,24 @@
         // The sign up holder should be bigger to match
         // the size of the page and the sign up button.
         .signup-holder {
-            position: relative;
-            top: 5%;
-            width: 50%;
-            z-index: 100;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 80px;
-            transform: translateY(0%);
+            transform: translate(-50%, 0%) scale(2);
+
+            .primary-button {
+                position: relative;
+                left: 50%;
+                width: 60px;
+                padding: 0px;
+                font-size: 10px;
+                margin-top: 100px;
+                border-radius: 4px;
+                transform: translateX(-50%);
+            }
         }
 
         // The color buttons should not turn white
@@ -117,12 +130,16 @@
             left: 0px;
             right: 0px;
             display: block;
-            font-size: 36px;
+            font-size: 32px;
             user-select: none;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
             margin-bottom: 50px;
+
+            &:nth-of-type(1) {
+                margin-top: 250px;
+            }
             
             &:hover {
                 color: black;
