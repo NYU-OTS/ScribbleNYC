@@ -2,9 +2,11 @@
 
 // The navigation bar component.
 .navigation-bar {
-    height: 89px;
+    height: 69px;
     text-align: right;
-    padding-top: 30px;
+    padding-top: 10px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
 
     // Hide the hamburger menu on desktop.
     span[class="fa fa-bars"], span[class="fas fa-times"] {
@@ -22,13 +24,15 @@
         position: absolute;
         top: 5px;
         left: 10px;
-        width: 89px;
-        height: 89px;
+        width: 69px;
+        height: 69px;
         cursor: pointer;
     }
 
     // The buttons, except for the sign up button, should have the same styles.
     .nav-button {
+        position: relative;
+        top: 10px;
         border: none;
         outline: none;
         .common-font();
@@ -52,7 +56,7 @@
     // The sign up button shouldn't be so close to the right.
     .primary-button {
         position: relative;
-        top: -2px;
+        top: 5px;
         font-size: 15px;
         margin-right: 40px;
     }
