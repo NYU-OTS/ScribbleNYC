@@ -6,7 +6,7 @@ import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
 import TopButton from '../components/BackToTopButton';
 
-import FAQBackground from '../images/FAQBackground.svg';
+import BubbleBackground from '../images/SlideTemplateLow.svg';
 import '../styles/FAQ.less';
 
 
@@ -28,7 +28,7 @@ export default function FAQ() {
                     :
                     <h1 key='0'>FAQs</h1>
                 }</Media>,
-                <img key='1' className='bubble-background-image' src={FAQBackground}/>,
+                <img key='1' className='bubble-background-image' src={BubbleBackground}/>,
                 <main key='2' className='information'>
                     <h2>What should I bring to Scribble NYC?</h2>
                     <p>

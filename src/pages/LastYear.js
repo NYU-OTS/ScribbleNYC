@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
+import '../components/DividerBubbles';
 
-import LastYearBackground from '../images/LastYearBackground.svg';
+import BubbleBackground from '../images/SlideTemplateLow.svg';
 import Image1 from '../images/LastYear/Image3.JPG';
 import Image2 from '../images/LastYear/Image2.JPG';
 import Image3 from '../images/LastYear/Image1.JPG';
@@ -32,7 +33,7 @@ export default function ThisYear() {
             orientation={CollectionView.Orientation.vertical}
             data={[
                 <h1 key='0'>Last Year (2018)</h1>,
-                <img loading='lazy' key='1' className='bubble-background-image' src={LastYearBackground}/>,
+                <img loading='lazy' key='1' className='bubble-background-image' src={BubbleBackground}/>,
                 <main key='2' className='information'>
                     <h2>64 attendees, 8 workshops, one design-a-thon</h2>
                     <p>
@@ -113,6 +114,8 @@ export default function ThisYear() {
                         <img loading='lazy' src={Image5} className='preview-image'/>
                     </div>
 
+                    <divider-bubbles></divider-bubbles>
+
                     <h2>The Competition</h2>
                     <p>
                         After participating in these workshops, students formed
@@ -132,6 +135,8 @@ export default function ThisYear() {
                     </p>
                     <img loading='lazy' src={Image8} />
                     <br/><br/><br/>
+
+                    <divider-bubbles></divider-bubbles>
 
                     <h2>More Winners</h2>
                     <p>

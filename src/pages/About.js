@@ -5,7 +5,7 @@ import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
 import OrganizerCell from '../components/OrganizerCell';
 
-import AboutBackground from '../images/AboutBackground.svg';
+import BubbleBackground from '../images/SlideTemplateLow.svg';
 import Adeola from '../images/Adeola Uthman.jpg';
 import Felicty from '../images/Felicity Ng.JPG';
 import Meenakshi from '../images/Meenakshi.svg';
@@ -30,7 +30,7 @@ export default function About() {
             orientation={CollectionView.Orientation.vertical}
             data={[
                 <h1 key='0'>About</h1>,
-                <img key='1' className='bubble-background-image' src={AboutBackground}/>,
+                <img key='1' className='bubble-background-image' src={BubbleBackground}/>,
                 <main key='2' className='information'>
                     <h2>What is Scribble NYC?</h2>
                     <p>

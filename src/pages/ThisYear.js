@@ -4,7 +4,7 @@ import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer';
 
-import ThisYearBackground from '../images/ThisYearBackground.svg';
+import BubbleBackground from '../images/SlideTemplateLow.svg';
 import ScheduleGraphic from '../images/ScheduleMiddle.png';
 import ScheduleLeft from '../images/ScheduleLeft.png';
 import '../styles/ThisYear.less';
@@ -24,7 +24,7 @@ export default function ThisYear() {
             orientation={CollectionView.Orientation.vertical}
             data={[
                 <h1 key='0'>This Year</h1>,
-                <img key='1' className='bubble-background-image' src={ThisYearBackground}/>,
+                <img key='1' className='bubble-background-image' src={BubbleBackground}/>,
                 <main key='2' className='information'>
                     <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
                     <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
