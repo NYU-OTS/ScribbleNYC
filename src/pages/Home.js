@@ -38,7 +38,8 @@ export default function Home() {
             This Year
         </button>
 
-       <img id='home-background' src={BubbleBackground}/>
+       {/* <img id='home-background' src={BubbleBackground}/> */}
+       <div id='home-background'></div>
 
         { goAbout && <Redirect to='/about'/> }
         { goLastYear && <Redirect to='/lastyear'/> }
