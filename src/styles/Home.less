@@ -25,6 +25,16 @@
         transform: translateY(-50%);
     }
 
+    // The bubble background.
+    #home-background {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        transform: scale(1.1);
+    }
+
     // Every "color-button" on this page should have the same look,
     // and should show a colorful background on hover.
     .color-button {
@@ -41,7 +51,6 @@
 
         // Hover state should change the text.
         &:hover {
-            color: white;
             font-weight: bolder;
         }
 
@@ -69,48 +78,6 @@
             bottom: @offset;
         }
     }
-
-    // The bubbles that show up when you hover over an item.
-    #home-green-bubble {
-        position: absolute;
-        left: -80px;
-        width: 0px;
-        height: 0px;
-        bottom: -40vh;
-        overflow: hidden;
-        object-fit: contain;
-        transition-duration: 0.2s;
-    }
-    #home-red-bubble {
-        position: absolute;
-        top: -40vh;
-        width: 0px;
-        height: 0px;
-        right: -80px;
-        overflow: hidden;
-        object-fit: contain;
-        transition-duration: 0.2s;
-    }
-    #home-yellow-bubble {
-        position: absolute;
-        top: -40vh;
-        width: 0px;
-        height: 0px;
-        left: -80px;
-        overflow: hidden;
-        object-fit: contain;
-        transition-duration: 0.2s;
-    }
-    #home-blue-bubble {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        right: -80px;
-        bottom: -40vh;
-        overflow: hidden;
-        object-fit: contain;
-        transition-duration: 0.2s;
-    }
 }
 
 
@@ -130,13 +97,6 @@
             width: 50%;
             margin-bottom: 80px;
             transform: translateY(0%);
-        }
-
-        // Don't show the bubbles on mobile.
-        #home-blue-bubble, #home-red-bubble,
-        #home-yellow-bubble, #home-green-bubble {
-            display: none;
-            visibility: hidden;
         }
 
         // The color buttons should not turn white
