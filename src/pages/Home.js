@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
 import ScribbleLogo from '../images/ScribbleLogo.svg';
-import BubbleBackground from '../images/SlideTemplateFull.svg';
+import BubbleBackground from '../images/SlideTemplateFull.png';
 // import GreenBubble from '../images/GreenBubble1.svg';
 // import RedBubble from '../images/RedBubble1.svg';
 // import YellowBubble from '../images/YellowBubble1.svg';
@@ -39,7 +39,7 @@ export default function Home() {
         </button>
 
        {/* <img id='home-background' src={BubbleBackground}/> */}
-       <div id='home-background'></div>
+       <img id='home-background' src={BubbleBackground}></img>
 
         { goAbout && <Redirect to='/about'/> }
         { goLastYear && <Redirect to='/lastyear'/> }
