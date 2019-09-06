@@ -36,8 +36,8 @@ export default function ThisYear() {
                         learn something new!
                     </p>
 
-
-                    <h2>Art + Code with p5</h2>
+                    <h2>~ Coming Soon ~</h2>
+                    {/* <h2>Art + Code with p5</h2>
                     <p>Taylor Want and Jeff Olson from UpperlineCode</p>
 
                     <h2>Editing Video on Mac and Video Stories with Clips</h2>
@@ -53,7 +53,7 @@ export default function ThisYear() {
                     <p>Parthavi Nerurkar from siStem.io</p>
 
                     <h2>Ueno</h2>
-                    <p>- Coming Soon -</p>
+                    <p>- Coming Soon -</p> */}
 
                     <br/><br/>
                     <br/><br/>

@@ -57,51 +57,27 @@ export default function ThisYear() {
                         <span>
                             <li>
                                 <b>Making the Most of Slack in Product Development</b>
-                                <span>
-                                    &nbsp; - Karsten Konopath, Mark Benussi, and Meghan Haenn from Slack
-                                </span>
                             </li>
                             <li>
                                 <b>Designer-Developer Collaboration</b>
-                                <span>
-                                    &nbsp; - Vidia Anindhita, Tianyue Wu, Yu-Hsuan Lin, and Hyobin Im from NYU IT
-                                </span>
                             </li>
                             <li>
                                 <b>Art + Code with p5</b>
-                                <span>
-                                    &nbsp; - Taylor Want and Jeff Olson from UpperlineCode
-                                </span>
                             </li>
                             <li>
                                 <b>How to Earn a Seat on a Rocketship</b>
-                                <span>
-                                    &nbsp; - Karsten Konopath, Mark Benussi, and Meghan Haenn from Slack
-                                </span>
                             </li>
                             <li>
                                 <b>Editing Video on Mac and Video Stories with Clips</b>
-                                <span>
-                                    &nbsp; - Juliana Velez and Anthony Morales from Apple Inc.
-                                </span>
                             </li>
                             <li>
                                 <b>Basic 2D Character Assembly for Animations</b>
-                                <span>
-                                    &nbsp; - Jodie Rae Charity and Elizabeth McAplin from NYU IT
-                                </span>
                             </li>
                             <li>
                                 <b>Virtual Reality</b>
-                                <span>
-                                    &nbsp; - Taylor Want and Jeff Olson from UpperlineCode
-                                </span>
                             </li>
                             <li>
                                 <b>Getting Started with Coding and Sphero Maze Challenge</b>
-                                <span>
-                                    &nbsp; - Juliana Velez and Anthony Morales from Apple Inc.
-                                </span>
                             </li>
                         </span>
                     </section>
