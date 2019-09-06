@@ -4,7 +4,6 @@ import Media from 'react-media';
 import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
-import TopButton from '../components/BackToTopButton';
 
 import BubbleBackground from '../images/SlideTemplateLow.svg';
 import '../styles/FAQ.less';

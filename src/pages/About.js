@@ -9,7 +9,7 @@ import BubbleBackground from '../images/SlideTemplateLow.svg';
 import Adeola from '../images/Adeola Uthman.jpg';
 import Felicty from '../images/Felicity Ng.JPG';
 import Meenakshi from '../images/Meenakshi.svg';
-import Ueno from '../images/Ueno.svg';
+import Ueno from '../images/Ueno.png';
 import Upperline from '../images/UpperlineCode.svg';
 import Square from '../images/Square.svg';
 import Apple from '../images/Apple.svg';
