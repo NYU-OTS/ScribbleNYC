@@ -50,10 +50,10 @@ export default function ThisYear() {
                     <p>Juliana Velez and Anthony Morales from Apple Inc.</p>
 
                     <h2>Robotics Design</h2>
-                    <p>Parthavi</p>
+                    <p>Parthavi Nerurkar from siStem.io</p>
 
                     <h2>Ueno</h2>
-                    <p>Coming Soon...</p>
+                    <p>- Coming Soon -</p>
 
                     <br/><br/>
                     <br/><br/>
