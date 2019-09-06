@@ -23,18 +23,14 @@ export default function FAQ() {
         <CollectionView id='faq-items'
             orientation={CollectionView.Orientation.vertical}
             data={[
-                <Media key='3' query='(min-width: 768px)'>{matches => matches ?
-                    <h1 key='0'>Frequently Asked Questions</h1>
-                    :
-                    <h1 key='0'>FAQs</h1>
-                }</Media>,
+                <h1 key='0'>FAQs</h1>,
                 <img key='1' className='bubble-background-image' src={BubbleBackground}/>,
                 <main key='2' className='information'>
                     <h2>What should I bring to Scribble NYC?</h2>
                     <p>
                         Please bring a valid student or government ID. 
                         We also recommend attendees to bring laptops, 
-                        as some workshops be heavily reliant on a laptop
+                        as some workshops be heavily reliant on a laptop.
                     </p>
 
                     <h2>Who can attend?</h2>
@@ -48,7 +44,7 @@ export default function FAQ() {
                     <p>
                         Tickets cost $20 per person. However, if you purchase 
                         tickets as a group, they are $15 per person. Groups are 
-                        limited to five people
+                        limited to five people.
                     </p>
 
                     <h2>How many people can be on a team for the design-a-thon?</h2>

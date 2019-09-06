@@ -134,7 +134,7 @@ export default function ThisYear() {
                         <br/><br/>
                         A student life application that allows students to 
                         communicate with teachers, connect to their peers, 
-                        and streamlines academic planning
+                        and streamlines academic planning.
                     </p>
                     <img loading='lazy' src={Image6} />
                     <br/>
