@@ -114,7 +114,9 @@ export default function ThisYear() {
                         <img loading='lazy' src={Image5} className='preview-image'/>
                     </div>
 
-                    <divider-bubbles></divider-bubbles>
+                    <div className='divider-button-holder'>
+                        <divider-bubbles></divider-bubbles>
+                    </div>
 
                     <h2>The Competition</h2>
                     <p>
@@ -136,7 +138,9 @@ export default function ThisYear() {
                     <img loading='lazy' src={Image8} />
                     <br/><br/><br/>
 
-                    <divider-bubbles></divider-bubbles>
+                    <div className='divider-button-holder'>
+                        <divider-bubbles></divider-bubbles>
+                    </div>
 
                     <h2>More Winners</h2>
                     <p>
