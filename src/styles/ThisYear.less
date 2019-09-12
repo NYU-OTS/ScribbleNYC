@@ -104,16 +104,26 @@
         #this-year-items {
             // Give the title some more side room.
             h1 {
+                position: relative;
+                top: -50px;
+                z-index: 1;
                 font-size: 80px;
                 padding-left: 2%;
                 padding-right: 2%;
             }
 
+            .bubble-background-image {
+                position: relative;
+                top: -200px;
+            }
+
             // Give more side spacing in general.
             .information {
+                position: relative;
+                top: 0px;
                 padding-left: 7%;
                 padding-right: 7%;
-                margin-top: -100px;
+                margin-top: -200px;
 
                 // Make the images fit better on mobile.
                 .preview-image {
@@ -124,13 +134,17 @@
 
                  // Hide the left schedule on desktop, and vice versa on mobile.
                 #schedule-image-1 {
+                    position: relative;
                     display: none;
+                    margin-top: 100px;
                 }
                 #schedule-image-2 {
+                    position: relative;
                     left: 0px;
                     display: block;
                     margin-left: 0px;
-                    margin-bottom: 50px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
                 }
             }
         }
