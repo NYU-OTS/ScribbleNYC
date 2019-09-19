@@ -22,7 +22,10 @@ export default function Home() {
     return <div className='page home'>
         <main className='signup-holder'>
             <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
-            <button className='primary-button'>Sign Up!</button>
+            <button className='primary-button'
+                onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
+                Sign Up!
+            </button>
         </main>
         
        <button className='color-button' onClick={() => setGoLastYear(true)}>

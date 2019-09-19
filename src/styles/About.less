@@ -2,136 +2,71 @@
 @import './OrganizerCell.less';
 
 .about {
-    text-align: center;
-
-    // The page contents are all contained inside of this
-    // collection view so that they can be appropriately stacked.
-    #about-items {
+    position: relative;
+    
+    // The bubble background image.
+    .bubble-background {
         position: relative;
+        top: 0px;
+        left: 0px;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+        height: 100%;
+        background-repeat: repeat;
+        background-image: url('../images//LooseLeafBackground.svg');
+    }
 
-        // By nature of the collection view, make sure everything
-        // takes up the entire width of the list.
-        * { width: 100%; }
+    // The main information section.
+    .information {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: block;
+        .common-font();
+        padding-top: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+        // display: none;
+        background-repeat: repeat-y;
+        background-image: url('../images//LooseLeafBackground.svg');
+    
 
-        // The title of the page.
-        h1 {
-            position: relative;
-            top: 150px;
-            .header-font();
-            margin-top: 0px;
+        // The titles should have some spacing.
+        h2 {
+            margin-top: 50px;
+            font-weight: bolder;
+        }
+
+        // The descriptions should have spacing on the bottom.
+        p {
+            font-weight: 100;
+            margin-bottom: 80px;
+        }
+
+        // Divs should not have the same kind of spacing that the
+        // other elements on this page have.
+        div {
             margin-bottom: 0px;
         }
 
-        // The background bubbles.
-        .bubble-background-image {
-            position: relative;
-            top: -180px;
-            margin: 0px;
-            padding: 0px;
-            max-width: 100%;
-            object-fit: cover;
+        // Add spacing on the lists too.
+        section {
+            margin-bottom: 80px;
         }
 
-        // The main information section of the page.
-        .information {
-            position: relative;
-            top: -182px;
-            padding-left: 22%;
-            padding-right: 22%;
-            background-color: @blue;
-
-            // The section titles.
-            h2 {
-                position: relative;
-                .common-font();
-                font-size: 30px;
-                line-height: 1.33;
-                font-weight: bolder;
-
-                &:nth-of-type(1) {
-                    padding-top: 100px;
-                }
-            }
-
-            // The descriptions.
-            p, section {
-                position: relative;
-                font-size: 16px;
-                line-height: 24px;
-                font-style: normal;
-                font-weight: normal;
-                margin-bottom: 80px;
-                font-family: Poppins;
-            }
-
-            // The section about event organizers.
-            .about-organizers {
-                position: relative;
-                width: 100%;
-                margin-left: auto;
-                text-align: center;
-                margin-right: auto;
-                margin-bottom: 80px;
-
-                * { .organizer-cell(); }
-            }
-
-            // The sponser logos.
-            p:nth-last-of-type(4) {
-                img {
-                    height: 50px;
-                    max-width: 220px;
-                }
-            }
-        } // End of ".information"
-    } // End of "#about-items"
+        // The last sponser.
+        #last-sponser img {
+            margin-bottom: 50px;
+        }
+    }
 } // End of ".about"
 
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
     .about {
-        #about-items {
-
-            // The title should be moved up more.
-            h1 {
-                position: absolute;
-                top: -50px;
-                z-index: 1;
-            }
-
-            .bubble-background-image {
-                position: relative;
-                top: 0px;
-            }
-
-            // Shorten the space from the sides on mobile.
-            .information {
-                position: relative;
-                top: 0px;
-                margin-top: 0px;
-                padding-left: 12%;
-                padding-right: 12%;
-            }
-
-            // Give the organizer cells some space.
-            .about-organizers {
-                * { margin-bottom: 50px; }
-                *:nth-last-child(1) { margin-bottom: 0px; }
-            }
-
-            // The list was too far to the right on mobile,
-            // so move it back.
-            ul {
-                position: relative;
-                left: -25px;
-            }
+        p img {
+            width: 100%;
         }
     }
 }

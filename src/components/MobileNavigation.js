@@ -15,8 +15,9 @@ export default function Home() {
     // 2.) Return component.
     return <div className='mobile-nav'>
         <main className='signup-holder'>
-            <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
-            <button className='primary-button'>Sign Up!</button>
+            <img className='mobile-nav-image' src={ScribbleLogo} alt='Scribble NYC Logo'/>
+            <button className='primary-button'
+                onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
         </main>
 
        <button className='color-button' onClick={() => setGoLastYear(true)}>

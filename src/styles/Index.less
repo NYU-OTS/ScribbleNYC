@@ -45,34 +45,6 @@
     }
 }
 
-// The button to take you back to the top of the page.
-.back-to-top-button {
-    position: absolute;
-    left: 50%;
-    top: -50px;
-    width: 80px;
-    border: none;
-    color: black;
-    outline: none;
-    display: block;
-    cursor: pointer;
-    font-size: 14px;
-    background: none;
-    text-decoration: none;
-    transform: translateX(-50%);
-
-    span {
-        display: block;
-        margin-bottom: 50px;
-        font-weight: bolder;
-    }
-    p {
-        margin-top: 0px;
-        font-weight: bolder;
-    }
-}
-
-
 
 // The entire app has the loose leaf paper background.
 .app {
@@ -81,8 +53,8 @@
     left: 0px;
     width: 100%;
     margin: 0px;
-    padding: 0px;
     height: 100%;
+    padding: 0px;
     background-size: 100%;
     background-repeat: repeat-y;
     background-image: url('../images//LooseLeafBackground.svg');
@@ -99,32 +71,5 @@ html, body {
     .primary-button {
         &:hover { background-color: @primary; }
         &:active { background-color: darken(@primary, 10%); }
-    }
-
-    // Make sure the back to top button is not squished on mobile.
-    .back-to-top-button {
-        position: absolute;
-        left: 50%;
-        top: -90px;
-        width: 80px;
-        border: none;
-        color: black;
-        outline: none;
-        display: block;
-        cursor: pointer;
-        font-size: 14px;
-        background: none;
-        text-decoration: none;
-        transform: translateX(-50%);
-    
-        span {
-            display: block;
-            margin-bottom: 90px;
-            font-weight: bolder;
-        }
-        p {
-            margin-top: 0px;
-            font-weight: bolder;
-        }
     }
 }

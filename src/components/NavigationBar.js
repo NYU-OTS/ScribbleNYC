@@ -22,14 +22,16 @@ export default function NavigationBar() {
             ''
         }</Media>
 
-        <img src={ScribbleLogo} alt='Scribble NYC Logo' onClick={() => {
-            window.location.href = '/';
-        }}/>
+        <img className='nav-image' src={ScribbleLogo} alt='Scribble NYC Logo'
+            onClick={() => {
+                window.location.href = '/';
+            }}/>
 
         <button className='nav-button nav-button-1' onClick={() => window.location.href = '/about'}>About</button>
         <button className='nav-button nav-button-2' onClick={() => window.location.href = '/lastyear'}>Last Year</button>
         <button className='nav-button nav-button-3' onClick={() => window.location.href = '/thisyear'}>This Year</button>
         <button className='nav-button nav-button-4' onClick={() => window.location.href = '/faq'}>FAQs</button>
-        <button className='primary-button'>Sign Up!</button>
+        <button className='primary-button'
+            onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
     </nav>
 }

@@ -1,8 +1,9 @@
 @import './Index.less';
 
 .this-year {
-    margin: 0px;
-    padding: 0px;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
     text-align: center;
 
     // Make sure that the back to top button on this page is white.
@@ -10,143 +11,77 @@
         color: black;
     }
 
-    // The page contents are all contained inside of this
-    // collection view so that they can be appropriately stacked.
-    #this-year-items {
+    // The background bubbles.
+    .bubble-background {
         position: relative;
+        top: 0px;
+        left: 0px;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+        height: 100%;
+        background-repeat: repeat;
+        background-image: url('../images//LooseLeafBackground.svg');
+    }
 
-        // By nature of the collection view, make sure everything
-        // takes up the entire width of the list.
-        * { width: 100%; }
+    // The main information section of the page.
+    // The main information section.
+    .information {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: block;
+        .common-font();
+        padding-top: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+        // display: none;
+        background-repeat: repeat;
+        background-image: url('../images//LooseLeafBackground.svg');
 
-        // The title of the page.
-        h1 {
+         // The section titles.
+         h2 {
             position: relative;
-            top: 150px;
-            .header-font();
+            .common-font();
             margin-top: 0px;
-            margin-bottom: 0px;
+            font-size: 30px;
+            line-height: 1.33;
+            font-weight: bolder;
         }
 
-        // The background bubbles.
-        .bubble-background-image {
+        // The descriptions.
+        p, section {
             position: relative;
-            top: -180px;
-            margin: 0px;
-            padding: 0px;
-            max-width: 100%;
-            object-fit: contain;
+            font-size: 16px;
+            line-height: 24px;
+            font-style: normal;
+            font-weight: normal;
+            margin-bottom: 80px;
+            font-family: Poppins;
         }
 
-        // The main information section of the page.
-        .information {
+        // The large image previews of the event.
+        .preview-image {
             position: relative;
-            top: -182px;
-            color: black;
-            padding-left: 22%;
-            padding-right: 22%;
-            background-color: @blue;
+            left: 0%;
+            width: 100%;
+            // height: 944px;
+            margin-bottom: 50px;
+        }
 
-            // The section titles.
-            h2 {
-                position: relative;
-                .common-font();
-                margin-top: 0px;
-                font-size: 30px;
-                line-height: 1.33;
-                font-weight: bolder;
-            }
+        // Hide the left schedule on desktop, and vice versa on mobile.
+        #schedule-image-1 {
+            display: block;
+        }
+        #schedule-image-2 {
+            display: none;
+        }
+    } // End of ".information"
 
-            // The descriptions.
-            p, section {
-                position: relative;
-                font-size: 16px;
-                line-height: 24px;
-                font-style: normal;
-                font-weight: normal;
-                margin-bottom: 80px;
-                font-family: Poppins;
-            }
-
-            // The large image previews of the event.
-            .preview-image {
-                position: relative;
-                left: 0%;
-                // width: 100%;
-                // height: 944px;
-                object-fit: cover;
-                margin-bottom: 0px;
-            }
-
-            // Hide the left schedule on desktop, and vice versa on mobile.
-            #schedule-image-1 {
-                display: block;
-            }
-            #schedule-image-2 {
-                display: none;
-            }
-
-        } // End of ".information"
-    } // End of "#last-year-items"
     // The title of the page.
 }
 
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-    .this-year {
-        #this-year-items {
-            // Give the title some more side room.
-            h1 {
-                position: absolute;
-                top: -50px;
-                z-index: 1;
-                font-size: 80px;
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-
-            .bubble-background-image {
-                position: relative;
-                top: 0px;
-            }
-
-            // Give more side spacing in general.
-            .information {
-                position: relative;
-                top: 0px;
-                margin-top: 0px;
-                padding-left: 7%;
-                padding-right: 7%;
-
-                // Make the images fit better on mobile.
-                .preview-image {
-                    // width: 100%;
-                    // height: 400px;
-                    transform: scale(1.2);
-                }
-
-                 // Hide the left schedule on desktop, and vice versa on mobile.
-                #schedule-image-1 {
-                    position: relative;
-                    display: none;
-                    margin-top: 100px;
-                }
-                #schedule-image-2 {
-                    position: relative;
-                    left: 0px;
-                    display: block;
-                    margin-left: 0px;
-                    margin-top: 100px;
-                    margin-bottom: 100px;
-                }
-            }
-        }
-    }
+    
 }

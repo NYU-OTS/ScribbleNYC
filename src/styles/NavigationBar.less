@@ -2,9 +2,15 @@
 
 // The navigation bar component.
 .navigation-bar {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
     height: 69px;
     text-align: right;
     padding-top: 10px;
+    background-color: white;
 
     // Hide the hamburger menu on desktop.
     span[class="fa fa-bars"], span[class="fas fa-times"] {
@@ -19,7 +25,7 @@
     }
 
     // The logo image should always stick to the left side of the screen.
-    img {
+    .nav-image {
         position: absolute;
         top: 5px;
         left: 10px;
@@ -73,10 +79,10 @@
         }
 
         // Hide everything else on mobile.
-        .nav-button {
+        & > .nav-image {
             display: none;
         }
-        & > img {
+        & > .nav-button {
             display: none;
         }
         & > .primary-button {
