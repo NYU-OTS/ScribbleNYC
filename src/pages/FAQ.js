@@ -11,11 +11,11 @@ import '../styles/FAQ.less';
 
 // The about page.
 export default function FAQ() {
-    
+
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
-    
+
     return <div className='page faq'>
         <NavigationBar />
 
@@ -23,23 +23,24 @@ export default function FAQ() {
         <main key='2' className='information'>
             <h2>What should I bring to Scribble NYC?</h2>
             <p>
-                Please bring a valid student or government ID. 
-                We also recommend attendees to bring laptops, 
+                Please bring a valid student or government ID.
+                We also recommend attendees to bring laptops,
                 as some workshops be heavily reliant on a laptop.
             </p>
 
             <h2>Who can attend?</h2>
             <p>
-                Anyone can purchase a ticket, which will give them 
-                admission to the workshops. However, only middle and 
+                Anyone can purchase a ticket, which will give them
+                admission to the workshops. However, only middle and
                 high school students can compete in the design-a-thon.
             </p>
 
             <h2>How much does it cost?</h2>
             <p>
-                If you purchase tickets as a group to compete, they are 
-                $15 per person. Groups are limited to five people (four
-                students and one adult chaperone).
+                General admission tickets cost $20. However, if you purchase
+                tickets as a group, it is $15 per person. Groups are limited to
+                five people (four students and one adult chaperone) and expected
+                to participate in the design-a-thon.
             </p>
 
             <h2>How many people can be on a team for the design-a-thon?</h2>
