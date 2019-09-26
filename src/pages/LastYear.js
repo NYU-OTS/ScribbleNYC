@@ -21,11 +21,11 @@ import '../styles/LastYear.less';
 
 // The page describing the event for this year.
 export default function ThisYear() {
-    
+
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
-    
+
     return <div className='page last-year'>
         <NavigationBar />
 
@@ -33,11 +33,11 @@ export default function ThisYear() {
         <main key='2' className='information'>
             <h2>64 attendees, 8 workshops, one design-a-thon</h2>
             <p>
-                Middle school and high school students from all over 
-                New York came to join us on October 14th to learn about
+                Middle school and high school students from all over
+                New York came last year, on October 14th, to learn about
                 product design. They participated in workshops and then
-                applied their knowledge to compete in a design-a-thon,
-                where the winners were chosen based on creativity, 
+                applied their new knowledge to compete in a design-a-thon,
+                where the winners were chosen based on creativity,
                 originality, and positive impact on their school.
             </p>
 
@@ -93,18 +93,18 @@ export default function ThisYear() {
             <h2>The Competition</h2>
             <p>
                 After participating in these workshops, students formed
-                teams and participated in a Design-A-Thon competition!
-                Each group was able to present their work to a panel of
+                teams and participated in a design-a-thon competition!
+                Each group presented their work to a panel of
                 judges, which included representatives from NYU, local
                 schools, and the tech community.
             </p>
 
-            <h2>Grand Prize Winners</h2>
+            <h2 className='lessMargin'>Grand Prize Winners</h2>
             <p>
                 The Marymount School of Manhattan
                 <br/><br/>
-                Using sound and a warning light, Tipper Stopper aims to 
-                keep students safe by alerting them and their teacher 
+                Using sound and a warning light, Tipper Stopper aims to
+                keep students safe by alerting them and their teacher
                 when they tip in their chair.
             </p>
             <img loading='lazy' src={Image8} />
@@ -116,20 +116,20 @@ export default function ThisYear() {
 
             <h2>More Winners</h2>
             <p>
-                Middle School 2017
+                Middle School 217
                 <br/><br/>
-                An online peer support network that brings together 
-                studentsand school to support academics and provide 
+                An online peer support network that brings together
+                students and school to support academics and provide
                 mental health services.
             </p>
             <img loading='lazy' src={Image7} />
             <br/>
 
             <p>
-                Thomas Alvin Edison High School
+                Thomas A. Edison High School
                 <br/><br/>
-                A student life application that allows students to 
-                communicate with teachers, connect to their peers, 
+                An application centered around student life that allows
+                students to communicate with teachers, connect to their peers,
                 and streamlines academic planning.
             </p>
             <img loading='lazy' src={Image6} />
@@ -138,9 +138,9 @@ export default function ThisYear() {
             <p>
                 Brooklyn Emerging Leaders Academy Charter High School
                 <br/><br/>
-                A school application that allows students to chat, 
-                receive important reminders about tests and quizzes, 
-                and connect to their classes. It also allows parents 
+                A school application that allows students to chat,
+                receive important reminders about tests and quizzes,
+                and connect to their classes. It also allows parents
                 to receive alerts and school updates.
             </p>
             <img loading='lazy' src={Image9} />

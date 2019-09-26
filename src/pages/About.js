@@ -10,6 +10,7 @@ import BubbleBackground from '../images/NewAboutBackground.svg';
 import Adeola from '../images/Adeola Uthman.jpg';
 import Felicty from '../images/Felicity Ng.JPG';
 import Meenakshi from '../images/Meenakshi.svg';
+import NYU from '../images/NYU_Logo.png';
 import Ueno from '../images/Ueno.png';
 import Upperline from '../images/UpperlineCode.svg';
 import Square from '../images/Square.svg';
@@ -31,26 +32,26 @@ export default function About() {
         <main key='3' className='information'>
             <h2>What is Scribble NYC?</h2>
             <p>
-                Scribble NYC is a design forum and design-a-thon 
-                aimed at teaching middle and high school students 
+                Scribble NYC is a design forum and design-a-thon
+                aimed at teaching middle and high school students
                 about the world of product design.
             </p>
 
             <h2>Who organizes Scribble NYC?</h2>
-            <p>
-                Scribble NYC is organized and hosted by NYU IT 
-                Operations Technology Services & Support (OTSS), 
-                in collaboration with industry partners from across 
+            <p className='relatedPhotoUnder'>
+                Scribble NYC is organized and hosted by NYU IT
+                Operations Technology Services & Support (OTSS),
+                in collaboration with industry partners from across
                 the software design and development field.
             </p>
             <div className='about-organizers'>
-                <OrganizerCell image={Meenakshi} 
+                <OrganizerCell image={Meenakshi}
                     name='Meenakshi Baker'
                     title='Event Manager'/>
                 <OrganizerCell image={Felicty}
                     name='Felicity Ng'
                     title='Event Organizer'/>
-                <OrganizerCell image={Adeola} 
+                <OrganizerCell image={Adeola}
                     name='Adeola Uthman'
                     title='Event Organizer'
                     id='twister'/>
@@ -60,12 +61,12 @@ export default function About() {
             <section>
                 <ul style={{ textAlign: 'left' }}>
                     <li>
-                        Students, teachers, and faculty entering our 
+                        Students, teachers, and faculty entering our
                         competition and/or attending our workshops.
                     </li>
                     <li>
-                        Designers and developers from many different companies 
-                        all over New York will host workshops and provide support 
+                        Designers and developers from many different companies
+                        all over New York will host workshops and provide support
                         while teams are working on projects.
                     </li>
                     <li>
@@ -77,12 +78,15 @@ export default function About() {
 
             <h2>Who sponsers Scribble NYC?</h2>
             <p>
-                The below companies have generously donated workshops, 
+                The below companies have generously donated workshops,
                 prizes, and other resources as sponsors of Scribble NYC.
             </p>
-            <p><img src={Ueno} alt='Ueno' height={80}/></p>
-            <p><img src={Upperline} alt='Upperline Code' height={80}/></p>
-            <p id='last-sponser'><img src={Apple} alt='Apple' height={80}/></p>
+            <div className="sponsors">
+              <img src={NYU} alt='NYU' height={80}/>
+              <img src={Ueno} alt='Ueno' height={80}/>
+              <img src={Upperline} alt='Upperline Code' height={80}/>
+              <img src={Apple} alt='Apple' height={80}/>
+            </div>
         </main>
         <Footer />
     </div>

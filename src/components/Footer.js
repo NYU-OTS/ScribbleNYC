@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import ScribbleLogo from '../images/ScribbleLogo.svg';
+import ScribbleLogo from '../images/ScribbleLogo.png';
 
 import '../styles/Footer.less';
 
