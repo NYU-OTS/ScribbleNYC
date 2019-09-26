@@ -29,7 +29,7 @@ export default function FAQ() {
                 <a href="https://drive.google.com/open?id=13JRgCMZjTXoXK1NjPXHmZG8rvYCibimSzLZEGxazSKs"  target="_blank">photo/video release form</a>
                 , and a valid student or government ID.
                 We also recommend attendees to bring laptops,
-                as some workshops be heavily reliant on a laptop.
+                as some workshops be heavily reliant on them.
             </p>
 
             <h2>Who can attend?</h2>
