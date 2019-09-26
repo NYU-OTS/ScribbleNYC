@@ -47,11 +47,20 @@
         font-size: 28px;
         background: none;
         text-decoration: underline;
+        transition-duration: 0.15s;
         font-family: 'Nanum Pen Script';
 
         // Hover state should change the text.
         &:hover {
             font-weight: bolder;
+        }
+        &:focus {
+            padding-top: 8px;
+            border-radius: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 8px;
+            background-color: rgb(231, 231, 231);
         }
 
         // The first one is in the top left corner.

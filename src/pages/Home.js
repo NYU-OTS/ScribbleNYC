@@ -23,21 +23,22 @@ export default function Home() {
         <main className='signup-holder'>
             <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
             <button className='primary-button'
+                tabIndex={0}
                 onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
                 Sign Up!
             </button>
         </main>
         
-       <button className='color-button' onClick={() => setGoLastYear(true)}>
+       <button className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
             Last Year
         </button>
-       <button className='color-button' onClick={() => setGoAbout(true)}>
+       <button className='color-button' tabIndex={0} onClick={() => setGoAbout(true)}>
             About
         </button>
-       <button className='color-button' onClick={() => setGoFAQ(true)}>
+       <button className='color-button' tabIndex={0} onClick={() => setGoFAQ(true)}>
             FAQs
         </button>
-       <button className='color-button' onClick={() => setGoThisYear(true)}>
+       <button className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
             This Year
         </button>
 
