@@ -25,7 +25,7 @@ export default function ThisYear() {
             <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
             <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
 
-            <h2>Workshops</h2>
+            <h2>~ Workshops ~</h2>
             <p>
                 From learning to code to navigating how to work as a
                 team, sit in on the workshops that interest you and
@@ -76,8 +76,8 @@ export default function ThisYear() {
                 everyday lives.
             </p>
 
-            <h2>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</h2>
-            <h3><i>Art and Animation with P5.js</i></h3>
+            <h2>Art and Animation with P5.js</h2>
+            <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
             <p>
                 p5.js is one of the most powerful and beginner-friendly text-based
                 introductions to code. With it, you can create animations, interactive
@@ -90,8 +90,8 @@ export default function ThisYear() {
                 next level.
             </p>
 
-            <h2>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</h2>
-            <h3><i>Problem Solving with Python</i></h3>
+            <h2>Problem Solving with Python</h2>
+            <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
             <p>
                 Python is one of the most readable programming languages, and the 
                 robust Python community has built out powerful applications for the 

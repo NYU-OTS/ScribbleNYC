@@ -37,9 +37,11 @@ export default function FAQ() {
 
             <h2>How much does it cost?</h2>
             <p>
-                If you purchase tickets as a group to compete, they are 
-                $15 per person. Groups are limited to five people (four
-                students and one adult chaperone).
+                General admission tickets cost $20. However, if you 
+                purchase tickets as a group, it is $15 per person. 
+                Groups are limited to five people (four students and 
+                one adult chaperone) and expected to participate in the 
+                design-a-thon.
             </p>
 
             <h2>How many people can be on a team for the design-a-thon?</h2>
