@@ -47,7 +47,7 @@ export default function ThisYear() {
             </p>
 
             <h2>Discovering Design with Robots!</h2>
-            <h3><i>Parthavi Nerurkar from siSTEM.io</i></h3>
+            <h3><i>Parthavi Nerurkar, Sanika Pande, and Neha Sudarshan from siSTEM.io</i></h3>
             <p>
                 Discover a new tomorrow with robots! Kickstart your journey into the
                 field of robotics by learning the basics of robot building from FTC
@@ -61,7 +61,7 @@ export default function ThisYear() {
             </p>
 
             <h2>Making Your Design Resonate: Storytelling Great UX Designs</h2>
-            <h3><i>Hyobin Im from NYU IT STIT</i></h3>
+            <h3><i>Hyobin Im and Maria Shin from NYU IT STIT</i></h3>
             <p>
                 Stories excite us. Therefore, storytelling is a crucial skill that
                 designers should develop to make their work resonate for clients and
