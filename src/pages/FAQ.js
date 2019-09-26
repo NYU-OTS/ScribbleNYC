@@ -23,7 +23,11 @@ export default function FAQ() {
         <main key='2' className='information'>
             <h2>What should I bring to Scribble NYC?</h2>
             <p>
-                Please bring a valid student or government ID.
+                Please bring the signed&nbsp;
+                <a href="https://drive.google.com/open?id=1pnBufeiSjfhqYajQZNNH85s9jXhwa-QLVuuG7qRK5d0"  target="_blank">liability waiver</a>
+                , the signed&nbsp;
+                <a href="https://drive.google.com/open?id=13JRgCMZjTXoXK1NjPXHmZG8rvYCibimSzLZEGxazSKs"  target="_blank">photo/video release form</a>
+                , and a valid student or government ID.
                 We also recommend attendees to bring laptops,
                 as some workshops be heavily reliant on a laptop.
             </p>
