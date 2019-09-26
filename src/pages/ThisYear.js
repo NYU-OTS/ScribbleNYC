@@ -25,15 +25,11 @@ export default function ThisYear() {
             <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
             <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
 
-<<<<<<< HEAD
-            <h2>~ Workshops ~</h2>
-=======
             <div className='divider-button-holder'>
                 <divider-bubbles></divider-bubbles>
             </div>
 
             <h2>Workshops</h2>
->>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
                 From learning to code to navigating how to work as a
                 team, sit in on the workshops that interest you and
@@ -85,11 +81,7 @@ export default function ThisYear() {
             </p>
 
             <h2>Art and Animation with P5.js</h2>
-<<<<<<< HEAD
-            <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
-=======
             <h3><i>Daniel Fenjves, Taylor Want, and Jeff Olson from Upperline Code</i></h3>
->>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
                 p5.js is one of the most powerful and beginner-friendly text-based
                 introductions to code. With it, you can create animations, interactive
@@ -103,11 +95,7 @@ export default function ThisYear() {
             </p>
 
             <h2>Problem Solving with Python</h2>
-<<<<<<< HEAD
-            <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
-=======
             <h3><i>Daniel Fenjves, Taylor Want, and Jeff Olson from Upperline Code</i></h3>
->>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
                 Python is one of the most readable programming languages, and the
                 robust Python community has built out powerful applications for the

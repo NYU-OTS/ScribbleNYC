@@ -37,18 +37,10 @@ export default function FAQ() {
 
             <h2>How much does it cost?</h2>
             <p>
-<<<<<<< HEAD
-                General admission tickets cost $20. However, if you 
-                purchase tickets as a group, it is $15 per person. 
-                Groups are limited to five people (four students and 
-                one adult chaperone) and expected to participate in the 
-                design-a-thon.
-=======
                 General admission tickets cost $20. However, if you purchase
                 tickets as a group, it is $15 per person. Groups are limited to
                 five people (four students and one adult chaperone) and expected
                 to participate in the design-a-thon.
->>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             </p>
 
             <h2>How many people can be on a team for the design-a-thon?</h2>
