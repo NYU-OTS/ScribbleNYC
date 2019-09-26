@@ -132,7 +132,7 @@ export default function ThisYear() {
             <h2>Competition Themes</h2>
             <p>
                 While it is not required to adhere to the themes, these are the
-                topics we've decided to focus on for this year:
+                topics we've decided to focus on for this year:<br/>
                 Environmental impact <br/>
                 Safer society <br/>
                 Connecting outside your school
