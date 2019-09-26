@@ -16,7 +16,7 @@ export default function ThisYear() {
     useEffect(() => {
         window.scrollTo({ top: 0 });
     }, []);
-    
+
     return <div className='page this-year'>
         <NavigationBar />
 
@@ -25,7 +25,15 @@ export default function ThisYear() {
             <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
             <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
 
+<<<<<<< HEAD
             <h2>~ Workshops ~</h2>
+=======
+            <div className='divider-button-holder'>
+                <divider-bubbles></divider-bubbles>
+            </div>
+
+            <h2>Workshops</h2>
+>>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
                 From learning to code to navigating how to work as a
                 team, sit in on the workshops that interest you and
@@ -35,49 +43,53 @@ export default function ThisYear() {
             <h2>We’re all in this together: Getting better at generating and developing ideas as a team</h2>
             <h3><i>Kwok Yin Mak and Marco Coppeto from Ueno</i></h3>
             <p>
-                This workshop will explore several ways for teams to get better at generating and 
-                developing design ideas collaboratively, using a general framework for creative 
-                teamwork that can be applied to many different scenarios (not just design). The 
-                workshop introduces a basic set of principles that teams can use to get better 
+                This workshop will explore several ways for teams to get better at generating and
+                developing design ideas collaboratively, using a general framework for creative
+                teamwork that can be applied to many different scenarios (not just design). The
+                workshop introduces a basic set of principles that teams can use to get better
                 at coming up with ideas, selecting and developing them together.
             </p>
 
             <h2>Discovering Design with Robots!</h2>
             <h3><i>Parthavi Nerurkar from siSTEM.io</i></h3>
             <p>
-                Discover a new tomorrow with robots! Kickstart your journey into the 
-                field of robotics by learning the basics of robot building from FTC 
+                Discover a new tomorrow with robots! Kickstart your journey into the
+                field of robotics by learning the basics of robot building from FTC
                 team siSTEM.io, who has been successfully building competitive robots
                 as well as teaching diverse audiences for the last five years. This
                 workshop will teach you the industrial design approach for robot
-                building which consists of brainstorming the problem, designing, 
-                prototyping, building and testing the robot that you built. It’s as 
-                close to real-world engineering as you as a student can get. It will 
+                building which consists of brainstorming the problem, designing,
+                prototyping, building and testing the robot that you built. It’s as
+                close to real-world engineering as you as a student can get. It will
                 be challenging and fun at the same time!
             </p>
 
             <h2>Making Your Design Resonate: Storytelling Great UX Designs</h2>
             <h3><i>Hyobin Im from NYU IT STIT</i></h3>
             <p>
-                Stories excite us. Therefore, storytelling is a crucial skill that 
-                designers should develop to make their work resonate for clients and 
-                users. The goal of this workshop is to teach students the benefits 
-                of storytelling when presenting UX designs and possible approaches to 
-                take when pitching or creating case studies. By incorporating case 
-                studies such as Find My Club and Print Status, made by students on the 
-                NYU Student Technology Innovation Team, this workshop will address how 
+                Stories excite us. Therefore, storytelling is a crucial skill that
+                designers should develop to make their work resonate for clients and
+                users. The goal of this workshop is to teach students the benefits
+                of storytelling when presenting UX designs and possible approaches to
+                take when pitching or creating case studies. By incorporating case
+                studies such as Find My Club and Print Status, made by students on the
+                NYU Student Technology Innovation Team, this workshop will address how
                 to emphasize UX designs through storytelling.
             </p>
-            
+
             <h2>An Exploration of Machine Learning</h2>
-            <h3><i>NYU IT OTSS</i></h3>
+            <h3><i>Rajat Bapuri, Sean Nordquist, and Andrew Xiao from NYU IT OTSS</i></h3>
             <p>
-                Get introduced to machine learning and learn about how it affects our 
+                Get introduced to machine learning and learn about how it affects our
                 everyday lives.
             </p>
 
             <h2>Art and Animation with P5.js</h2>
+<<<<<<< HEAD
             <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
+=======
+            <h3><i>Daniel Fenjves, Taylor Want, and Jeff Olson from Upperline Code</i></h3>
+>>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
                 p5.js is one of the most powerful and beginner-friendly text-based
                 introductions to code. With it, you can create animations, interactive
@@ -91,17 +103,51 @@ export default function ThisYear() {
             </p>
 
             <h2>Problem Solving with Python</h2>
+<<<<<<< HEAD
             <h3><i>Daniel Fenjves, Taylor Want, Jeff Olson from Upperline Code</i></h3>
+=======
+            <h3><i>Daniel Fenjves, Taylor Want, and Jeff Olson from Upperline Code</i></h3>
+>>>>>>> 07a20c2d56cdf994f14f19342afe50dc6289d4e9
             <p>
-                Python is one of the most readable programming languages, and the 
-                robust Python community has built out powerful applications for the 
-                language. It’s one of the core languages used at Google, and since 
-                it’s both readable and powerful, it can be a great language for both 
-                beginner and expert developers. In this workshop, we’ll cover the 
-                skills students will need to create a command-line application. Using 
-                Python, students will have a chance to build a command-line chatbot, a 
-                calculator, a mad-lib, or an adventure game in the style of early 
+                Python is one of the most readable programming languages, and the
+                robust Python community has built out powerful applications for the
+                language. It’s one of the core languages used at Google, and since
+                it’s both readable and powerful, it can be a great language for both
+                beginner and expert developers. In this workshop, we’ll cover the
+                skills students will need to create a command-line application. Using
+                Python, students will have a chance to build a command-line chatbot, a
+                calculator, a mad-lib, or an adventure game in the style of early
                 classics like Adventure or Oregon Trail.
+            </p>
+
+            <h2>Getting Started with Coding and Sphero Maze Challenge</h2>
+            <h3><i>Taught by representatives from Apple Inc.</i></h3>
+            <p>
+                Help a Sphero robot navigate obstacles using code in the Sphero
+                Edu app on iPad. Explore block-based coding by programming simple
+                movements, changing colors, and more. Set up obstacles and use
+                iPad to program a path for their robot to navigate. iPad devices
+                will be provided, or bring your own.
+            </p>
+
+            <h2>Editing Video on Mac and Creating Stories with Clips</h2>
+            <h3><i>Taught by representatives from Apple Inc.</i></h3>
+            <p>
+                Learn how to create visual stories the free Clips app on iPad.
+                You’ll collaborate with others and create a short video to share.
+                Bring your iPad or we’ll provide one.
+            </p>
+
+            <div className='divider-button-holder'>
+                <divider-bubbles></divider-bubbles>
+            </div>
+            <h2>Competition Themes</h2>
+            <p>
+                While it is not required to adhere to the themes, these are the
+                topics we've decided to focus on for this year:<br/>
+                Environmental impact <br/>
+                Safer society <br/>
+                Connecting outside your school
             </p>
 
             {/* <h2>Art + Code with p5</h2>
