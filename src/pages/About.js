@@ -28,7 +28,7 @@ export default function About() {
     return <div className='page about'>
         <NavigationBar />
 
-        <img src={BubbleBackground} className='bubble-background' />
+        <img tabIndex={-1} aria-hidden='true' src={BubbleBackground} className='bubble-background' />
         <main key='3' className='information'>
             <h2>What is Scribble NYC?</h2>
             <p>
@@ -81,11 +81,11 @@ export default function About() {
                 The below companies have generously donated workshops,
                 prizes, and other resources as sponsors of Scribble NYC.
             </p>
-            <div className="sponsors">
-              <img src={NYU} alt='NYU' height={80}/>
-              <img src={Ueno} alt='Ueno' height={80}/>
-              <img src={Upperline} alt='Upperline Code' height={80}/>
-              <img src={Apple} alt='Apple' height={80}/>
+            <div className="sponsors" aria-label='Sponsors for this event are: NYU, Ueno, Upperline Code, Apple'>
+              <img tabIndex={-1} aria-hidden='true' src={NYU} alt='NYU' height={80}/>
+              <img tabIndex={-1} aria-hidden='true' src={Ueno} alt='Ueno' height={80}/>
+              <img tabIndex={-1} aria-hidden='true' src={Upperline} alt='Upperline Code' height={80}/>
+              <img tabIndex={-1} aria-hidden='true' src={Apple} alt='Apple' height={80}/>
             </div>
         </main>
         <Footer />

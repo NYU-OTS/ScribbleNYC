@@ -15,7 +15,7 @@ export default function NavigationBar() {
     return <nav className='navigation-bar'>
         <span className={showingMobileNav ? 'fas fa-times' : 'fa fa-bars'} onClick={() => {
             setShowMobileNav(!showingMobileNav);
-        }}></span>
+        }} tabIndex={0} aria-hidden='true'></span>
         <Media query='(max-width: 768px)'>{ matches => matches ?
             (showingMobileNav ? <MobileNav /> : '')
             :
@@ -23,6 +23,7 @@ export default function NavigationBar() {
         }</Media>
 
         <img className='nav-image' src={ScribbleLogo} alt='Scribble NYC Logo'
+            tabIndex={0} aria-hidden='true'
             onClick={() => {
                 window.location.href = '/';
             }}/>

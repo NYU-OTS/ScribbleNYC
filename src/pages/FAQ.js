@@ -19,7 +19,7 @@ export default function FAQ() {
     return <div className='page faq'>
         <NavigationBar />
 
-        <img key='1' className='bubble-background' src={BubbleBackground}/>,
+        <img tabIndex={-1} aria-hidden='true' key='1' className='bubble-background' src={BubbleBackground}/>,
         <main key='2' className='information'>
             <h2>What should I bring to Scribble NYC?</h2>
             <p>

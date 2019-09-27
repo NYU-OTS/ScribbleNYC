@@ -20,12 +20,12 @@ export default function ThisYear() {
     return <div className='page this-year'>
         <NavigationBar />
 
-        <img key='1' className='bubble-background' src={BubbleBackground}/>,
+        <img tabIndex={-1} aria-hidden='true' key='1' className='bubble-background' src={BubbleBackground}/>,
         <main key='2' className='information'>
-            <img src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
-            <img src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
+            <img tabIndex={-1} aria-hidden='true' src={ScheduleGraphic} className='preview-image' id='schedule-image-1' />
+            <img tabIndex={-1} aria-hidden='true' src={ScheduleLeft} className='preview-image' id='schedule-image-2' />
 
-            <div className='divider-button-holder'>
+            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
                 <divider-bubbles></divider-bubbles>
             </div>
 
@@ -126,9 +126,10 @@ export default function ThisYear() {
                 Bring your iPad or we’ll provide one.
             </p>
 
-            <div className='divider-button-holder'>
+            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
                 <divider-bubbles></divider-bubbles>
             </div>
+            
             <h2>Competition Themes</h2>
             <p>
                 While it is not required to adhere to the themes, these are the
@@ -137,24 +138,6 @@ export default function ThisYear() {
                 Safer society <br/>
                 Connecting outside your school
             </p>
-
-            {/* <h2>Art + Code with p5</h2>
-            <p>Taylor Want and Jeff Olson from UpperlineCode</p>
-
-            <h2>Editing Video on Mac and Video Stories with Clips</h2>
-            <p>Juliana Velez and Anthony Morales from Apple Inc.</p>
-
-            <h2>Virtual Reality</h2>
-            <p>Taylor Want and Jeff Olson from UpperlineCode</p>
-
-            <h2>Getting Started with Coding and Sphero Maze Challenge</h2>
-            <p>Juliana Velez and Anthony Morales from Apple Inc.</p>
-
-            <h2>Robotics Design</h2>
-            <p>Parthavi Nerurkar from siStem.io</p>
-
-            <h2>Ueno</h2>
-            <p>- Coming Soon -</p> */}
 
             <br/><br/>
             <br/><br/>

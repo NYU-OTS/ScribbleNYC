@@ -5,10 +5,10 @@ import '../styles/DividerBubbles.less';
 export default new Mosaic({
     name: 'divider-bubbles',
     view: () => html`
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div tabIndex={-1} aria-hidden='true'></div>
+    <div tabIndex={-1} aria-hidden='true'></div>
+    <div tabIndex={-1} aria-hidden='true'></div>
+    <div tabIndex={-1} aria-hidden='true'></div>
+    <div tabIndex={-1} aria-hidden='true'></div>
     `
 });

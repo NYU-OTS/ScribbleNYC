@@ -29,7 +29,8 @@ export default function ThisYear() {
     return <div className='page last-year'>
         <NavigationBar />
 
-        <img src={BubbleBackground} className='bubble-background' />
+        <img tabIndex={-1} aria-hidden='true' 
+            src={BubbleBackground} className='bubble-background' />
         <main key='2' className='information'>
             <h2>64 attendees, 8 workshops, one design-a-thon</h2>
             <p>
@@ -51,34 +52,34 @@ export default function ThisYear() {
                 <br/><br/>
                 <b style={{ fontWeight: 'bolder' }}>Workshops Provided:</b>
                 <span>
-                    <li>
+                    <li role='section'>
                         <b>Making the Most of Slack in Product Development</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Designer-Developer Collaboration</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Art + Code with p5</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>How to Earn a Seat on a Rocketship</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Editing Video on Mac and Video Stories with Clips</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Basic 2D Character Assembly for Animations</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Virtual Reality</b>
                     </li>
-                    <li>
+                    <li role='section'>
                         <b>Getting Started with Coding and Sphero Maze Challenge</b>
                     </li>
                 </span>
             </section>
 
-            <div className='image-group'>
+            <div tabIndex={-1} aria-hidden='true' className='image-group'>
                 <img loading='lazy' src={Image1} className='preview-image'/>
                 <img loading='lazy' src={Image2} className='preview-image'/>
                 <img loading='lazy' src={Image3} className='preview-image'/>
@@ -86,7 +87,7 @@ export default function ThisYear() {
                 <img loading='lazy' src={Image5} className='preview-image'/>
             </div>
 
-            <div className='divider-button-holder'>
+            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
                 <divider-bubbles></divider-bubbles>
             </div>
 
@@ -107,10 +108,10 @@ export default function ThisYear() {
                 keep students safe by alerting them and their teacher
                 when they tip in their chair.
             </p>
-            <img loading='lazy' src={Image8} />
+            <img aria-hidden='true' loading='lazy' src={Image8} />
             <br/><br/><br/>
 
-            <div className='divider-button-holder'>
+            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
                 <divider-bubbles></divider-bubbles>
             </div>
 
@@ -122,7 +123,7 @@ export default function ThisYear() {
                 students and school to support academics and provide
                 mental health services.
             </p>
-            <img loading='lazy' src={Image7} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image7} />
             <br/>
 
             <p>
@@ -132,7 +133,7 @@ export default function ThisYear() {
                 students to communicate with teachers, connect to their peers,
                 and streamlines academic planning.
             </p>
-            <img loading='lazy' src={Image6} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image6} />
             <br/>
 
             <p>
@@ -143,11 +144,11 @@ export default function ThisYear() {
                 and connect to their classes. It also allows parents
                 to receive alerts and school updates.
             </p>
-            <img loading='lazy' src={Image9} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image9} />
             <br/>
 
             <a href='/thisyear'>Click to join us again this year!</a>
-            <img loading='lazy' src={Image10} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10} />
         </main>
         <Footer />
     </div>
