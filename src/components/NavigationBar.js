@@ -22,10 +22,14 @@ export default function NavigationBar() {
             ''
         }</Media>
 
-        <img className='nav-image' src={ScribbleLogo} alt='Scribble NYC Logo'
+        <img className='nav-image' src={ScribbleLogo}
+            alt='Scribble NYC Logo'
             tabIndex={0} aria-hidden='true'
             onClick={() => {
                 window.location.href = '/';
+            }}
+            onKeyDown={e => {
+                if(e.keyCode === 13) window.location.href = '/';
             }}/>
 
         <button className='nav-button nav-button-1' onClick={() => window.location.href = '/about'}>About</button>
