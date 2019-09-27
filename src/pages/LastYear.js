@@ -29,7 +29,7 @@ export default function ThisYear() {
     return <div className='page last-year'>
         <NavigationBar />
 
-        <img tabIndex={-1} aria-hidden='true' 
+        <img tabIndex={-1} aria-hidden='true'
             src={BubbleBackground} className='bubble-background' />
         <main key='2' className='information'>
             <h2>64 attendees, 8 workshops, one design-a-thon</h2>
@@ -102,7 +102,7 @@ export default function ThisYear() {
 
             <h2 className='lessMargin'>Grand Prize Winners</h2>
             <p>
-                The Marymount School of Manhattan
+                The Marymount School of New York
                 <br/><br/>
                 Using sound and a warning light, Tipper Stopper aims to
                 keep students safe by alerting them and their teacher
