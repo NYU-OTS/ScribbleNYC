@@ -21,21 +21,19 @@ export default function NavigationBar() {
             :
             ''
         }</Media>
-        
-        <div id="navOptions">
-          <a href = '/' aria-hidden='false'>
-            <img className='nav__logo' src={ScribbleLogo}
-                alt='Scribble NYC Logo'
-                tabIndex={0}/>
-          </a>
-          <div>
-            <a className='nav__button' href='/about' id="aboutButton">About</a>
-            <a className='nav__button' href='/lastyear' id="lastYearButton">Last Year</a>
-            <a className='nav__button' href='/thisyear' id="thisYearButton">This Year</a>
-            <a className='nav__button' href='/faq' id="faqButton">FAQs</a>
-            <button className='nav__button nav__signupButton'
-                onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
-          </div>
+
+        <a href = '/' aria-hidden='false'>
+          <img className='nav__logo' src={ScribbleLogo}
+              alt='Scribble NYC Logo'
+              tabIndex={0}/>
+        </a>
+        <div>
+          <a className='nav__button' href='/about' id="aboutButton">About</a>
+          <a className='nav__button' href='/lastyear' id="lastYearButton">Last Year</a>
+          <a className='nav__button' href='/thisyear' id="thisYearButton">This Year</a>
+          <a className='nav__button' href='/faq' id="faqButton">FAQs</a>
+          <button className='nav__button nav__signupButton'
+              onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
         </div>
     </nav>
 }

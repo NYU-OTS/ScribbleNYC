@@ -81,24 +81,26 @@
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-    // .navigation-bar {
-    //     text-align: left;
-    //
-    //     // Only show the hamburger menu on mobile.
-    //     span[class="fa fa-bars"], span[class="fas fa-times"] {
-    //         display: block;
-    //     }
-    //
-    //     // Hide everything else on mobile.
-    //     & > .nav-image {
-    //         display: none;
-    //     }
-    //     & > .nav-button {
-    //         display: none;
-    //     }
-    //     & > .primary-button {
-    //         display: none;
-    //     }
-    // }
+    .navigation-bar {
+        text-align: left;
+
+        // Only show the hamburger menu on mobile.
+        span[class="fa fa-bars"], span[class="fas fa-times"] {
+            display: block;
+            position: fixed;
+            left: 0px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        // Hide everything else on mobile.
+        & .nav__logo {
+            display: none;
+        }
+        & .nav__button {
+            display: none;
+        }
+    }
 
 }
