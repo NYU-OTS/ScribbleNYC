@@ -1,38 +1,20 @@
 @import './Index.less';
 
-.organizer-cell {
-    position: relative;
-    width: 180px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: inline-block;
+.organizerCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+  img {
+      width: 130px;
+      height: auto;
+      border-radius: 100%;
+      background-color: lightgray;
+  }
 
-    // The profile image.
-    img {
-        position: relative;
-        width: 130px;
-        height: 130px;
-        border-radius: 100%;
-        background-color: lightgray;
-    }
-    .twister {
-        img {
-            transform: rotateZ(90deg);
-        }
-    }
-
-    // The organizer name.
-    h3 {
-        position: relative;
-        .common-font();
-        margin-top: 10px;
-        margin-bottom: 10px;
-        height: fit-content;
-        font-weight: bolder;
-    }
+  p{
+    text-align: center;
+    margin-top: 10px;
+  }
 }

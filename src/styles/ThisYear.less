@@ -1,94 +1,32 @@
 @import './Index.less';
 
-.this-year {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    text-align: center;
-
-    // Make sure that the back to top button on this page is white.
-    .back-to-top-button {
-        color: black;
-    }
-
-    // The background bubbles.
-    .bubble-background {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        // background-repeat: repeat;
-        // background-image: url('../images//LooseLeafBackground.svg');
-    }
-
-    // The main information section of the page.
-    // The main information section.
-    .information {
-        position: relative;
-        z-index: 2;
-        height: 100%;
-        display: block;
-        .common-font();
-        padding-top: 20px;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-        // display: none;
-        // background-repeat: repeat;
-        // background-image: url('../images//LooseLeafBackground.svg');
-
-         // The section titles.
-         h2 {
-            position: relative;
-            .common-font();
-            margin-top: 0px;
-            font-size: 30px;
-            line-height: 1.33;
-            margin-bottom: 0px;
-            font-weight: bolder;
-        }
-        
-        // The workshop leaders.
-        h3 {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        // The descriptions.
-        p, section {
-            position: relative;
-            font-size: 16px;
-            line-height: 30px;
-            font-style: normal;
-            font-weight: normal;
-            margin-bottom: 80px;
-            font-family: Poppins;
-        }
-
-        // The large image previews of the event.
-        .preview-image {
-            position: relative;
-            left: 0%;
-            width: 100%;
-            // height: 944px;
-            margin-bottom: 50px;
-        }
-
-        // Hide the left schedule on desktop, and vice versa on mobile.
-        #schedule-image-1 {
-            display: block;
-        }
-        #schedule-image-2 {
-            display: none;
-        }
-    } // End of ".information"
-
-    // The title of the page.
+#schedule-image-1{
+  width: 150%;
+  height: auto;
 }
 
+.thisYear__h3{
+  width: 100%;
+  text-align: left;
+}
+
+.section__leader{
+  width: 100%;
+  text-align: left;
+  margin: 5px 0px;
+}
+
+.section__description{
+  width: 100%;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-
+  #schedule-image-1{
+    width: 100%;
+    height: auto;
+  }
 }

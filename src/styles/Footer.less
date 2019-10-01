@@ -1,10 +1,9 @@
 @import './Index.less';
 
 footer {
-    position: relative;
     width: 100%;
-    margin: 0px;
-    padding: 25px 15px;
+    margin: 100px 0px 0px 0px;
+    padding: 25px 40px;
     box-sizing: border-box;
     text-align: center;
     background-color: white;
@@ -12,20 +11,26 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #D5EFF6;
 
     img {
-      margin: 0px !important;
+      margin: 0px;
       width: 70px;
       height: auto;
     }
 
-    p {
+    .footer-text {
       font-size: 14px;
       font-family: 'Noto Sans';
+      margin: 0px;
+      text-align: center;
     }
 
     button{
       height: 40px;
+      &:focus {
+          background-color: #AB6503;
+      }
     }
 }
 
@@ -33,41 +38,18 @@ footer {
 // Media Queries:
 @media not screen and (min-width: 768px) {
     footer {
-        position: relative;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
 
-        // Make the image smaller so it fits on the page better.
-        img {
-            position: relative;
-            left: 0px;
-            width: 70px;
-            height: 70px;
-            display: block;
-            padding-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            margin-bottom: 20px;
+        button{
+          margin-top: 50px;
         }
 
-        // The footer description should align to the right to
-        // fit better.
-        .footer-text {
-            position: relative;
-            width: 50%;
-            display: block;
-            font-size: 14px;
-            margin-top: 0px;
-            padding-left: 0px;
-            text-align: center;
-            padding-right: 0px;
-            margin-bottom: 20px;
-        }
-
-        // Remove the sign up button, it doesn't really need to
-        // be there on mobile.
-        button {
-            display: none;
+        img{
+          display: none;
         }
     }
 }

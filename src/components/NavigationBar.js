@@ -21,22 +21,21 @@ export default function NavigationBar() {
             :
             ''
         }</Media>
-
-        <img className='nav-image' src={ScribbleLogo}
-            alt='Scribble NYC Logo'
-            tabIndex={0} aria-hidden='true'
-            onClick={() => {
-                window.location.href = '/';
-            }}
-            onKeyDown={e => {
-                if(e.keyCode === 13) window.location.href = '/';
-            }}/>
-
-        <button className='nav-button nav-button-1' onClick={() => window.location.href = '/about'}>About</button>
-        <button className='nav-button nav-button-2' onClick={() => window.location.href = '/lastyear'}>Last Year</button>
-        <button className='nav-button nav-button-3' onClick={() => window.location.href = '/thisyear'}>This Year</button>
-        <button className='nav-button nav-button-4' onClick={() => window.location.href = '/faq'}>FAQs</button>
-        <button className='primary-button'
-            onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
+        
+        <div id="navOptions">
+          <a href = '/' aria-hidden='false'>
+            <img className='nav__logo' src={ScribbleLogo}
+                alt='Scribble NYC Logo'
+                tabIndex={0}/>
+          </a>
+          <div>
+            <a className='nav__button' href='/about' id="aboutButton">About</a>
+            <a className='nav__button' href='/lastyear' id="lastYearButton">Last Year</a>
+            <a className='nav__button' href='/thisyear' id="thisYearButton">This Year</a>
+            <a className='nav__button' href='/faq' id="faqButton">FAQs</a>
+            <button className='nav__button nav__signupButton'
+                onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>Sign Up!</button>
+          </div>
+        </div>
     </nav>
 }

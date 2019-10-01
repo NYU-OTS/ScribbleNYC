@@ -2,15 +2,17 @@
 
 // The navigation bar component.
 .navigation-bar {
-    position: relative;
+    position: fixed;
     top: 0px;
     left: 0px;
-    right: 0px;
-    z-index: 10;
-    height: 69px;
-    text-align: right;
-    padding-top: 10px;
-    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    z-index: 100;
 
     // Hide the hamburger menu on desktop.
     span[class="fa fa-bars"], span[class="fas fa-times"] {
@@ -24,77 +26,79 @@
         color: rgb(83, 83, 83);
     }
 
-    // The logo image should always stick to the left side of the screen.
-    .nav-image {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        width: 69px;
-        height: 69px;
-        cursor: pointer;
+    .nav__logo {
+        width: 70px;
+        height: auto;
+        background-color: white;
+        padding: 5px;
+        border-radius: 100px;
     }
 
-    // The buttons, except for the sign up button, should have the same styles.
-    .nav-button {
-        position: relative;
-        top: 10px;
-        border: none;
-        outline: none;
-        .common-font();
-        font-size: 16px;
-        cursor: pointer;
-        background: none;
-        margin-right: 30px;
+    .nav__button {
         text-decoration: none;
-
-        // When you hover over them, underline it and color it appropriately.
-        &:hover {
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-        &:focus {
-            padding-top: 8px;
-            border-radius: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 8px;
-            background-color: rgb(231, 231, 231);
-        }
+        margin-left: 50px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        color: #333;
+        background-color: rgba(255,255,255,0.9);
+        padding: 5px 10px;
+        border-radius: 10px;
     }
-    .nav-button-1:hover { color: @red; }
-    .nav-button-2:hover { color: @yellow; }
-    .nav-button-3:hover { color: @green; }
-    .nav-button-4:hover { color: @blue; }
+    #aboutButton{
+      &:hover, &:focus{
+        background-color: #EDA1A2;
+      }
+    }
+    #lastYearButton{
+      &:hover, &:focus{
+        background-color: #FCC57E;
+      }
+    }
+    #thisYearButton{
+      &:hover, &:focus{
+        background-color: #90CBE4;
+      }
+    }
+    #faqButton{
+      &:hover, &:focus{
+        background-color: #68D3D2;
+      }
+    }
 
-    // The sign up button shouldn't be so close to the right.
-    .primary-button {
-        position: relative;
-        top: 5px;
-        font-size: 15px;
-        margin-right: 40px;
+    .nav__signupButton {
+        color: white;
+        background-color: #237A9F;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 4px;
+        &:hover, &:focus {
+            background-color: #AB6503;
+            cursor: pointer;
+        }
     }
 }
 
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-    .navigation-bar {
-        text-align: left;
+    // .navigation-bar {
+    //     text-align: left;
+    //
+    //     // Only show the hamburger menu on mobile.
+    //     span[class="fa fa-bars"], span[class="fas fa-times"] {
+    //         display: block;
+    //     }
+    //
+    //     // Hide everything else on mobile.
+    //     & > .nav-image {
+    //         display: none;
+    //     }
+    //     & > .nav-button {
+    //         display: none;
+    //     }
+    //     & > .primary-button {
+    //         display: none;
+    //     }
+    // }
 
-        // Only show the hamburger menu on mobile.
-        span[class="fa fa-bars"], span[class="fas fa-times"] {
-            display: block;
-        }
-
-        // Hide everything else on mobile.
-        & > .nav-image {
-            display: none;
-        }
-        & > .nav-button {
-            display: none;
-        }
-        & > .primary-button {
-            display: none;
-        }
-    }
 }

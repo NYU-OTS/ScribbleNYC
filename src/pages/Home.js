@@ -2,11 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
 import ScribbleLogo from '../images/ScribbleLogo.svg';
+
 import BubbleBackground from '../images/SlideTemplateFull.png';
-// import GreenBubble from '../images/GreenBubble1.svg';
-// import RedBubble from '../images/RedBubble1.svg';
-// import YellowBubble from '../images/YellowBubble1.svg';
-// import BlueBubble from '../images/BlueBubble1.svg';
 
 import '../styles/Home.less';
 
@@ -19,35 +16,34 @@ export default function Home() {
     const [goFAQ, setGoFAQ] = useState(false);
 
     // 2.) Return the component.
-    return <div className='page home'>
-        <main className='signup-holder'>
-            <img src={ScribbleLogo} alt='Scribble NYC Logo'/>
-            <button className='primary-button'
-                tabIndex={0}
-                onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
-                Sign Up!
-            </button>
-        </main>
-        
-       <button className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
-            Last Year
-        </button>
-       <button className='color-button' tabIndex={0} onClick={() => setGoAbout(true)}>
-            About
-        </button>
-       <button className='color-button' tabIndex={0} onClick={() => setGoFAQ(true)}>
-            FAQs
-        </button>
-       <button className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
-            This Year
-        </button>
+    return <main class="home">
+      <img id='home-background' src={BubbleBackground} alt=""></img>
+      <div class="layout">
+          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'/>
+          <button className='primary-button layout__button--signup'
+              tabIndex={0}
+              onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
+              Sign Up!
+          </button>
 
-       {/* <img id='home-background' src={BubbleBackground}/> */}
-       <img id='home-background' src={BubbleBackground}></img>
+         <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
+              This Year
+          </button>
+          <button id="aboutButton" className='color-button' tabIndex={0} onClick={() => setGoAbout(true)}>
+              About
+          </button>
+          <button id="faqButton" className='color-button' tabIndex={0} onClick={() => setGoFAQ(true)}>
+              FAQs
+          </button>
+          <button id="lastYearButton" className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
+              Last Year
+          </button>
 
-        { goAbout && <Redirect to='/about'/> }
-        { goLastYear && <Redirect to='/lastyear'/> }
-        { goThisYear && <Redirect to='/thisyear'/> }
-        { goFAQ && <Redirect to='/faq'/> }
-    </div>
+          { goAbout && <Redirect to='/about'/> }
+          { goLastYear && <Redirect to='/lastyear'/> }
+          { goThisYear && <Redirect to='/thisyear'/> }
+          { goFAQ && <Redirect to='/faq'/> }
+        </div>
+      </main>
+
 }

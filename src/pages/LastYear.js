@@ -3,9 +3,7 @@ import React, { useState, useEffect } from 'react';
 import NavigationBar from '../components/NavigationBar.js';
 import CollectionView from '../components/CollectionView.js';
 import Footer from '../components/Footer.js';
-import '../components/DividerBubbles';
 
-import BubbleBackground from '../images/NewLastYearBackground.svg';
 import Image1 from '../images/LastYear/Image3.JPG';
 import Image2 from '../images/LastYear/Image2.JPG';
 import Image3 from '../images/LastYear/Image1.JPG';
@@ -16,7 +14,10 @@ import Image7 from '../images/LastYear/Image7.JPG';
 import Image8 from '../images/LastYear/Image8.JPG';
 import Image9 from '../images/LastYear/Image9.JPG';
 import Image10 from '../images/LastYear/Image10.JPG';
+import DividerBubbles from '../images/dividerBubbles.png';
+import '../styles/styles.less';
 import '../styles/LastYear.less';
+import BubbleBackground from '../images/Experiment1.svg'
 
 
 // The page describing the event for this year.
@@ -26,12 +27,15 @@ export default function ThisYear() {
         window.scrollTo({ top: 0 });
     }, []);
 
-    return <div className='page last-year'>
+    return <div className='root'>
         <NavigationBar />
 
-        <img tabIndex={-1} aria-hidden='true'
-            src={BubbleBackground} className='bubble-background' />
-        <main key='2' className='information'>
+        <div class="pageTitle">
+          <h1>Last Year</h1>
+          <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
+        </div>
+
+        <main key='2' class="main">
             <h2>64 attendees, 8 workshops, one design-a-thon</h2>
             <p>
                 Middle school and high school students from all over
@@ -43,53 +47,35 @@ export default function ThisYear() {
             </p>
 
             <h2>Workshops</h2>
-            <section>
+                <p>
                 Teams started the day by participating in a series
                 of workshops where they learned how to articulate
                 a project concept, design a solution based program,
                 and develop a system prototype.
+                <br/>
+                <br/>
+                Workshops provided:
+                <ul>
+                    <li>Making the Most of Slack in Product Development</li>
+                    <li>Designer-Developer Collaboration</li>
+                    <li>Art + Code with p5</li>
+                    <li>How to Earn a Seat on a Rocketship</li>
+                    <li>Editing Video on Mac and Video Stories with Clips</li>
+                    <li>Basic 2D Character Assembly for Animations</li>
+                    <li>Virtual Reality</li>
+                    <li>Getting Started with Coding and Sphero Maze Challenge</li>
+                </ul>
+            </p>
 
-                <br/><br/>
-                <b style={{ fontWeight: 'bolder' }}>Workshops Provided:</b>
-                <span>
-                    <li role='section'>
-                        <b>Making the Most of Slack in Product Development</b>
-                    </li>
-                    <li role='section'>
-                        <b>Designer-Developer Collaboration</b>
-                    </li>
-                    <li role='section'>
-                        <b>Art + Code with p5</b>
-                    </li>
-                    <li role='section'>
-                        <b>How to Earn a Seat on a Rocketship</b>
-                    </li>
-                    <li role='section'>
-                        <b>Editing Video on Mac and Video Stories with Clips</b>
-                    </li>
-                    <li role='section'>
-                        <b>Basic 2D Character Assembly for Animations</b>
-                    </li>
-                    <li role='section'>
-                        <b>Virtual Reality</b>
-                    </li>
-                    <li role='section'>
-                        <b>Getting Started with Coding and Sphero Maze Challenge</b>
-                    </li>
-                </span>
-            </section>
-
-            <div tabIndex={-1} aria-hidden='true' className='image-group'>
-                <img loading='lazy' src={Image1} className='preview-image'/>
-                <img loading='lazy' src={Image2} className='preview-image'/>
-                <img loading='lazy' src={Image3} className='preview-image'/>
-                <img loading='lazy' src={Image4} className='preview-image'/>
-                <img loading='lazy' src={Image5} className='preview-image'/>
+            <div tabIndex={-1} aria-hidden='true' className='imageGroup'>
+                <img loading='lazy' src={Image1} className='previewImage'/>
+                <img loading='lazy' src={Image2} className='previewImage'/>
+                <img loading='lazy' src={Image3} className='previewImage' id="middleImage"/>
+                <img loading='lazy' src={Image4} className='previewImage'/>
+                <img loading='lazy' src={Image9} className='previewImage'/>
             </div>
 
-            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
-                <divider-bubbles></divider-bubbles>
-            </div>
+            <img src={DividerBubbles} class="dividerBubble"/>
 
             <h2>The Competition</h2>
             <p>
@@ -100,55 +86,55 @@ export default function ThisYear() {
                 schools, and the tech community.
             </p>
 
-            <h2 className='lessMargin'>Grand Prize Winners</h2>
-            <p>
-                The Marymount School of New York
-                <br/><br/>
-                Using sound and a warning light, Tipper Stopper aims to
-                keep students safe by alerting them and their teacher
-                when they tip in their chair.
-            </p>
-            <img aria-hidden='true' loading='lazy' src={Image8} />
-            <br/><br/><br/>
+            <section id="grandPrizeWinners">
+              <h2>Grand Prize Winners</h2>
+              <p>
+                  <b>The Marymount School of New York</b>
+                  <br/>
+                  Using sound and a warning light, Tipper Stopper aims to
+                  keep students safe by alerting them and their teacher
+                  when they tip in their chair.
+              </p>
+              <img aria-hidden='true' loading='lazy' src={Image8} />
+              <br/><br/><br/>
+            </section>
 
-            <div tabIndex={-1} aria-hidden='true' className='divider-button-holder'>
-                <divider-bubbles></divider-bubbles>
-            </div>
+            <img src={DividerBubbles} class="dividerBubble"/>
 
-            <h2>More Winners</h2>
+            <section id="moreWinners">
+            <h2 class="moreMargin">More Winners</h2>
             <p>
-                Middle School 217
-                <br/><br/>
+                <b>Middle School 217</b>
+                <br/>
                 An online peer support network that brings together
                 students and school to support academics and provide
                 mental health services.
             </p>
             <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image7} />
-            <br/>
 
             <p>
-                Thomas A. Edison High School
-                <br/><br/>
+                <b>Thomas A. Edison High School</b>
+                <br/>
                 An application centered around student life that allows
                 students to communicate with teachers, connect to their peers,
                 and streamlines academic planning.
             </p>
             <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image6} />
-            <br/>
 
             <p>
-                Brooklyn Emerging Leaders Academy Charter High School
-                <br/><br/>
+                <b>Brooklyn Emerging Leaders Academy Charter High School</b>
+                <br/>
                 A school application that allows students to chat,
                 receive important reminders about tests and quizzes,
                 and connect to their classes. It also allows parents
                 to receive alerts and school updates.
             </p>
-            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image9} />
-            <br/>
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image5} />
+            </section>
 
-            <a href='/thisyear'>Click to join us again this year!</a>
-            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10} />
+            <img src={DividerBubbles} class="dividerBubble"/>
+            <a id="comeAgain" href='/thisyear'>Click to join us again this year on November 2nd, 2019!</a>
+            <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10} />
         </main>
         <Footer />
     </div>

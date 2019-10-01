@@ -5,155 +5,84 @@
 
 
 // The home page with the options to take you to different pages.
-.home {
-    position: relative;
-    top: 0px;
-    left: 0px;
+html, body, #root, .app{
+  height: 100%;
+}
+.home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-background{
+    z-index: -100;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-
-    // The image and sign up button in the middle of the home page.
-    .signup-holder {
-        position: relative;
-        top: 45%;
-        width: 25%;
-        z-index: 2;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: fit-content;
-        transform: translateY(-50%);
-    }
-
-    // The bubble background.
-    #home-background {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-    }
-
-    // Every "color-button" on this page should have the same look,
-    // and should show a colorful background on hover.
-    .color-button {
-        position: absolute;
-        z-index: 1;
-        border: none;
-        outline: none;
-        color: black;
-        cursor: pointer;
-        font-size: 28px;
-        background: none;
-        text-decoration: underline;
-        transition-duration: 0.15s;
-        font-family: 'Nanum Pen Script';
-
-        // Hover state should change the text.
-        &:hover {
-            font-weight: bolder;
-        }
-        &:focus {
-            padding-top: 8px;
-            border-radius: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 8px;
-            background-color: rgb(231, 231, 231);
-        }
-
-        // The first one is in the top left corner.
-        &:nth-of-type(1) {
-            top: @offset;
-            left: @offset;
-        }
-
-        // The second one is in the top right corner.
-        &:nth-of-type(2) {
-            top: @offset;
-            right: @offset;
-        }
-
-        // The third one is in the bottom left corner.
-        &:nth-of-type(3) {
-            left: @offset;
-            bottom: @offset;
-        }
-
-        // The fourth one is in the bottom right corner.
-        &:nth-of-type(4) {
-            right: @offset;
-            bottom: @offset;
-        }
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+.layout{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+}
+
+.color-button{
+  border: none;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 36px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#lastYearButton{
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+#aboutButton{
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+#faqButton{
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+#thisYearButton{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#scribbleLogo{
+  width: 100%;
+  height: auto;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.layout__button--signup{
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  padding: 8px 20px;
+  width: 50%;
+  text-align: center;
+}
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-    .home {
-        overflow-y: auto;
-        margin-left: auto;
-        text-align: center;
-        margin-right: auto;
-        
-        // The sign up holder should be bigger to match
-        // the size of the page and the sign up button.
-        .signup-holder {
-            position: relative;
-            top: 5%;
-            width: 50%;
-            margin-bottom: 80px;
-            transform: translateY(0%);
-        }
+    .layout{
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        // The color buttons should not turn white
-        // since the bubbles are hidden.
-        .color-button {
-            position: relative;
-            left: 0px;
-            right: 0px;
-            display: block;
-            font-size: 36px;
-            user-select: none;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            margin-bottom: 50px;
-            
-            &:hover {
-                color: black;
-                font-weight: normal;
-            }
-            &:active {
-                font-weight: bolder;
-            }
-
-            * {
-                user-select: none;
-            }
-
-            &:nth-of-type(1) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(2) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(3) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-            &:nth-of-type(4) {
-                top: 0px;
-                left: 0px;
-                right: 0px;
-            }
-        }
+    #scribbleLogo{
+      width: 50%;
     }
 }
