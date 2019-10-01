@@ -15,7 +15,7 @@ export default function NavigationBar() {
     return <nav className='navigation-bar'>
         <span className={showingMobileNav ? 'fas fa-times' : 'fa fa-bars'} onClick={() => {
             setShowMobileNav(!showingMobileNav);
-        }} tabIndex={0} aria-hidden='true'></span>
+        }} tabIndex={0} aria-hidden='false'></span>
         <Media query='(max-width: 768px)'>{ matches => matches ?
             (showingMobileNav ? <MobileNav /> : '')
             :
