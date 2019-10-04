@@ -19,7 +19,9 @@ export default function Home() {
     return <main class="home">
       <img id='home-background' src={BubbleBackground} alt=""></img>
       <div class="layout">
-          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'/>
+          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
+                aria-hidden='true'/>
+
           <button className='primary-button layout__button--signup'
               tabIndex={0}
               onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
