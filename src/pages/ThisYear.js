@@ -33,7 +33,7 @@ export default function ThisYear() {
               alt="Registration is from 11:30am to 12pm. The first round of workshops run from 12 to 1:20pm. There is a lunch break from 1:20 to 1:40pm. The second round of workshops happen afterwards, running until 3pm. After that, the design-a-thon portion of the day begins and attendees spend two hours honing their designs. At five, judging starts. After judging is finished, we award the winners during the closing ceremony. Everything should end around 6pm."
             />
 
-            <img src={DividerBubbles} class="dividerBubble"/>
+            <img src={DividerBubbles} class="dividerBubble" aria-hidden='true'/>
             <section>
               <h2>Workshops</h2>
               <p>
@@ -148,7 +148,7 @@ export default function ThisYear() {
                   Bring your iPad or we’ll provide one.
               </p>
             </section>
-            <img src={DividerBubbles} class="dividerBubble"/>
+            <img src={DividerBubbles} class="dividerBubble" aria-hidden='true'/>
 
             <section>
               <h2>Competition Themes</h2>
