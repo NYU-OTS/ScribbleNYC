@@ -29,6 +29,11 @@ export default function ThisYear() {
 
         <main key='2' className="main">
             <h2>Join us November 2nd, 2019!</h2>
+            <p>
+              This year, we will once again be at:<br/>
+              6 MetroTech Center<br/>
+              Brooklyn, NY 11201<br/>
+            </p>
             <img tabIndex={-1} src={ScheduleGraphic} id='schedule-image-1'
               alt="Registration is from 11:30am to 12pm. The first round of workshops run from 12 to 1:20pm. There is a lunch break from 1:20 to 1:40pm. The second round of workshops happen afterwards, running until 3pm. After that, the design-a-thon portion of the day begins and attendees spend two hours honing their designs. At five, judging starts. After judging is finished, we award the winners during the closing ceremony. Everything should end around 6pm."
             />
