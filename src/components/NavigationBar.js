@@ -22,7 +22,7 @@ export default function NavigationBar() {
             ''
         }</Media>
 
-        <a href = '/' aria-hidden='false'>
+        <a href = '/' aria-hidden='false' aria-label="navigate back to home page">
           <img className='nav__logo' src={ScribbleLogo}
               alt='Scribble NYC Logo'
               tabIndex={0}/>

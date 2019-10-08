@@ -75,7 +75,7 @@ export default function ThisYear() {
                 <img loading='lazy' src={Image9} alt='Fifth image from Scribble 2018'className='previewImage'/>
             </div>
 
-            <img src={DividerBubbles} class="dividerBubble" aria-hidden='true'/>
+            <img src={DividerBubbles} class="dividerBubble" alt=""/>
 
             <h2>The Competition</h2>
             <p>
@@ -99,7 +99,7 @@ export default function ThisYear() {
               <br/><br/><br/>
             </section>
 
-            <img src={DividerBubbles} class="dividerBubble" aria-hidden='true'/>
+            <img src={DividerBubbles} class="dividerBubble" alt=""/>
 
             <section id="moreWinners">
             <h2 class="moreMargin">More Winners</h2>
@@ -132,9 +132,9 @@ export default function ThisYear() {
             <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image5} alt='Another winner from Scribble 2018'/>
             </section>
 
-            <img src={DividerBubbles} class="dividerBubble" aria-hidden='true'/>
+            <img src={DividerBubbles} class="dividerBubble" alt=""/>
             <a id="comeAgain" href='/thisyear'>Click to join us again this year on November 2nd, 2019!</a>
-            <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10} 
+            <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10}
                 alt='Promotional Image'/>
         </main>
         <Footer />
