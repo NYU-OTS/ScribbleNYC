@@ -39,22 +39,37 @@ html, body, #root, .app{
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: 5px 10px;
+  &:hover{
+    cursor: pointer;
+  }
 }
 #lastYearButton{
   grid-column-start: 1;
   grid-row-start: 3;
+  &:hover, &:focus{
+    background-color: #FCC57E;
+  }
 }
 #aboutButton{
   grid-column-start: 3;
   grid-row-start: 1;
+  &:hover, &:focus{
+    background-color: #EDA1A2;
+  }
 }
 #faqButton{
   grid-column-start: 3;
   grid-row-start: 3;
+  &:hover, &:focus{
+    background-color: #68D3D2;
+  }
 }
 #thisYearButton{
   grid-column-start: 1;
   grid-row-start: 1;
+  &:hover, &:focus{
+    background-color: #90CBE4;
+  }
 }
 
 #scribbleLogo{
