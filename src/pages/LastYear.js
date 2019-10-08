@@ -68,11 +68,11 @@ export default function ThisYear() {
             </p>
 
             <div tabIndex={-1} aria-hidden='true' className='imageGroup'>
-                <img loading='lazy' src={Image1} className='previewImage'/>
-                <img loading='lazy' src={Image2} className='previewImage'/>
-                <img loading='lazy' src={Image3} className='previewImage' id="middleImage"/>
-                <img loading='lazy' src={Image4} className='previewImage'/>
-                <img loading='lazy' src={Image9} className='previewImage'/>
+                <img loading='lazy' src={Image1} alt='First image from Scribble 2018' className='previewImage'/>
+                <img loading='lazy' src={Image2} alt='Second image from Scribble 2018'className='previewImage'/>
+                <img loading='lazy' src={Image3} alt='Third image from Scribble 2018'className='previewImage' id="middleImage"/>
+                <img loading='lazy' src={Image4} alt='Fourth image from Scribble 2018'className='previewImage'/>
+                <img loading='lazy' src={Image9} alt='Fifth image from Scribble 2018'className='previewImage'/>
             </div>
 
             <img src={DividerBubbles} class="dividerBubble" alt=""/>
@@ -95,7 +95,7 @@ export default function ThisYear() {
                   keep students safe by alerting them and their teacher
                   when they tip in their chair.
               </p>
-              <img aria-hidden='true' loading='lazy' src={Image8} />
+              <img aria-hidden='true' loading='lazy' src={Image8} alt='Grand Prize Winner image'/>
               <br/><br/><br/>
             </section>
 
@@ -110,7 +110,7 @@ export default function ThisYear() {
                 students and school to support academics and provide
                 mental health services.
             </p>
-            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image7} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image7} alt='Another winner from Scribble 2018'/>
 
             <p>
                 <b>Thomas A. Edison High School</b>
@@ -119,7 +119,7 @@ export default function ThisYear() {
                 students to communicate with teachers, connect to their peers,
                 and streamlines academic planning.
             </p>
-            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image6} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image6} alt='Another winner from Scribble 2018'/>
 
             <p>
                 <b>Brooklyn Emerging Leaders Academy Charter High School</b>
@@ -129,12 +129,13 @@ export default function ThisYear() {
                 and connect to their classes. It also allows parents
                 to receive alerts and school updates.
             </p>
-            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image5} />
+            <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image5} alt='Another winner from Scribble 2018'/>
             </section>
 
             <img src={DividerBubbles} class="dividerBubble" alt=""/>
             <a id="comeAgain" href='/thisyear'>Click to join us again this year on November 2nd, 2019!</a>
-            <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10} />
+            <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10}
+                alt='Promotional Image'/>
         </main>
         <Footer />
     </div>

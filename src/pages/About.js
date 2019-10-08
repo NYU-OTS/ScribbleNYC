@@ -48,7 +48,8 @@ export default function About() {
             <div className='about__organizers'>
                 <OrganizerCell image={Meenakshi}
                     name='Meenakshi Baker'
-                    title='Event Manager'/>
+                    title='Event Manager'
+                    aria-hidden='true'/>
                 <OrganizerCell image={Felicty}
                     name='Felicity Ng'
                     title='Event Organizer'/>
@@ -81,10 +82,10 @@ export default function About() {
                 prizes, and other resources as sponsors of Scribble NYC.
             </p>
             <div className="sponsors" aria-label='Sponsors for this event are: NYU, Ueno, Upperline Code, Apple'>
-              <img id="nyuLogo" tabIndex={-1} src={NYU} alt='NYU' height={80}/>
-              <img id="uenoLogo" tabIndex={-1} src={Ueno} alt='Ueno' height={80}/>
-              <img id="upperlineLogo" tabIndex={-1} src={Upperline} alt='Upperline Code' height={80}/>
-              <img id="appleLogo" tabIndex={-1} src={Apple} alt='Apple' height={80}/>
+              <img id="nyuLogo" aria-hidden='true' tabIndex={-1} src={NYU} alt='NYU' height={80}/>
+              <img id="uenoLogo" aria-hidden='true' tabIndex={-1} src={Ueno} alt='Ueno' height={80}/>
+              <img id="upperlineLogo" aria-hidden='true' tabIndex={-1} src={Upperline} alt='Upperline Code' height={80}/>
+              <img id="appleLogo" aria-hidden='true' tabIndex={-1} src={Apple} alt='Apple' height={80}/>
             </div>
         </main>
       <Footer />

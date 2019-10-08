@@ -18,8 +18,10 @@ export default function Home() {
     // 2.) Return the component.
     return <main className="home">
       <img id='home-background' src={BubbleBackground} alt=""></img>
-      <div className="layout">
-          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'/>
+      <div class="layout">
+          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
+                aria-hidden='true'/>
+
           <button className='primary-button layout__button--signup'
               tabIndex={0}
               onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
