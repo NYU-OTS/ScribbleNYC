@@ -22,15 +22,15 @@ export default function About() {
         window.scrollTo({ top: 0 });
     }, []);
 
-    return <div class="root">
+    return <div className="root">
         <NavigationBar />
 
-        <div class="pageTitle">
+        <div className="pageTitle">
           <h1>About</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='3' class="main">
+        <main key='3' className="main">
             <h2>What is Scribble NYC?</h2>
             <p>
                 Scribble NYC is a design forum and design-a-thon
