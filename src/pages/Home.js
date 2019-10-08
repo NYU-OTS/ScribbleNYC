@@ -21,6 +21,10 @@ export default function Home() {
       <div class="layout">
           <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
                 aria-hidden='true'/>
+          <p id="scribbleDescription">
+            Design forum and design-a-thon<br/>
+            November 2, 2019
+          </p>
 
           <button className='primary-button layout__button--signup'
               tabIndex={0}
