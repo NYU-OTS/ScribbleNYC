@@ -26,23 +26,23 @@ export default function Home() {
             November 2, 2019
           </p>
 
-          <button className='primary-button layout__button--signup'
-              tabIndex={0}
-              onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
-              Sign Up!
-          </button>
-
          <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
               This Year
           </button>
           <button id="aboutButton" className='color-button' tabIndex={0} onClick={() => setGoAbout(true)}>
               About
           </button>
+          <button id="lastYearButton" className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
+              Last Year
+          </button>
           <button id="faqButton" className='color-button' tabIndex={0} onClick={() => setGoFAQ(true)}>
               FAQs
           </button>
-          <button id="lastYearButton" className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
-              Last Year
+
+          <button className='primary-button layout__button--signup'
+              tabIndex={0}
+              onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
+              Sign Up!
           </button>
 
           { goAbout && <Redirect to='/about'/> }
