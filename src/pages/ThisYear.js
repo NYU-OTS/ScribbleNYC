@@ -53,8 +53,7 @@ export default function ThisYear() {
                   <th>Session 2 Workshops</th>
                 </tr>
                 <tr>
-                  <td>Discovering Design with Robots!</td>
-                  <td>Discovering Design with Robots!</td>
+                  <td colspan="2" id="twoSessionWorkshop">Discovering Design with Robots!</td>
                 </tr>
                 <tr>
                   <td>Making Your Design Resonate: Storytelling Great UX Designs</td>
