@@ -30,12 +30,12 @@ export default function ThisYear() {
     return <div className='root'>
         <NavigationBar />
 
-        <div class="pageTitle">
+        <div className="pageTitle">
           <h1>Last Year</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='2' class="main">
+        <main key='2' className="main" tabIndex={1}>
             <h2>64 attendees, 8 workshops, one design-a-thon</h2>
             <p>
                 Middle school and high school students from all over
@@ -55,17 +55,18 @@ export default function ThisYear() {
                 <br/>
                 <br/>
                 Workshops provided:
-                <ul>
-                    <li>Making the Most of Slack in Product Development</li>
-                    <li>Designer-Developer Collaboration</li>
-                    <li>Art + Code with p5</li>
-                    <li>How to Earn a Seat on a Rocketship</li>
-                    <li>Editing Video on Mac and Video Stories with Clips</li>
-                    <li>Basic 2D Character Assembly for Animations</li>
-                    <li>Virtual Reality</li>
-                    <li>Getting Started with Coding and Sphero Maze Challenge</li>
-                </ul>
             </p>
+
+            <ul className="workshopList">
+                <li>Making the Most of Slack in Product Development</li>
+                <li>Designer-Developer Collaboration</li>
+                <li>Art + Code with p5</li>
+                <li>How to Earn a Seat on a Rocketship</li>
+                <li>Editing Video on Mac and Video Stories with Clips</li>
+                <li>Basic 2D Character Assembly for Animations</li>
+                <li>Virtual Reality</li>
+                <li>Getting Started with Coding and Sphero Maze Challenge</li>
+            </ul>
 
             <div tabIndex={-1} aria-hidden='true' className='imageGroup'>
                 <img loading='lazy' src={Image1} alt='First image from Scribble 2018' className='previewImage'/>
@@ -75,7 +76,7 @@ export default function ThisYear() {
                 <img loading='lazy' src={Image9} alt='Fifth image from Scribble 2018'className='previewImage'/>
             </div>
 
-            <img src={DividerBubbles} class="dividerBubble" alt=""/>
+            <img src={DividerBubbles} className="dividerBubble" alt=""/>
 
             <h2>The Competition</h2>
             <p>
@@ -99,10 +100,10 @@ export default function ThisYear() {
               <br/><br/><br/>
             </section>
 
-            <img src={DividerBubbles} class="dividerBubble" alt=""/>
+            <img src={DividerBubbles} className="dividerBubble" alt=""/>
 
             <section id="moreWinners">
-            <h2 class="moreMargin">More Winners</h2>
+            <h2 className="moreMargin">More Winners</h2>
             <p>
                 <b>Middle School 217</b>
                 <br/>
@@ -132,7 +133,7 @@ export default function ThisYear() {
             <img tabIndex={-1} aria-hidden='true' loading='lazy' src={Image5} alt='Another winner from Scribble 2018'/>
             </section>
 
-            <img src={DividerBubbles} class="dividerBubble" alt=""/>
+            <img src={DividerBubbles} className="dividerBubble" alt=""/>
             <a id="comeAgain" href='/thisyear'>Click to join us again this year on November 2nd, 2019!</a>
             <img id="groupPicture" tabIndex={-1} aria-hidden='true' loading='lazy' src={Image10}
                 alt='Promotional Image'/>

@@ -30,7 +30,7 @@ export default function About() {
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='3' className="main">
+        <main key='3' className="main" tabIndex={1}>
             <h2>What is Scribble NYC?</h2>
             <p>
                 Scribble NYC is a design forum and design-a-thon

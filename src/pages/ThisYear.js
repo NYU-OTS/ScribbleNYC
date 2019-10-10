@@ -27,7 +27,7 @@ export default function ThisYear() {
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='2' className="main">
+        <main key='2' className="main"  tabIndex={1}>
             <h2>Join us November 2nd, 2019!</h2>
             <p>
               This year, we will once again be at:<br/>
@@ -48,29 +48,31 @@ export default function ThisYear() {
               </p>
 
               <table id="workshopSessionTable">
-                <tr>
-                  <th>Session 1 Workshops</th>
-                  <th>Session 2 Workshops</th>
-                </tr>
-                <tr>
-                  <td colspan="2" id="twoSessionWorkshop">Discovering Design with Robots!</td>
-                </tr>
-                <tr>
-                  <td>Making Your Design Resonate: Storytelling Great UX Designs</td>
-                  <td>We’re all in this together: Getting better at generating and developing ideas as a team</td>
-                </tr>
-                <tr>
-                  <td>Art and Animation with P5.js</td>
-                  <td>Problem Solving with Python</td>
-                </tr>
-                <tr>
-                  <td>An Exploration of Machine Learning</td>
-                  <td>Editing Video on Mac and Creating Stories with Clips</td>
-                </tr>
-                <tr>
-                  <td>Getting Started with Coding and Sphero Maze Challenge</td>
-                  <td></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>Session 1 Workshops</th>
+                    <th>Session 2 Workshops</th>
+                  </tr>
+                  <tr>
+                    <td colSpan="2" id="twoSessionWorkshop">Discovering Design with Robots!</td>
+                  </tr>
+                  <tr>
+                    <td>Making Your Design Resonate: Storytelling Great UX Designs</td>
+                    <td>We’re all in this together: Getting better at generating and developing ideas as a team</td>
+                  </tr>
+                  <tr>
+                    <td>Art and Animation with P5.js</td>
+                    <td>Problem Solving with Python</td>
+                  </tr>
+                  <tr>
+                    <td>An Exploration of Machine Learning</td>
+                    <td>Editing Video on Mac and Creating Stories with Clips</td>
+                  </tr>
+                  <tr>
+                    <td>Getting Started with Coding and Sphero Maze Challenge</td>
+                    <td></td>
+                  </tr>
+                </tbody>
               </table>
 
               <h3 className="thisYear__h3">We’re all in this together: Getting better at generating and developing ideas as a team</h3>

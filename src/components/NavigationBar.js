@@ -12,7 +12,7 @@ export default function NavigationBar() {
     const [showingMobileNav, setShowMobileNav] = useState(false);
 
     // 1.) Return the react component.
-    return <nav className='navigation-bar'>
+    return <nav className='navigation-bar' tabIndex={0}>
         <span className={showingMobileNav ? 'fas fa-times' : 'fa fa-bars'} onClick={() => {
             setShowMobileNav(!showingMobileNav);
         }} tabIndex={0} aria-hidden='false'></span>

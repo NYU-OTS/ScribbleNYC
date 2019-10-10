@@ -22,7 +22,7 @@ export default function FAQ() {
           <h1>FAQs</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
-        <main key='2' className="main">
+        <main key='2' className="main" tabIndex={1}>
             <h2 className="faq__h2">What should I bring to Scribble NYC?</h2>
             <p className="faq__p">
                 Please bring the signed&nbsp;

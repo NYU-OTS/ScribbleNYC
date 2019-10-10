@@ -16,9 +16,9 @@ export default function Home() {
     const [goFAQ, setGoFAQ] = useState(false);
 
     // 2.) Return the component.
-    return <main className="home">
+    return <main className="home" tabIndex={1}>
       <img id='home-background' src={BubbleBackground} alt=""></img>
-      <div class="layout">
+      <div className="layout">
           <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
                 aria-hidden='true'/>
           <p id="scribbleDescription">
