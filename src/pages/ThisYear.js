@@ -47,6 +47,33 @@ export default function ThisYear() {
                   learn something new!
               </p>
 
+              <table id="workshopSessionTable">
+                <tr>
+                  <th>Session 1 Workshops</th>
+                  <th>Session 2 Workshops</th>
+                </tr>
+                <tr>
+                  <td>Discovering Design with Robots!</td>
+                  <td>Discovering Design with Robots!</td>
+                </tr>
+                <tr>
+                  <td>Making Your Design Resonate: Storytelling Great UX Designs</td>
+                  <td>We’re all in this together: Getting better at generating and developing ideas as a team</td>
+                </tr>
+                <tr>
+                  <td>Art and Animation with P5.js</td>
+                  <td>Problem Solving with Python</td>
+                </tr>
+                <tr>
+                  <td>An Exploration of Machine Learning</td>
+                  <td>Editing Video on Mac and Creating Stories with Clips</td>
+                </tr>
+                <tr>
+                  <td>Getting Started with Coding and Sphero Maze Challenge</td>
+                  <td></td>
+                </tr>
+              </table>
+
               <h3 className="thisYear__h3">We’re all in this together: Getting better at generating and developing ideas as a team</h3>
               <p className="section__leader">
                 <i>Kwok Yin Mak and Marco Coppeto from Ueno</i>
@@ -153,6 +180,7 @@ export default function ThisYear() {
                   Bring your iPad or we’ll provide one.
               </p>
             </section>
+
             <img src={DividerBubbles} className="dividerBubble" alt=""/>
 
             <section>
