@@ -22,8 +22,12 @@ export default function Home() {
           <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
                 aria-hidden='true'/>
           <p id="scribbleDescription">
-            Design forum and design-a-thon<br/>
-            November 2, 2019
+            Come learn about product design!
+            <br/>
+            <br/>
+            November 2, 2019<br/>
+            @<br/>
+            NYU Tandon's Event Space
           </p>
 
          <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>

@@ -52,10 +52,10 @@ export default function About() {
                     aria-hidden='true'/>
                 <OrganizerCell image={Felicty}
                     name='Felicity Ng'
-                    title='Event Organizer'/>
+                    title='Founder'/>
                 <OrganizerCell image={Adeola}
                     name='Adeola Uthman'
-                    title='Event Organizer'
+                    title='Designer'
                     id='twister'/>
             </div>
 
@@ -76,10 +76,10 @@ export default function About() {
                 </li>
             </ul>
 
-            <h2>Who sponsors Scribble NYC?</h2>
+            <h2 style={{ textAlign: 'center' }}>Who makes Scribble NYC possible?</h2>
             <p>
-                The companies below have generously donated workshops,
-                prizes, and other resources as sponsors of Scribble NYC.
+                The companies below have generously donated workshops
+                and/or other resources to Scribble NYC to make it possible.
             </p>
             <div className="sponsors" aria-label='Sponsors for this event are: NYU, Ueno, Upperline Code, Apple'>
               <img id="nyuLogo" aria-hidden='true' tabIndex={-1} src={NYU} alt='NYU' height={80}/>
