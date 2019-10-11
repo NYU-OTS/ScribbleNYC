@@ -21,14 +21,14 @@ export default function Home() {
       <div className="layout">
           <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
                 aria-hidden='true'/>
-          <p id="scribbleDescription">
+          <h1 id="scribbleDescription">
             Come learn about product design!
             <br/>
             <br/>
             November 2, 2019<br/>
             @<br/>
             NYU Tandon's Event Space
-          </p>
+          </h1>
 
          <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
               This Year
