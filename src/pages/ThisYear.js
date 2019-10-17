@@ -105,7 +105,7 @@ export default function ThisYear() {
 
               <h3 className="thisYear__h3">Making Your Design Resonate: Storytelling Great UX Designs</h3>
               <p className="section__leader">
-                <i>Hyobin Im and Maria Shin from NYU IT STIT</i>
+                <i>Hyobin Im, Maxine Kho, and Adeola Uthman from NYU IT</i>
               </p>
               <p className="section__description">
                   Stories excite us. Therefore, storytelling is a crucial skill that
@@ -120,7 +120,7 @@ export default function ThisYear() {
 
               <h3 className="thisYear__h3">An Exploration of Machine Learning</h3>
               <p className="section__leader">
-                <i>Rajat Bapuri, Sean Nordquist, and Andrew Xiao from NYU IT OTSS</i>
+                <i>Rajat Bapuri, Sean Nordquist, and Andrew Xiao from NYU IT</i>
               </p>
               <p className="section__description">
                   Get introduced to machine learning and learn about how it affects our
