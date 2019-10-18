@@ -27,7 +27,7 @@ export default function Home() {
             <br/>
             November 2, 2019<br/>
             @<br/>
-            NYU Tandon's Event Space
+            6 MetroTech Center
           </h1>
 
          <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
