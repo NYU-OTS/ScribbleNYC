@@ -26,6 +26,32 @@
         color: rgb(83, 83, 83);
     }
 
+    .skip-nav{
+      left:-999px;
+      position:absolute;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+      z-index:-999;
+
+      &:focus, &:active{
+        width: 20%;
+        height: auto;
+        color: black;
+        background-color: pink;
+        left: 0;
+        top: 100px;
+        overflow: auto;
+        padding: 25px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Rubik', sans-serif;
+        z-index: 999;
+        text-decoration: none;
+      }
+    }
+
     .nav__logo {
         width: 70px;
         height: auto;
@@ -44,6 +70,11 @@
         padding: 5px 10px;
         border-radius: 10px;
     }
+    #homeButton{
+      &:hover, &:focus{
+        background-color: #90CBE4;
+      }
+    }
     #aboutButton{
       &:hover, &:focus{
         background-color: #EDA1A2;
@@ -52,11 +83,6 @@
     #lastYearButton{
       &:hover, &:focus{
         background-color: #FCC57E;
-      }
-    }
-    #thisYearButton{
-      &:hover, &:focus{
-        background-color: #90CBE4;
       }
     }
     #faqButton{

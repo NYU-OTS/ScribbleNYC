@@ -26,11 +26,11 @@ export default function About() {
         <NavigationBar />
 
         <div className="pageTitle">
-          <h1>About</h1>
+          <h1 id="main">About</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='3' className="main" tabIndex={1}>
+        <main key='3' className="main">
             <h2>What is Scribble NYC?</h2>
             <p>
                 Scribble NYC is a design forum and design-a-thon
@@ -48,15 +48,13 @@ export default function About() {
             <div className='about__organizers'>
                 <OrganizerCell image={Meenakshi}
                     name='Meenakshi Baker'
-                    title='Event Manager'
-                    aria-hidden='true'/>
+                    title='Event Manager'/>
                 <OrganizerCell image={Felicty}
                     name='Felicity Ng'
                     title='Founder'/>
                 <OrganizerCell image={Adeola}
                     name='Adeola Uthman'
-                    title='Designer'
-                    id='twister'/>
+                    title='Designer'/>
             </div>
 
             <h2>Who participates?</h2>
@@ -79,13 +77,13 @@ export default function About() {
             <h2 style={{ textAlign: 'center' }}>Who makes Scribble NYC possible?</h2>
             <p>
                 The companies below have generously donated workshops
-                and/or other resources to Scribble NYC to make it possible.
+                and/or other resources to Scribble NYC 2019 to make it possible.
             </p>
             <div className="sponsors" aria-label='Sponsors for this event are: NYU, Ueno, Upperline Code, Apple'>
-              <img id="nyuLogo" aria-hidden='true' tabIndex={-1} src={NYU} alt='NYU' height={80}/>
-              <img id="uenoLogo" aria-hidden='true' tabIndex={-1} src={Ueno} alt='Ueno' height={80}/>
-              <img id="upperlineLogo" aria-hidden='true' tabIndex={-1} src={Upperline} alt='Upperline Code' height={80}/>
-              <img id="appleLogo" aria-hidden='true' tabIndex={-1} src={Apple} alt='Apple' height={80}/>
+              <img id="nyuLogo" aria-hidden='true' src={NYU} alt='NYU' height={80}/>
+              <img id="uenoLogo" aria-hidden='true' src={Ueno} alt='Ueno' height={80}/>
+              <img id="upperlineLogo" aria-hidden='true' src={Upperline} alt='Upperline Code' height={80}/>
+              <img id="appleLogo" aria-hidden='true' src={Apple} alt='Apple' height={80}/>
             </div>
         </main>
       <Footer />

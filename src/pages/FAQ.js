@@ -19,10 +19,10 @@ export default function FAQ() {
         <NavigationBar />
 
         <div className="pageTitle">
-          <h1>FAQs</h1>
+          <h1 id="main">FAQs</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
-        <main key='2' className="main" tabIndex={1}>
+        <main key='2' className="main">
             <h2 className="faq__h2">What should I bring to Scribble NYC?</h2>
             <p className="faq__p">
                 Please bring the signed&nbsp;

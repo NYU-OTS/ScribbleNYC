@@ -23,22 +23,17 @@ export default function ThisYear() {
         <NavigationBar />
 
         <div className="pageTitle">
-          <h1>This Year</h1>
+          <h1 id="main">This Year</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='2' className="main"  tabIndex={1}>
-            <h2>Join us November 2nd, 2019!</h2>
+        <main key='2' className="main">
+            <h2>November 2nd, 2019</h2>
             <p>
-              This year, we will once again be at:<br/>
+              This year, we were once again at:<br/>
               6 MetroTech Center<br/>
               Brooklyn, NY 11201<br/>
             </p>
-            <img tabIndex={-1} src={ScheduleGraphic} id='schedule-image-1'
-              alt="Registration is from 11:30am to 12pm. The first round of workshops run from 12 to 1:20pm. There is a lunch break from 1:20 to 1:40pm. The second round of workshops happen afterwards, running until 3pm. After that, the design-a-thon portion of the day begins and attendees spend two hours honing their designs. At five, judging starts. After judging is finished, we award the winners during the closing ceremony. Everything should end around 6pm."
-            />
-
-            <img src={DividerBubbles} className="dividerBubble" alt=""/>
             <section>
               <h2>Workshops</h2>
               <p>
@@ -187,8 +182,8 @@ export default function ThisYear() {
             <section>
               <h2>Competition Themes</h2>
               <p>
-                  While it is not required to adhere to the themes, these are the
-                  topics we've decided to focus on for this year:<br/>
+                  While it was not required to adhere to the themes, these were the
+                  topics we decided to focus on this year:<br/>
                   Environmental impact <br/>
                   Safer society <br/>
                   Connecting outside your school

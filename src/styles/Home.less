@@ -1,116 +1,99 @@
 @import './Index.less';
+@import './OrganizerCell.less';
 
-// The home page with the options to take you to different pages.
-html, body, #root, .app{
-  height: 100%;
-}
-.home{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#home-background{
-    z-index: -100;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.layout{
-  width: 80%;
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-rows: repeat(4, auto);
-  justify-items: center;
-}
-
-.color-button{
-  border: none;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 36px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  padding: 5px 10px;
-  max-height: 51px;
-  &:hover{
-    cursor: pointer;
-  }
-}
-#lastYearButton{
-  grid-column-start: 1;
-  grid-row-start: 3;
-  &:hover, &:focus{
-    background-color: #FCC57E;
-  }
-}
-#aboutButton{
-  grid-column-start: 3;
-  grid-row-start: 1;
-  &:hover, &:focus{
-    background-color: #EDA1A2;
-  }
-}
-#faqButton{
-  grid-column-start: 3;
-  grid-row-start: 3;
-  &:hover, &:focus{
-    background-color: #68D3D2;
-  }
-}
-#thisYearButton{
-  grid-column-start: 1;
-  grid-row-start: 1;
-  &:hover, &:focus{
-    background-color: #90CBE4;
-  }
-}
-
-#scribbleLogo{
-  width: 100%;
+.pageTitle .logo{
+  width: 200px;
   height: auto;
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -100px;
+  padding: 0;
+  text-align: center;
 }
 
-#scribbleDescription{
+.home{
+  justify-content: center;
+  text-align: center;
+}
+
+.scribbleDescription{
+  margin-top: 0px;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  text-align: center;
-  grid-column-start: 2;
-  grid-row-start: 3;
+  font-weight: bold;
 }
-
-.layout__button--signup{
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-  padding: 8px 20px;
-  width: 50%;
+p{
   text-align: center;
-  &:hover, &:focus {
-      background-color: #AB6503;
-      cursor: pointer;
-  }
+}
+section{
+  margin-bottom: 50px;
+}
+.dividerBubble{
+  margin-bottom: 50px;
+}
+.infoPiece{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.numberFont{
+  font-family: 'Rubik', sans-serif;
+  font-size: 35px;
+}
+#attendees{
+  color: #287FA4;
+}
+#schools{
+  color: #AC6406;
+}
+#workshops{
+  color: #268281;
+  margin-bottom: 10px;
+}
+.photo{
+  width: 100%;
+  margin-bottom: 25px;
+}
+.workshopList{
+  margin: 0px;
+  text-align: left;
+}
+.photoLink{
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  font-weight: normal;
 }
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-    .layout{
-      height: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    #scribbleLogo{
-      height: 20%;
-      width: auto;
-    }
-    #scribbleDescription{
-      font-size: 12px;
-    }
+  .pageTitle .logo{
+    width: 50px;
+    margin-left: -25px;
+  }
+  h2{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .numberFont{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+  .infoPiece{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #groupPhoto{
+    width: 100%;
+  }
+  #workshopPhoto{
+   width: 100%;
+  }
 }

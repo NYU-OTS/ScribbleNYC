@@ -16,8 +16,8 @@ export default function App() {
         <div className='app'>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/thisyear' component={ThisYear} />
-            <Route exact path='/lastyear' component={LastYear} />
+            <Route exact path='/2019' component={ThisYear} />
+            <Route exact path='/2018' component={LastYear} />
             <Route exact path='/faq' component={FAQ} />
         </div>
     </Router>

@@ -1,59 +1,76 @@
 import React, { useState, useEffect } from 'react';
-import { Redirect } from 'react-router-dom';
 
-import ScribbleLogo from '../images/ScribbleLogo.svg';
-
-import BubbleBackground from '../images/SlideTemplateFull.png';
-
+import NavigationBar from '../components/NavigationBar.js';
+import Footer from '../components/Footer.js';
+import '../styles/styles.less';
 import '../styles/Home.less';
+import DividerBubbles from '../images/dividerBubbles.png';
+import ScribbleLogo from '../images/ScribbleLogo.svg';
+import BubbleBackground from '../images/Experiment1.svg'
+import GroupPhoto from '../images/2019/IMG_5929.jpg';
+import WorkshopPhoto from '../images/2019/IMG_1616.jpg';
 
 
+// The about page.
 export default function Home() {
-    // 1.) Setup the state.
-    const [goAbout, setGoAbout] = useState(false);
-    const [goThisYear, setGoThisYear] = useState(false);
-    const [goLastYear, setGoLastYear] = useState(false);
-    const [goFAQ, setGoFAQ] = useState(false);
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
 
-    // 2.) Return the component.
-    return <main className="home" tabIndex={1}>
-      <img id='home-background' src={BubbleBackground} alt=""></img>
-      <div className="layout">
-          <img id="scribbleLogo" src={ScribbleLogo} alt='Scribble NYC Logo'
-                aria-hidden='true'/>
-          <h1 id="scribbleDescription">
-            Come learn about product design!
-            <br/>
-            <br/>
-            November 2, 2019<br/>
-            @<br/>
-            6 MetroTech Center
-          </h1>
+    return <div className="root">
+        <NavigationBar />
 
-         <button id="thisYearButton" className='color-button' tabIndex={0} onClick={() => setGoThisYear(true)}>
-              This Year
-          </button>
-          <button id="aboutButton" className='color-button' tabIndex={0} onClick={() => setGoAbout(true)}>
-              About
-          </button>
-          <button id="lastYearButton" className='color-button' tabIndex={0} onClick={() => setGoLastYear(true)}>
-              Last Year
-          </button>
-          <button id="faqButton" className='color-button' tabIndex={0} onClick={() => setGoFAQ(true)}>
-              FAQs
-          </button>
-
-          <button className='primary-button layout__button--signup'
-              tabIndex={0}
-              onClick={()=>window.open("https://www.eventbrite.com/e/scribble-nyc-2019-registration-65267143784?aff=website")}>
-              Sign Up!
-          </button>
-
-          { goAbout && <Redirect to='/about'/> }
-          { goLastYear && <Redirect to='/lastyear'/> }
-          { goThisYear && <Redirect to='/thisyear'/> }
-          { goFAQ && <Redirect to='/faq'/> }
+        <div className="pageTitle">
+          <img className='logo' src={ScribbleLogo}
+              alt='Scribble NYC Logo'/>
+          <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
-      </main>
 
+        <main key='3' className="home main" id="main">
+          <section>
+            <h1 className="scribbleDescription">
+              Design forum & design-a-thon
+              <br/>
+              for middle school and high school students
+            </h1>
+          </section>
+
+          <img src={DividerBubbles} className="dividerBubble" alt=""/>
+
+          <section>
+            <h2>Scribble 2019 was a blast!</h2>
+
+            <div className="infoPiece">
+              <p className="numberFont" id="attendees">52<br/>attendees</p>
+              <p className="numberFont" id="schools">11<br/>schools</p>
+            </div>
+            <img src={GroupPhoto} alt="" className="photo"/>
+
+            <p className="numberFont" id="workshops">8 workshops</p>
+            <ul className="workshopList">
+                <li>Discovering Design with Robots!</li>
+                <li>Making Your Design Resonate: Storytelling Great UX Designs</li>
+                <li>We’re all in this together: Getting better at generating and developing ideas as a team</li>
+                <li>Art and Animation with P5.js</li>
+                <li>Problem Solving with Python</li>
+                <li>An Exploration of Machine Learning</li>
+                <li>Editing Video on Mac and Creating Stories with Clips</li>
+                <li>Getting Started with Coding and Sphero Maze Challenge</li>
+            </ul>
+            <img src={WorkshopPhoto} alt="" className="photo"/>
+            <a className="photoLink" target="_blank" href="https://drive.google.com/drive/folders/1EvHFxJZkIyxBL2gRCwe9kELlBEW2HFFR?usp=sharing">
+              More photos from 2019's event
+            </a>
+          </section>
+
+          <img src={DividerBubbles} className="dividerBubble" alt=""/>
+          <h2>
+            Thanks for attending Scribble.
+            <br/>
+            Stay tuned for 2020!
+          </h2>
+
+        </main>
+      <Footer />
+    </div>
 }

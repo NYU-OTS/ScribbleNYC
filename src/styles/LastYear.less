@@ -1,61 +1,42 @@
 @import './Index.less';
 
-.workshopList{
-  margin: 0px;
+.main{
+  max-width: 100%;
 }
 
-.imageGroup{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-
-  .previewImage{
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  #middleImage{
-    width: 100%;
-  }
+.carouselSection{
+  padding: 20px;
+  margin: 100px 0px;
+  border: 1px #333 solid;
+  border-radius: 5px;
 }
 
-section{
-  p{
-    text-align: center;
-  }
-  img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 120px;
-  }
-  .moreMargin{
-    margin-bottom: 50px;
-  }
-}
-
-#comeAgain{
-  font-size: 36px;
+.yearHeader{
   text-align: center;
-  font-family: 'Rubik', sans-serif;
-  color: #333;
 }
-#groupPicture{
-  width: 150%;
+
+.backgroundColor{
+  color: black;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+h3.backgroundColor{
+  display: inline-block;
+}
+
+.resizeImage{
+  width: 1000px;
   height: auto;
 }
 
+.dividerBubble{
+  width: 50%;
+  margin: 25px 0px;
+}
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-  section img{
-    margin-bottom: 50px;
-  }
 
-  #groupPicture{
-    width: 100%;
-    height: auto;
-  }
 }

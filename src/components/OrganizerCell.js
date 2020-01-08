@@ -8,8 +8,8 @@ export default function OrganizerCell(props) {
 
     return <div className='organizerCell'
                 aria-label={`${title}: ${name}`}>
-        <img tabIndex={-1} src={image} aria-hidden='true'/>
-        <p tabIndex={-1} aria-hidden='true'>
+        <img src={image} alt=''/>
+        <p aria-hidden='true'>
           <b aria-hidden='true'>{name}</b>
           <br/>
           {title}
