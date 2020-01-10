@@ -22,7 +22,51 @@ export default function FAQ() {
           <h1 id="main">FAQs</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
+
         <main key='2' className="main">
+
+          <div className="QandA">
+            <h2 className="faq__h2">When is Scribble 2020?</h2>
+            <p className="faq__p">
+                Scribble NYC takes place in the fall, typically around the end of October and beginning of November.
+            </p>
+          </div>
+
+          <div className="QandA">
+            <h2 className="faq__h2">Who can attend?</h2>
+            <p className="faq__p">
+                Anyone can purchase a ticket, which will give them
+                admission to the workshops. However, only middle and
+                high school students can compete in the design-a-thon.
+            </p>
+          </div>
+
+          <div className="QandA">
+            <h2 className="faq__h2">Got more questions?</h2>
+            <p className="faq__p">
+                Email us at nyuit.scribble@nyu.edu
+            </p>
+          </div>
+
+          {/*
+          <div className="QandA">
+            <h2 className="faq__h2">How much does it cost?</h2>
+            <p className="faq__p">
+                General admission tickets cost $20. However, if you purchase
+                tickets as a group, it is $15 per person. Groups are limited to
+                five people (four students and one adult chaperone) and expected
+                to participate in the design-a-thon.
+            </p>
+          </div>
+
+          <div className="QandA">
+            <h2 className="faq__h2">How many people can be on a team for the design-a-thon?</h2>
+            <p className="faq__p">
+                Teams must consist of 2-4 students.
+            </p>
+          </div>
+
+          <div className="QandA">
             <h2 className="faq__h2">What should I bring to Scribble NYC?</h2>
             <p className="faq__p">
                 Please bring the signed&nbsp;
@@ -35,26 +79,8 @@ export default function FAQ() {
                 We also recommend attendees to bring laptops,
                 as some workshops be heavily reliant on them.
             </p>
-
-            <h2 className="faq__h2">Who can attend?</h2>
-            <p className="faq__p">
-                Anyone can purchase a ticket, which will give them
-                admission to the workshops. However, only middle and
-                high school students can compete in the design-a-thon.
-            </p>
-
-            <h2 className="faq__h2">How much does it cost?</h2>
-            <p className="faq__p">
-                General admission tickets cost $20. However, if you purchase
-                tickets as a group, it is $15 per person. Groups are limited to
-                five people (four students and one adult chaperone) and expected
-                to participate in the design-a-thon.
-            </p>
-
-            <h2 className="faq__h2">How many people can be on a team for the design-a-thon?</h2>
-            <p className="faq__p">
-                Teams must consist of 2-4 students.
-            </p>
+          </div>
+          */}
         </main>
         <Footer />
     </div>

@@ -32,124 +32,129 @@ export default function ThisYear() {
         <NavigationBar />
 
         <div className="pageTitle">
-          <h1 id="main">Last Year</h1>
+          <h1 id="main">Previous Years</h1>
           <img src={BubbleBackground} alt="" id="bubbleyBackground"/>
         </div>
 
-        <main key='2' className="main">
+        <main key='2' className="mainLastYear">
 
           <section className="carouselSection">
             <h2 className="yearHeader">2019</h2>
-            <Carousel>
+            <Carousel fade={true} slide={false}>
               <Carousel.Item>
                 <img
-                  class="resizeImage"
+                  className="resizeImage"
                   src={OverallBest2019}
                   alt="Overall best idea for 2019: Team PeerPrep"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">PeerPrep from MS217</h3>
-                  <p className="backgroundColor">Best idea overall</p>
+                  <h3 className="carouselText">PeerPrep from MS217</h3>
+                  <p className="carouselText">Best idea overall</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
-                  class="resizeImage"
+                  className="resizeImage"
                   src={Safety2019}
                   alt="Best idea for creating a safer society: Team Epic Sheep"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Team Epic Sheep</h3>
-                  <p className="backgroundColor">Best idea for creating a safer society</p>
+                  <h3 className="carouselText">Team Epic Sheep</h3>
+                  <p className="carouselText">Best idea for creating a safer society</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
-                  class="resizeImage"
+                  className="resizeImage"
                   src={Connection2019}
                   alt="Best idea for forming connections outside of school: Team Kindlee"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Team Kindlee</h3>
-                  <p className="backgroundColor">Best idea for forming connections outside of school</p>
+                  <h3 className="carouselText">Team Kindlee</h3>
+                  <p className="carouselText">Best idea for forming connections outside of school</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
-                  class="resizeImage"
+                  className="resizeImage"
                   src={Environment2019}
                   alt="Best idea for helping the environment: Team Gottem"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Team Gottem</h3>
-                  <p className="backgroundColor">Best idea for helping the environment</p>
+                  <h3 className="carouselText">Team Gottem</h3>
+                  <p className="carouselText">Best idea for helping the environment</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
             </Carousel>
           </section>
 
-          <img src={DividerBubbles} className="dividerBubble" alt=""/>
+          <img src={DividerBubbles} className="dividerBubbleLastYear" alt=""/>
 
           <section className="carouselSection">
             <h2 className="yearHeader">2018</h2>
-            <Carousel>
+            <Carousel fade={true} slide={false}>
 
               <Carousel.Item>
                 <img
+                  className="resizeImage"
                   src={Marymount}
                   alt="Group Photo"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Grand Prize Winners</h3>
-                  <p className="backgroundColor">A team from Marymount School of New York created Tipper Stopper, a device to keep students safe by alerting them and their teacher when they tip in their chairs.</p>
+                  <h3 className="carouselText">Grand Prize Winners</h3>
+                  <p className="carouselText">A team from Marymount School of New York created Tipper Stopper, a device to keep students safe by alerting them and their teacher when they tip in their chairs.</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
+                  className="resizeImage"
                   src={BELA}
                   alt="Group Photo"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Brooklyn Emerging Leaders Academy Charter High School</h3>
-                  <p className="backgroundColor">A school application that allows students to chat, receive important reminders about tests and quizzes, and connect to their classes. It also allows parents to receive alerts and school updates.</p>
+                  <h3 className="carouselText">Brooklyn Emerging Leaders Academy Charter High School</h3>
+                  <p className="carouselText">A school application that allows students to chat, receive important reminders about tests and quizzes, and connect to their classes. It also allows parents to receive alerts and school updates.</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
+                  className="resizeImage"
                   src={ThomasAEdisonHS}
                   alt="Group Photo"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Thomas A. Edison High School</h3>
-                  <p className="backgroundColor">An application centered around student life that allows students to communicate with teachers, connect to their peers, and streamlines academic planning.</p>
+                  <h3 className="carouselText">Thomas A. Edison High School</h3>
+                  <p className="carouselText">An application centered around student life that allows students to communicate with teachers, connect to their peers, and streamlines academic planning.</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
+                  className="resizeImage"
                   src={MS217}
                   alt="Group Photo"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Middle School 217</h3>
-                  <p className="backgroundColor">An online peer support network that brings together students and school to support academics and provide mental health services.</p>
+                  <h3 className="carouselText">Middle School 217</h3>
+                  <p className="carouselText">An online peer support network that brings together students and school to support academics and provide mental health services.</p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img
+                  className="resizeImage"
                   src={GroupPhoto}
                   alt="Group Photo"
                 />
                 <Carousel.Caption>
-                  <h3 className="backgroundColor">Group Photo</h3>
-                  <p className="backgroundColor">2018 was a hit!</p>
+                  <h3 className="carouselText">Group Photo</h3>
+                  <p className="carouselText">2018 was a hit!</p>
                 </Carousel.Caption>
               </Carousel.Item>
 

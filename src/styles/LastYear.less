@@ -1,7 +1,11 @@
 @import './Index.less';
 
-.main{
+.mainLastYear{
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .carouselSection{
@@ -15,14 +19,14 @@
   text-align: center;
 }
 
-.backgroundColor{
-  color: black;
-  background-color: #eee;
+.carouselText{
+  color: white;
+  background-color: #000;
   padding: 10px 20px;
   border-radius: 5px;
 }
 
-h3.backgroundColor{
+h3.carouselText{
   display: inline-block;
 }
 
@@ -31,12 +35,33 @@ h3.backgroundColor{
   height: auto;
 }
 
-.dividerBubble{
+.dividerBubbleLastYear{
   width: 50%;
   margin: 25px 0px;
 }
 
 // Media Queries:
 @media not screen and (min-width: 768px) {
-
+  .dividerBubble{
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .resizeImage{
+    width: 100%;
+    height: auto;
+  }
+  .carouselText{
+    display: none;
+  }
+  h3.carouselText{
+    display: none;
+  }
+  .carouselSection{
+    margin: 25px 0px;
+    border: none;
+  }
+  .dividerBubbleLastYear{
+    width: 75%;
+    margin: 10px 0px;
+  }
 }

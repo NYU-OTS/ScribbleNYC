@@ -31,13 +31,16 @@ export default function About() {
         </div>
 
         <main key='3' className="main">
+          <div className="informationSection">
             <h2>What is Scribble NYC?</h2>
             <p>
                 Scribble NYC is a design forum and design-a-thon
                 aimed at teaching middle and high school students
                 about the world of product design.
             </p>
+          </div>
 
+          <div className="informationSection">
             <h2>Who organizes Scribble NYC?</h2>
             <p className='relatedPhotoUnder'>
                 Scribble NYC is organized and hosted by NYU IT
@@ -56,7 +59,9 @@ export default function About() {
                     name='Adeola Uthman'
                     title='Designer'/>
             </div>
+          </div>
 
+          <div className="informationSection">
             <h2>Who participates?</h2>
             <ul style={{ textAlign: 'left' }}>
                 <li>
@@ -73,7 +78,9 @@ export default function About() {
                     teachers, faculty, parents, and school administrators.
                 </li>
             </ul>
+          </div>
 
+          <div className="informationSection">
             <h2 style={{ textAlign: 'center' }}>Who makes Scribble NYC possible?</h2>
             <p>
                 The companies below have generously donated workshops
@@ -85,6 +92,7 @@ export default function About() {
               <img id="upperlineLogo" aria-hidden='true' src={Upperline} alt='Upperline Code' height={80}/>
               <img id="appleLogo" aria-hidden='true' src={Apple} alt='Apple' height={80}/>
             </div>
+          </div>
         </main>
       <Footer />
     </div>
