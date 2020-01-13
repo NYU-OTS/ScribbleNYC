@@ -38,13 +38,26 @@ export default function Home() {
           <img src={DividerBubbles} className="dividerBubble" alt=""/>
 
           <section>
-            <h2>Scribble 2019 was a blast!</h2>
+            <h2 className="marginOnBottom">Scribble 2019 was a blast!</h2>
 
-            <div className="infoPiece">
-              <p className="numberFont" id="attendees">52<br/>attendees</p>
-              <p className="numberFont" id="schools">11<br/>schools</p>
-            </div>
-            <img src={GroupPhoto} alt="" className="photo"/>
+            <p className="numberFont" id="attendees">52 attendees</p>
+            <img src={GroupPhoto} alt="" className="photo marginOnBottom"/>
+
+            <p className="numberFont" id="schools">12 schools</p>
+            <ul className="schoolList marginOnBottom">
+                <li>Alabama A&M</li>
+                <li>The British International School of New York</li>
+                <li>Brearley School</li>
+                <li>Bronx Academy for Software Engineering</li>
+                <li>Brooklyn Friends School</li>
+                <li>Brooklyn Prospect Charter School</li>
+                <li>Digital Arts and Cinema Technology High School</li>
+                <li>High School of Applied Communication</li>
+                <li>The High School of Fashion Industries</li>
+                <li>MS 217</li>
+                <li>New Voices School Of Academic & Creative Arts</li>
+                <li>Tenafly High School</li>
+            </ul>
 
             <p className="numberFont" id="workshops">8 workshops</p>
             <ul className="workshopList">

@@ -48,7 +48,7 @@ export default function ThisYear() {
                   alt="Overall best idea for 2019: Team PeerPrep"
                 />
                 <Carousel.Caption>
-                  <h3 className="carouselText">PeerPrep from MS217</h3>
+                  <h3 className="carouselText">Team PeerPrep</h3>
                   <p className="carouselText">Best idea overall</p>
                 </Carousel.Caption>
               </Carousel.Item>
